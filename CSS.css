@@ -442,6 +442,8 @@ header {
   padding-right: 30px;
   position: relative;
   top: 5px;
+  float: left;
+  clear: both;
 }
 
  ul {
@@ -456,7 +458,9 @@ header {
   border: none;
   margin: 30px;
   position: absolute;
+  top: 600px;
   left: 200px;
+  z-index: -1;
 }
 
 .member-tier button:nth-child(3) {
