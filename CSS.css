@@ -430,7 +430,7 @@ header {
   padding-bottom: 10px;
 }
 
-.member-tier h3 {
+.member-tier button {
   height: 50px;
   border: none;
   color: white;
@@ -444,7 +444,7 @@ header {
   top: 5px;
 }
 
- /* ul {
+ ul {
   text-align: left;
   display: block;
   margin-left: 30px;
@@ -457,9 +457,9 @@ header {
   margin: 30px;
   position: absolute;
   left: 200px;
-} */
+}
 
-.member-tier h3:nth-child(3) {
+.member-tier button:nth-child(3) {
   width: 700px;
   background-color: rgb(178, 92, 199);
   position: relative;
@@ -467,25 +467,25 @@ header {
   margin-top: 40px;
 }
 
-/* .D-tier {
+.D-tier {
   background-color: rgb(178, 92, 199);
-} */
+}
 
-.member-tier h3:nth-child(4) {
+.member-tier button:nth-child(4) {
   width: 900px;
   background-color: gold;
   position: relative;
   left: 660px;
 }
 
-.member-tier h3:nth-child(5) {
+.member-tier button:nth-child(5) {
   width: 1100px;
   background-color: silver;
   position: relative;
   left: 560px;
 }
 
-.member-tier h3:nth-child(6) {
+.member-tier button:nth-child(6) {
   width: 1300px;
   background-color: rgb(4, 160, 221);
   position: relative;

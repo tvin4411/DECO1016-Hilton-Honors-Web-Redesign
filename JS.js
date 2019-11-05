@@ -1,4 +1,4 @@
-// Menu Icon 
+// Menu Icon
 function myMenu(x) {
     x.classList.toggle("extend");
 }
@@ -81,7 +81,7 @@ function AppIcon(x) {
 
 // Form Validation
 function validateForm() {
-    
+
 }
 
 // Local Storage
