@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Title of page and links to the css and javascript file -->
+  <head>
+    <title>Hilton Honors Home</title>
+    <link rel="stylesheet" href="CSS.css"><link>
+    <script type="text/javascript" src="JS.js"></script>
+  </head>
+  
+  <!-- Contents of Landing Page -->
+  <body>
+    <main class='page'>
+      <!-- Menu class is the top white border containing the menu button, logo, user icon and login & sign up links -->
+      <header class='menu'>
+        <div class="logo"><a href="Landing Page.html"><img src="images/Hilton Honors Logo (White).png" alt="Hilton Honors Logo" width="110" height="50"></a></div>
+        <nav class="button" onclick="myMenu(this)">
+          <div class="bar1"><a href="https://hiltonhonors3.hilton.com/en/explore/benefits/index.html" style="text-decoration:none">Benefits</a></div>
+          <div class="bar2"><a href="https://hiltonhonors3.hilton.com/en/earn-use-points/overview/index.html" style="text-decoration:none">Points</a></div>
+          <div class="bar3"><a href="https://hiltonhonors3.hilton.com/en/offers/index.htm" style="text-decoration:none">Offers</a></div>
+          <div class="close"></div>
+          <div class="tri"></div>
+        </nav>
+        <div class="user"><img src="images/User.JPG" alt="User Icon" width="40" height="40"></a>
+      </header>
+      <!-- Hotel Image and Find a Hotel button -->
+      <section class='container'>
+        <img src="images/Top image landing page.jpg" alt="Hotel by Water" width="100%" height="800">
+        <button class="btn">Find a Hotel</button>
+      </section>
+      <!-- Greeting Quote and Joining button to Sign up page -->
+      <section class='bubble'>
+        <h1>We'd be</h1>
+        <h1><em>honoured</em></h1>
+        <h1>to have you</h1>
+        <p>(plus it's free)</p>
+        <button class="joinbtn"><a href="Sign Up Page.html" style="text-decoration:none">Join Hilton Honors</a></button>
+      </section>
+      <!-- Shows perks as icons and speech bubble of information -->
+      <section class='perks'>
+        <h2>Join for the perks</h2>
+          <p>The perks start the moment you join.</p>
+          <button onclick="EliteIcon(this)"></button>
+            <div id="speech-pointer1"></div>
+            <div id="speechR1">
+            <h3>Elite-level Benefits</h3>
+            <p>Our elite members get access to Rollover Nights, Milestone Bonuses, free breakfaset, and more.</p>
+            <a href="https://hiltonhonors3.hilton.com/en/explore/benefits/index.html">Explore Member Tiers</a>
+            </div>
+          <button onclick="LowIcon(this)"></button>
+            <div id="speech-pointer2"></div>
+            <div id="speechR2">
+              <h3>Lowest Price</h3>
+              <p>When you book at Hilton.com, we guarantee you'll always get the lowest price. If you find a lower rate we'll match it and give you an extra 25% off.*</p>
+              <a href="https://hiltonhonors3.hilton.com/en/offers/100115474.htm?cid=OH,MB,WG8539,DDR,PMG_CTA,StudioLP,SingleLink,i1">Terms & Conditions Apply</a>
+            </div>
+          <button onclick="WifiIcon(this)"></button>
+            <div id="speech-pointer3"></div>
+            <div id="speechR3">
+              <h3>Free Wifi</h3>
+              <p>Get online throughout the hotel with free standard WiFi during your stay.</p>
+              <a href="https://hiltonhonors3.hilton.com/en/terms/index.html">Terms Apply</a>
+            </div>  
+          <button onclick="PointsIcon(this)"></button>
+            <div id="speech-pointer4"></div>
+            <div id="speechR4">
+              <h3>Earn Points</h3>
+              <p>New Members earn 10 points for every $1 spent at our hotels. Plus , the more you stay, the more you earn-up to 20 Points per $1 spent. Earn even more with the Hilton Honors American Express Card.</p>
+              <a href="https://hiltonhonors3.hilton.com/en/earn-use-points/credit-cards/index.html">Terms & Conditions Apply</a>
+            </div>  
+          <button onclick="AppIcon(this)"></button>
+            <div id="speech-pointer5"></div>
+            <div id="speechR5">
+              <h3>Exclusive App Features</h3>
+              <p>Book a stay, check in, choose your own room, unlock your door, and check-out all in the Hilton Honors app.</p>
+              <a href="https://hiltonhonors3.hilton.com/rs/hilton-honors-mobile-app/">View Features</a>
+             </div> 
+      </section> 
+      <!-- Gray border to separate the perks information and member tier information  -->
+      <div class="v-border"></div>
+      <!-- Member tier shows a pyramid of the different membership levels on the requirements and the added benefits -->
+      <section class='member-tier'>
+        <h2>Membership Tier</h2>
+          <p>Greater rewards awaits you. See the different tiers you can access when you meet the requirements</p>
+        <h3>Diamond</h3>
+        <h3>Gold</h3>
+        <h3>Silver</h3>
+        <h3>Blue</h3>
+      </section>
+
+      <section class='D-tier'>
+        <p>The highest tier is available to members who either:</p>
+          <ul style="list-style-type:circle;">
+            <li>have 30 stays or spent 60 nights in Hilton properties in a calendar year</li>
+            <li>earned 120,000 Honors Base Points in a year.</li>
+          </ul>
+        <br>
+        <p>Benefits include the following:</p>
+          <ul style="list-style-type:circle;">
+            <li>A 50% point bonus</li>
+            <li>A guaranteed room when you make a reservation at least 48 hours prior to your arrival</li>
+            <li>Spa, golf or restaurant discounts</li>
+            <li>Complimentary meals and snacks</li>
+            <li>Point bonuses for stays at participating Hilton Worldwide properties</li>
+          </ul>  
+      </section>
+
+      <!-- Gray border to separate the member tier information and the rewards & benefits informtion  -->
+      <div class="v-border"></div>
+
+      <section class='SFR'>
+          <h2>Stay for the Rewards</h2>
+            <p>Redeem your Points on the things that matter most to you.</p>
+      </section>
+
+      <div class="h-border"></div>
+
+      <section class='EO'>
+          <h2>Exclusive Offers</h2>
+            <p>Take advantage of our member-only promotions and exclusive offers.</p>
+      </section>
+
+  </main>
+  <footer>
+
+  </footer>
+  </body>
+
+</html>
