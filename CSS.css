@@ -23,7 +23,7 @@
 /* LANDING PAGE */
 
 /* Head Bar */
-header {
+.menu {
   background-color: white;
   height: 70px;
   width: 100%;
@@ -123,28 +123,32 @@ header {
 }
 
 .menu .login, .menu .signup {
-  background-color:#009CDE;
   color: white;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 35px;
   padding-right: 35px;
-  border-radius: 30%
+  border-radius: 30%;
+  font-weight: bold;
 }
 
 .menu .login {
+  background-color:#104C97;
   position: fixed;
   top: 10px;
   right: 200px;
 }
+.menu .login:hover {
+  background-color:#0a3d7d;
+}
 
 .menu .signup {
+  background-color:#009CDE;
   position: fixed;
   top: 10px;
   right: 70px;
 }
-
-.menu .login:hover, .menu .signup:hover {
+.menu .signup:hover {
   background-color: #068cc4;
 }
 
@@ -156,7 +160,7 @@ header {
   padding-bottom: 30px;
 }
 
-.container .findbtn {
+.container button:first-of-type {
   position: absolute;
   top: 10%;
   left: 41%;
@@ -167,14 +171,242 @@ header {
   padding-bottom: 20px;
   border: solid white 5px;
   border-radius: 20px;
-  cursor: pointer;
   transition: background-color 1s ease-in;
 }
 
-.container .findbtn:hover {
+.container button:first-of-type:hover {
   background-color: #c9a112cb;
 }
 
+.container #hotel-opt {
+  position: absolute;
+  top: 90px;
+  left: 350px;
+  background-color: black;
+  border: 4px solid #D9B018;
+  border-radius: 60px;
+  width: 800px;
+  height: 520px;
+  padding: 50px;
+  padding-top: 20px;
+  display: none;
+  opacity: 0.97;
+}
+
+.container #hotel-opt span {
+  position: absolute;
+  right: 35px;
+  top: 26px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container #hotel-opt span:hover {
+  opacity: 0.3;
+}
+.container #hotel-opt span:before, .container #hotel-opt span:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 5px;
+  background-color: white;
+}
+.container #hotel-opt span:before {
+  transform: rotate(45deg);
+}
+.container #hotel-opt span:after {
+  transform: rotate(-45deg);
+}
+
+.container #hotel-opt h2 {
+  text-align: left;
+  color: white;
+  font-size: 55px;
+  font-family: Simple Joys;
+}
+
+.container #hotel-opt h3 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family: Simple Joys;
+  margin: 10px;
+}
+
+.container #hotel-opt input {
+  background-color: white;
+  border: 2px solid #A7A7A7;
+  color: #A7A7A7;
+  font-size: 15px;
+}
+
+.container #hotel-opt input:first-of-type {
+  padding: 20px;
+  width: 700px;
+  margin-bottom: 20px;
+}
+
+.container #hotel-opt input:nth-of-type(2), .container #hotel-opt input:nth-of-type(3) {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 600px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.container #hotel-opt .external a {
+  background-color: white;
+  color: #A7A7A7;
+  border: 2px solid #A7A7A7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-left: 80px;
+  position: relative;
+  top: 20px;
+}
+
+.container #hotel-opt input:last-child {
+  border: 5px solid white;
+  background-color: #D9B018;
+  color: white;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.container #hotel-opt input:last-child:hover {
+    background-color: #c9a112cb;
+}
+
+/* ROOMS PAGE & SPECIAL RATES PAGE */
+
+/* Arrow to go back to landing page for Rooms and Special Rates */
+.roomBar a, .srBar a {
+  color: black;
+  position: relative;
+  top: 20px;
+  left: 30px;
+  font-size: 35px;
+  font-family: Segoe UI;
+}
+
+.roomBar a:hover, .srBar a:hover {
+  color: #009CDE;
+}
+
+.roomBar, .srBar {
+  background-color: white;
+  height: 120px;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 6px solid #D9B018;
+  position: static;
+  z-index: 2;
+}
+
+#roomForm input[type=submit], #srForm input[type=submit] {
+    border: 3px dotted white;
+    border-radius: 10px;
+    background-color: #D9B018;
+    padding: 20px 100px 20px 100px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 500px;
+    left: 600px;
+}
+
+#roomForm input[type=submit]:hover, #srForm input[type=submit]:hover {
+    border: 3px dotted #D9B018;
+    background-color: #104C97;
+}
+
+.roomBar h1, .srBar h1 {
+  color: black;
+  font-family: Simple Joys;
+  text-align: center;
+  font-size: 100px;
+  position: absolute;
+  top: 10px;
+  left: 40%
+}
+
+.roomCon p, .srCon p {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  margin: 25px;
+}
+
+.roomCon em, .srCon em {
+  font-family: Segoe UI;
+}
+
+/* Separate details for Room Page */
+#roomForm div {
+  position: relative;
+  top: 40px;
+  left: 100px;;
+  float: left;
+  margin: 10px;
+}
+.roomCon label {
+  font-size: 30px;
+  font-family: Segoe UI;
+  font-weight: bold;
+}
+.roomCon input {
+  border: 4px solid #009CDE;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Separate details for Special Rates Page */
+#srForm label, #srForm input {
+  float: left;
+  clear: both;
+  margin: 7px;
+  font-weight: bold;
+  font-family: Segoe UI;
+}
+
+#srForm label {
+  position: relative;
+  left: 510px;
+  font-size: 25px;
+  color: #009CDE;
+}
+
+#srForm input[type=checkbox] {
+  position: relative;
+  left: 290px;
+  height: 30px;
+  width: 30px;
+}
+
+#srForm input[type=text] {
+  text-align: center;
+  font-size: 20px;
+  padding: 30px 300px 30px 300px;
+  position: relative;
+  left: 290px;
+  margin-top: 20px;
+  color: #D9B018;
+  border: 3px dashed #009CDE;
+}
+
+/* Continuation of LANDING PAGE */
 
 /* Join Button & Phrase */
 .bubble {
@@ -269,13 +501,14 @@ header {
   background-color: #009CDE;
   border: 2px white solid;
   margin-bottom: 70px;
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.5s ease-in;
   position: relative;
   bottom: 220px;
   left: 1375px;
 }
-.perks button:focus {
+.perks button:hover {
   background-color: #068cc4;
+  border: 4px dashed #D9B018;
   cursor: pointer;
 }
 
@@ -380,16 +613,13 @@ header {
   margin-left: 30px;
 }
 
-/* .D-tier, .G-tier, .S-tier, .B-tier {
+.D-tier, .G-tier, .S-tier, .B-tier {
   color: white;
   padding: 40px;
   border: none;
   margin: 30px;
-  position: relative;
-  top: 600px;
-  left: 200px;
   z-index: -1;
-} */
+}
 
 .member-tier button:nth-child(3) {
   width: 600px;
@@ -399,9 +629,12 @@ header {
   margin-top: 40px;
 }
 
-/* .D-tier {
+.D-tier {
   background-color: rgb(178, 92, 199);
-} */
+  position: relative;
+  top: 100px;
+  left: 60px;
+}
 
 .member-tier button:nth-child(4) {
   width: 800px;
@@ -499,7 +732,8 @@ form .details select {
   border-radius: 20px;
 }
 
-.firstF input {padding-top: 20px;
+.firstF input {
+  padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 150px;
@@ -509,8 +743,6 @@ form .details select {
   margin-right: 1px;
   border: 2px solid;
   border-radius: 20px;
-
-
 }
 
 .secondF input {
@@ -683,7 +915,7 @@ form .details select {
   width: 0;
   padding-left:20px;
 }
-.checkmark {
+.checkagree {
   position: absolute;
   top: 0;
   left: 0;
@@ -691,21 +923,21 @@ form .details select {
   width: 25px;
   background-color: white;
 }
-.checkbox:hover input ~ .checkmark {
+.checkbox:hover input ~ .checkagree {
   background-color: #D9B018;
 }
-.checkbox input:checked ~ .checkmark {
+.checkbox input:checked ~ .checkagree {
   background-color: #009CDE;
 }
-.checkmark:after {
+.checkagree:after {
   content: "";
   position: absolute;
   display: none;
 }
-.checkbox input:checked ~ .checkmark:after {
+.checkbox input:checked ~ .checkagree:after {
   display: block;
 }
-.checkbox .checkmark:after {
+.checkbox .checkagree:after {
   left: 9px;
   top: 5px;
   width: 5px;

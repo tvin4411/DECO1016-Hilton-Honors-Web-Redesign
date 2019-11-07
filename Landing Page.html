@@ -18,8 +18,8 @@
       <div class="tri"></div>
     </nav>
     <div class="user"><img src="images/User.JPG" alt="User Icon" width="40" height="40"></a></div>
-    <button class="login"><a href="https://secure3.hilton.com/en/hh/customer/login/index.htm">Log in</a></button>
-    <button class="signup"><a href="Sign Up Page.html">Sign up</a></button>
+    <button class="login"><a href="https://secure3.hilton.com/en/hh/customer/login/index.htm" style="text-decoration: none">Log in</a></button>
+    <button class="signup"><a href="Sign Up Page.html" style="text-decoration: none">Sign up</a></button>
   </header>
 
   <!-- Contents of Landing Page -->
@@ -28,7 +28,20 @@
       <!-- Hotel Image and Find a Hotel button -->
       <section class='container'>
         <img src="images/Top image landing page.jpg" alt="Hotel by Water">
-        <button class="findbtn">Find a Hotel</button>
+        <button onclick="findbtn(this)">Find a Hotel</button>
+          <nav id="hotel-opt">
+            <span onclick="exit(this)"><a href="Landing Page.html"></a></span>
+            <h2>Where to?</h2>
+            <input type="text" name="location" placeholder="City, State, Location or Airport">
+            <br>
+            <input type="date" name="start-cal" placeholder="Start"><h3>TO</h3><input type="date" name="end-cal" placeholder="End">
+            <br>
+            <nav class="external">
+              <a href="Rooms.html" style="text-decoration:none">Rooms</a>
+              <a href="Special Rates.html" style="text-decoration:none">Special Rates</a>
+            <nav>
+            <input type="submit" value="Enter">
+          </nav>
       </section>
       <!-- Greeting Quote and Joining button to Sign up page -->
       <section class='bubble'>
@@ -85,7 +98,7 @@
         <button>Blue</button>
       </section>
 
-      <!-- <section class='D-tier'>
+      <section class='D-tier'>
         <p>The highest tier is available to members who either:</p>
           <ul style="list-style-type:circle;">
             <li>have 30 stays or spent 60 nights in Hilton properties in a calendar year</li>
@@ -100,7 +113,7 @@
             <li>Complimentary meals and snacks</li>
             <li>Point bonuses for stays at participating Hilton Worldwide properties</li>
           </ul>
-      </section> -->
+      </section>
 
       <!-- Gray border to separate the member tier information and the rewards & benefits informtion  -->
       <div class="v-border2"></div>
