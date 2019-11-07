@@ -69,9 +69,41 @@ function AppIcon(x) {
     }
 }
 
-// Menu Icon
-function myDTeir(x) {
-    x.classList.toggle("extend");
+// Member-Teirs will appear when button is preesed
+function myDia(x) {
+    var x = document.getElementById("D-tier");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function myGol(x) {
+    var x = document.getElementById("G-tier");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function mySil(x) {
+    var x = document.getElementById("S-tier");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function myBlu(x) {
+    var x = document.getElementById("B-tier");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }
 
 // Form Validation ensures users input is on the right track

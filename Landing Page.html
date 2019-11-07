@@ -39,7 +39,7 @@
             <nav class="external">
               <a href="Rooms.html" style="text-decoration:none">Rooms</a>
               <a href="Special Rates.html" style="text-decoration:none">Special Rates</a>
-            <nav>
+            </nav>
             <input type="submit" value="Enter">
           </nav>
       </section>
@@ -55,35 +55,40 @@
       <section class='perks'>
         <h2>Join for the perks</h2>
           <p>The perks start the moment you join.</p>
-          <button onclick="EliteIcon(this)"><img src="images/Elite.png" alt="Gift Image" width="50" height="50"></button>
+          <button onmouseover="EliteIcon(this)"><img src="images/Elite.png" alt="Gift Image" width="50" height="50"></button>
             <p id="speechR1">
             <strong>Elite-level Benefits</strong><br>
             Our elite members get access to Rollover Nights, Milestone Bonuses, free breakfaset, and more.<br>
             <a href="https://hiltonhonors3.hilton.com/en/explore/benefits/index.html">Explore Member Tiers</a>
+            <img src="images/Elite.png" alt="Gift Image" width="45" height="45">
             </p>
-          <button onclick="LowIcon(this)"><img src="images/Low.png" alt="Money Symbol" width="50" height="60"></button>
+          <button onmouseover="LowIcon(this)"><img src="images/Low.png" alt="Money Symbol" width="50" height="60"></button>
             <p id="speechR2">
             <strong>Lowest Price</strong><br>
             When you book at Hilton.com, we guarantee you'll always get the lowest price. If you find a lower rate we'll match it and give you an extra 25% off.*<br>
             <a href="https://hiltonhonors3.hilton.com/en/offers/100115474.htm?cid=OH,MB,WG8539,DDR,PMG_CTA,StudioLP,SingleLink,i1">Terms & Conditions Apply</a>
+            <img src="images/Low.png" alt="Money Symbol" width="45" height="45">
             </p>
-          <button onclick="WifiIcon(this)"><img src="images/Wifi.png" alt="Wifi Icon" width="60" height="60"></button>
+          <button onmouseover="WifiIcon(this)"><img src="images/Wifi.png" alt="Wifi Icon" width="60" height="60"></button>
             <p id="speechR3">
             <strong>Free Wifi</strong><br>
             Get online throughout the hotel with free standard WiFi during your stay.<br>
             <a href="https://hiltonhonors3.hilton.com/en/terms/index.html">Terms Apply</a>
+            <img src="images/Wifi.png" alt="Wifi Icon" width="45" height="45">
             </p>
-          <button onclick="PointsIcon(this)"><img src="images/Points.png" alt="Stacked Coins" width="50" height="50"></button>
+          <button onmouseover="PointsIcon(this)"><img src="images/Points.png" alt="Stacked Coins" width="50" height="50"></button>
             <p id="speechR4">
             <strong>Earn Points</strong><br>
             New Members earn 10 points for every $1 spent at our hotels. Plus , the more you stay, the more you earn-up to 20 Points per $1 spent. Earn even more with the Hilton Honors American Express Card.<br>
             <a href="https://hiltonhonors3.hilton.com/en/earn-use-points/credit-cards/index.html">Terms & Conditions Apply</a>
+            <img src="images/Points.png" alt="Stacked Coins" width="45" height="45">
             </p>
-          <button onclick="AppIcon(this)"><img src="images/App.png" alt="Phone Icon" width="50" height="60"></button>
+          <button onmouseover="AppIcon(this)"><img src="images/App.png" alt="Phone Icon" width="50" height="60"></button>
             <p id="speechR5">
             <strong>Exclusive App Features</strong><br>
             Book a stay, check in, choose your own room, unlock your door, and check-out all in the Hilton Honors app.<br>
             <a href="https://hiltonhonors3.hilton.com/rs/hilton-honors-mobile-app/">View Features</a>
+            <img src="images/App.png" alt="Phone Icon" width="45" height="45">
             </p>
       </section>
       <!-- Gray border to separate the perks information and member tier information  -->
@@ -92,13 +97,15 @@
       <section class='member-tier'>
         <h2>Membership Tier</h2>
           <p>Greater rewards awaits you. See the different tiers you can access when you meet the requirements</p>
-        <button>Diamond</button>
-        <button>Gold</button>
-        <button>Silver</button>
-        <button>Blue</button>
+        <button onclick="myDia(this)">Diamond</button>
+        <button onclick="myGol(this)">Gold</button>
+        <button onclick="mySil(this)">Silver</button>
+        <button onclick="myBlu(this)">Blue</button>
+        <img src="Images/Member Perks.JPG" arc="Perks Table" width="650" height="600"> 
       </section>
 
-      <section class='D-tier'>
+      <!-- Diamond Member Tier Information -->
+      <div id='D-tier'>
         <p>The highest tier is available to members who either:</p>
           <ul style="list-style-type:circle;">
             <li>have 30 stays or spent 60 nights in Hilton properties in a calendar year</li>
@@ -113,7 +120,54 @@
             <li>Complimentary meals and snacks</li>
             <li>Point bonuses for stays at participating Hilton Worldwide properties</li>
           </ul>
-      </section>
+      </div>
+
+      <!-- Gold Member Tier Information -->
+      <div id='G-tier'>
+        <p>You’ll achieve Gold status when you either:</p>
+          <ul style="list-style-type:circle;">
+            <li>had 20 stays or spend 40 nights in Hilton properties.</li>
+            <li>earned 75,000 Honors Base Points in a calendar year.</li>
+          </ul>
+        <br>
+        <p>In addition to the benefits available to Blue and Silver members, you can get:</p>
+          <ul style="list-style-type:circle;">
+            <li>A 25% point bonus</li>
+            <li>Upgrades to a preferred room</li>
+            <li>Complimentary breakfasts</li>
+            <li>Complimentary snacks</li>
+            <li>Point bonuses for stays at participating Hilton properties</li>
+          </ul>
+      </div>
+
+      <!-- Silver Member Tier Information -->
+      <div id='S-tier'>
+        <p>You’ll make it to the second level when you have had 4 stays or spent 10 nights in a Hilton property within a calendar year.</p>
+        <br>
+        <p>This provides you with:</p>
+          <ul style="list-style-type:circle;">
+            <li>A 15% point bonus on the base rate.</li>
+            <li>A free night for Standard Room Reward stays of 5 nights or more.</li>
+            <li>A “Second Guest Stays Free” offer.</li>
+            <li>Complimentary access to fitness centers</li>
+            <li> Two complimentary bottles of water per stay at participating hotels and resorts</li>
+          </ul>
+      </div>
+
+      <!-- Blue Member Tier Information -->
+      <div id='B-tier'>
+        <p>The base level of the memberships you can obtain and it offers the following benefits:</p>
+          <ul style="list-style-type:circle;">
+            <li>Points for eligible spending with program partners.</li>
+            <li>A guaranteed booking discount.</li>
+            <li>Digital check-in.</li>
+            <li>Complimentary in-room and lobby standard Internet access at participating Hilton Worldwide properties.</li>
+            <li>The ability to register your room preferences for faster bookings and check-in.</li>
+            <li>Late check-out at participating Hilton Worldwide properties</li>
+            <li>Express check-out.</li>
+            <li>A “Second Guest Stays Free” offer at participating Hilton Worldwide properties.</li>
+          </ul>
+      </div>
 
       <!-- Gray border to separate the member tier information and the rewards & benefits informtion  -->
       <div class="v-border2"></div>

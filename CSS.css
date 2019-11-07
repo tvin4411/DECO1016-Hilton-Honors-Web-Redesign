@@ -74,7 +74,7 @@
   float: left;
   clear: both;
   text-align: center;
-  font-size: 7px;
+  font-size: 6px;
   font-weight: bold;
 }
 
@@ -514,7 +514,7 @@
 
 #speechR1, #speechR2, #speechR3, #speechR4, #speechR5 {
   background-color: white;
-  border: 3px double #D9B018;
+  border: 5px double #D9B018;
   color: black;
   font-size: 15px;
   display: none;
@@ -532,6 +532,13 @@
 #speechR1 a, #speechR2 a, #speechR3 a, #speechR4 a, #speechR5 a {
   color: blue;
   font-size: 13px;
+}
+
+#speechR1 img, #speechR2 img, #speechR3 img, #speechR4 img, #speechR5 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
 }
 
 #speechR1 {
@@ -589,73 +596,172 @@
   text-align: center;
   font-size: 30px;
   padding-top: 5px;
+  padding-right: 70px;
+}
+
+.member-tier img {
+  position: absolute;
+  top: 220px;
+  right: 20px;
+  z-index: -2;
 }
 
 .member-tier button {
-  height: 50px;
+  height: 40px;
   border: 4px solid #A7A7A7;
   color: white;
   text-align: center;
   font-family: Simple Joys;
-  font-size: 100px;
-  padding-top: 40px;
-  padding-bottom: 110px;
-  padding-left: 30px;
-  padding-right: 30px;
+  font-size: 70px;
+  font-weight: bold;
+  padding: 40px 10px 100px 0px;
   float: left;
   clear: both;
   cursor: pointer;
 }
 
- ul {
-  text-align: left;
-  display: block;
-  margin-left: 30px;
-}
-
-.D-tier, .G-tier, .S-tier, .B-tier {
+#D-tier, #G-tier, #S-tier, #B-tier {
   color: white;
-  padding: 40px;
-  border: none;
+  width: 930px;
+  height: 620px;
+  border: 6px dashed #A7A7A7;
   margin: 30px;
+  position: relative;
+  bottom: 10px;
+  left: 500px;
+  display:none;
   z-index: -1;
 }
 
 .member-tier button:nth-child(3) {
-  width: 600px;
+  width: 300px;
   background-color: rgb(178, 92, 199);
   position: relative;
-  left: 430px;
+  left: 280px;
   margin-top: 40px;
 }
-
-.D-tier {
+#D-tier {
   background-color: rgb(178, 92, 199);
-  position: relative;
-  top: 100px;
-  left: 60px;
+}
+#D-tier p {
+ text-align: center;
+ font-size: 30px;
+ font-weight: bold;
+ position: relative;
+ top: 30px;
+ margin-bottom: 120px;
+ padding-left: 200px;
+ padding-right: 120px;
+}
+#D-tier ul:first-of-type {
+ font-size: 25px;
+ position: absolute;
+ top: 140px;
+ padding-left: 300px;
+ margin-right: 20px;
+}
+#D-tier ul:last-child {
+ font-size: 25px;
+ position: absolute;
+ top: 330px;
+ padding-left: 300px;
+ margin-right: 20px;
 }
 
 .member-tier button:nth-child(4) {
-  width: 800px;
-  background-color: gold;
+  width: 450px;
+  background-color: #D9B018;
   position: relative;
-  left: 330px;
+  left: 200px;
+}
+#G-tier {
+  background-color: #D9B018;
+}
+#G-tier p {
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 140px;
+  padding-right: 100px;
+}
+#G-tier p:first-of-type {
+ position: relative;
+ top: 40px;
+}
+#G-tier p:last-of-type {
+ text-align: left;
+ position: relative;
+ top: 10px;
+ font-size: 24px;
+}
+#G-tier ul:first-of-type {
+ font-size: 25px;
+ position: absolute;
+ top: 130px;
+ padding-left: 300px;
+ margin-right: 20px;
+}
+#G-tier ul:last-child {
+ font-size: 25px;
+ position: absolute;
+ top: 360px;
+ padding-left: 420px;
+ margin-right: 20px;
 }
 
 .member-tier button:nth-child(5) {
-  width: 1000px;
+  width: 600px;
   background-color: silver;
   position: relative;
-  left: 230px;
+  left: 120px;
+}
+#S-tier {
+  background-color: silver;
+}
+#S-tier p {
+ text-align: justify;
+ font-size: 30px;
+ font-weight: bold;
+ position: relative;
+ top: 50px;
+ margin-bottom: 40px;
+ padding-left: 250px;
+ padding-right: 100px;
+}
+#S-tier ul {
+ font-size: 25px;
+ position: absolute;
+ top: 320px;
+ padding-left: 420px;
+ margin-right: 20px;
 }
 
 .member-tier button:nth-child(6) {
-  width: 1200px;
+  width: 750px;
   background-color: rgb(4, 160, 221);
   position: relative;
-  left: 130px;
-  margin-bottom: 80px;
+  left: 40px;
+  margin-bottom: 40px;
+}
+#B-tier {
+  background-color: rgb(4, 160, 221);
+}
+#B-tier p {
+ text-align: left;
+ font-size: 30px;
+ font-weight: bold;
+ position: relative;
+ top: 30px;
+ margin-bottom: 140px;
+ padding-left: 350px;
+ padding-right: 70px;
+}
+#B-tier ul {
+ font-size: 24px;
+ position: absolute;
+ top: 170px;
+ padding-left: 350px;
+ margin-right: 20px;
 }
 
 /* Information - Rewards and Offers */
