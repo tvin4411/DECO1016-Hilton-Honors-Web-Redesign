@@ -4,11 +4,19 @@
   padding: 0;
   }
 
-a {
+* a {
   color: white;
 }
 
-input, select {
+* h1, * h2, * h3, * p, * a, * ul {
+  font-family: Segoe UI;
+}
+
+* em {
+  font-family: Simple Joys;
+}
+
+* input, * select, * button {
   cursor: pointer;
 }
 
@@ -39,23 +47,20 @@ header {
   cursor: pointer;
 }
 
-.extend .bar1 {
-  transform: scale(6, 15) translate(23.5px, 2.5px);
+.extend .bar1, .extend .bar2, .extend .bar3 {
   background-color: black;
-  border: 1px solid #D9B018;
+  border: 0.5px solid #D9B018;
   padding: 3px;
+}
+
+.extend .bar1 {
+  transform: scale(3, 8) translate(15px, 1.5px);
 }
 .extend .bar2 {
-  transform: scale(6, 15) translate(23.5px, 9px);
-  background-color: black;
-  border: 1px solid #D9B018;
-  padding: 3px;
+  transform: scale(3, 8) translate(15px, 7px);
 }
 .extend .bar3 {
-  transform: scale(6, 15) translate(23.5px, 15px);
-  background-color: black;
-  border: 1px solid #D9B018;
-  padding: 3px;
+  transform: scale(3, 8) translate(15px, 12.5px);
 }
 
 .button a {
@@ -64,11 +69,12 @@ header {
   transition-delay: 0.5s;
 }
 .extend a {
-  transform: scale(1, 0.5) translate(16px, -7.5px);
+  transform: scale(1, 0.5) translate(18.5px, -6.5px);
   visibility: visible;
   float: left;
   clear: both;
-  font-size: 8px;
+  text-align: center;
+  font-size: 7px;
   font-weight: bold;
 }
 
@@ -77,62 +83,83 @@ header {
   width: 65px;
   height: 8px;
   background-color: white;
-  border: 1px solid black;
+  border: none;
   position: relative;
   bottom: 10px;
   left: 10px;
   transition: 1s ease-in-out;
 }
 .extend .close {
-  transform: scale(6, 10) translate(23.5px, 31.5px);
+  transform: scale(3, 6) translate(15px, 24px);
   visibility: visible;
-  background-color: white;
-  border: 1px solid black;
+  background-color:  #009CDE;
+  border: 0.5px solid #D9B018;
 }
 
 .extend .tri {
-  transform: translate(160px, 280px);
+  transform: translate(73px, 117px);
   transition: 1s linear;
   visibility: visible;
   cursor: pointer;
   width: 0;
   height: 0;
-  border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 45px solid black;
+  border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-bottom: 23px solid white;
 }
 
-.logo {
+.menu .logo {
   margin-left: auto;
   margin-right: auto;
   width: 100px;
 }
 
-.user {
+.menu .user {
   float: right;
   position: fixed;
-  top: 0;
+  top: 5px;
   right: 0;
   padding: 10px;
 }
 
-/* Hotel Image + Find a Hotel Button */
-.container {
-  position: relative;
-  width: 100%;
+.menu .login, .menu .signup {
+  background-color:#009CDE;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 30%
 }
 
+.menu .login {
+  position: fixed;
+  top: 10px;
+  right: 200px;
+}
+
+.menu .signup {
+  position: fixed;
+  top: 10px;
+  right: 70px;
+}
+
+.menu .login:hover, .menu .signup:hover {
+  background-color: #068cc4;
+}
+
+/* Hotel Image + Find a Hotel Button */
 .container img {
   width: 100%;
-  height: 700px;
+  height: 800px;
   padding-top: 70px;
   padding-bottom: 30px;
 }
 
-.container .btn {
+.container .findbtn {
   position: absolute;
-  top: 78%;
-  left: 44%;
+  top: 10%;
+  left: 41%;
   background-color: #D9B018;
   color: white;
   font-size: 30px;
@@ -144,50 +171,53 @@ header {
   transition: background-color 1s ease-in;
 }
 
-.container .btn:hover {
+.container .findbtn:hover {
   background-color: #c9a112cb;
 }
+
 
 /* Join Button & Phrase */
 .bubble {
   float: left;
   padding: 50px;
-  margin-top: 100px;
-  margin-left: 140px;
-  width: 800px;
+  position: relative;
+  top: 180px;
+  left: 70px;
+  width: 700px;
   height: 400px;
   border: solid white 8px;
   border-radius: 80px;
   background-color: black;
 }
 
-.bubble h1:first-of-type {
-  text-align: left;
-  color:white;
-  font-size: 50px;
-  padding-left: 30px;
-}
-
-.bubble h1:last-of-type {
-  text-align: right;
-  color:white;
-  font-size: 50px;
-  padding-right: 30px;
-}
-
 .bubble h1 {
   text-align: center;
   color:white;
-  font-size: 40px;
+  font-size: 50px;
+}
+
+.bubble h1:first-of-type {
+  text-align: left;
+  padding-left: 35px;
+}
+
+.bubble h1:last-of-type {
+  position: relative;
+  bottom: 140px;
+  text-align: right;
+  padding-right: 40px;
 }
 
 .bubble em {
+  position: relative;
+  bottom: 50px;
   color:#009CDE;
-  font-size: 90px;
-  z-index: -1;
+  font-size: 200px;
 }
 
 .bubble p {
+  position: relative;
+  bottom: 120px;
   text-align: center;
   color:white;
   font-size: 20px;
@@ -195,9 +225,9 @@ header {
 
 .bubble .joinbtn {
   z-index: 1;
-  position: absolute;
-  top: 85%;
-  left: 16%;
+  position: relative;
+  bottom: 80px;
+  left: 110px;
   background-color: #009CDE;
   font-size: 30px;
   padding: 30px 65px;
@@ -214,8 +244,8 @@ header {
 .perks {
   text-align: center;
   background-color: #104C97;
-  height: 600px;
-  z-index: -1;
+  height: 1000px;
+  z-index: -2;
 }
 
 .perks h2 {
@@ -226,193 +256,79 @@ header {
 
 .perks p {
   padding-top: 5px;
-  color:white;
+  color: white;
   font-size: 25px;
 }
 
 .perks button {
   float: left;
-  width: 150px;
-  height: 150px;
+  clear: both;
+  width: 95px;
+  height: 95px;
   border-radius: 50%;
-  background-color: #104C97;
+  background-color: #009CDE;
   border: 2px white solid;
-  margin: 30px;
+  margin-bottom: 70px;
   transition: background-color 0.2s ease-in;
   position: relative;
-  left: 110px;
+  bottom: 220px;
+  left: 1375px;
 }
-.perks button:hover {
-  background-color: #009CDE;
+.perks button:focus {
+  background-color: #068cc4;
   cursor: pointer;
 }
 
-.perks h3 {
+#speechR1, #speechR2, #speechR3, #speechR4, #speechR5 {
+  background-color: white;
+  border: 3px double #D9B018;
   color: black;
-  font-size: 35px;
+  font-size: 15px;
+  display: none;
+  position: relative;
+  right: 30px;
   padding: 15px;
+  margin-left: 850px;
+  margin-right: 90px;
 }
-.perks a {
+
+#speechR1:first-line, #speechR2:first-line, #speechR3:first-line, #speechR4:first-line, #speechR5:first-line {
+  font-size: 22px;
+}
+
+#speechR1 a, #speechR2 a, #speechR3 a, #speechR4 a, #speechR5 a {
   color: blue;
-  font-size: 25px;
-  padding-top: 20px;
+  font-size: 13px;
 }
 
-#speech-pointer1 {
-  position: absolute;
-  top: 1000px;
-  left: 1125px;
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 45px solid white;
-  display: none;
-}
 #speechR1 {
-  position: absolute;
-  top: 1040px;
-  left: 1050px;
-  background-color: white;
-  border: 1px solid white;
-  width: 1070px;
-  height: 235px;
-  display: none;
-}
-#speechR1 p {
-  color: black;
-  padding-top: 6px;
-  padding-bottom: 14px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 30px;
+  position: relative;
+  top: 30px;
 }
 
-#speech-pointer2 {
-  position: absolute;
-  top: 1000px;
-  left: 1339px;
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 45px solid white;
-  display: none;
-}
 #speechR2 {
-  position: absolute;
-  top: 1040px;
-  left: 1050px;
-  background-color: white;
-  border: 1px solid white;
-  width: 1070px;
-  height: 235px;
-  display: none;
-}
-#speechR2 p {
-  color: black;
-  padding-top: 6px;
-  padding-bottom: 14px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 30px;
+  position: relative;
+  top: 70px;
 }
 
-#speech-pointer3 {
-  position: absolute;
-  top: 1000px;
-  left: 1545px;
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 45px solid white;
-  display: none;
-}
 #speechR3 {
-  position: absolute;
-  top: 1040px;
-  left: 1050px;
-  background-color: white;
-  border: 1px solid white;
-  color: black;
-  width: 1070px;
-  height: 235px;
-  display: none;
-}
-#speechR3 p {
-  color: black;
-  padding-top: 6px;
-  padding-bottom: 14px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 30px;
+  position: relative;
+  top: 110px;
 }
 
-#speech-pointer4 {
-  position: absolute;
-  top: 1000px;
-  left: 1759px;
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 45px solid white;
-  display: none;
-}
 #speechR4 {
-  position: absolute;
-  top: 1040px;
-  left: 1050px;
-  background-color: white;
-  border: 1px solid white;
-  color: black;
-  width: 1070px;
-  height: 235px;
-  display: none;
-}
-#speechR4 p {
-  color: black;
-  padding-top: 6px;
-  padding-bottom: 14px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 30px;
+  position: relative;
+  top: 150px;
 }
 
-#speech-pointer5 {
-  position: absolute;
-  top: 1000px;
-  left: 1965px;
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 45px solid white;
-  display: none;
-}
 #speechR5 {
-  position: absolute;
-  top: 1040px;
-  left: 1050px;
-  background-color: white;
-  border: 1px solid white;
-  color: black;
-  width: 1070px;
-  height: 235px;
-  display: none;
-}
-#speechR5 p {
-  color: black;
-  padding-top: 6px;
-  padding-bottom: 14px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 30px;
+  position: relative;
+  top: 180px;
 }
 
-/* Information - Member Tier, Rewards and Offers */
-.v-border {
+/* The vertical borders splitting information content */
+
+.v-border1, .v-border2 {
   height: 5px;
   width: 90%;
   background-color: #A7A7A7;
@@ -423,88 +339,13 @@ header {
   margin-right: auto;
 }
 
+/* Information - Member Tier */
+
+.member-tier {
+  position: relative;
+}
+
 .member-tier h2 {
-  text-align: center;
-  font-size: 60px;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-.member-tier button {
-  height: 50px;
-  border: none;
-  color: white;
-  text-align: center;
-  font-size: 60px;
-  padding-top: 70px;
-  padding-bottom: 110px;
-  padding-left: 30px;
-  padding-right: 30px;
-  position: relative;
-  top: 5px;
-  float: left;
-  clear: both;
-}
-
- ul {
-  text-align: left;
-  display: block;
-  margin-left: 30px;
-}
-
-.D-tier, .G-tier, .S-tier, .B-tier {
-  color: white;
-  padding: 40px;
-  border: none;
-  margin: 30px;
-  position: absolute;
-  top: 600px;
-  left: 200px;
-  z-index: -1;
-}
-
-.member-tier button:nth-child(3) {
-  width: 700px;
-  background-color: rgb(178, 92, 199);
-  position: relative;
-  left: 760px;
-  margin-top: 40px;
-}
-
-.D-tier {
-  background-color: rgb(178, 92, 199);
-}
-
-.member-tier button:nth-child(4) {
-  width: 900px;
-  background-color: gold;
-  position: relative;
-  left: 660px;
-}
-
-.member-tier button:nth-child(5) {
-  width: 1100px;
-  background-color: silver;
-  position: relative;
-  left: 560px;
-}
-
-.member-tier button:nth-child(6) {
-  width: 1300px;
-  background-color: rgb(4, 160, 221);
-  position: relative;
-  left: 460px;
-  margin-bottom: 80px;
-}
-
-.SFR h2 {
-  text-align: center;
-  font-size: 60px;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-.EO h2 {
   text-align: center;
   font-size: 60px;
   padding-top: 30px;
@@ -515,43 +356,101 @@ header {
   text-align: center;
   font-size: 30px;
   padding-top: 5px;
-  padding-bottom: 30px;
 }
 
-.SFR p {
+.member-tier button {
+  height: 50px;
+  border: 4px solid #A7A7A7;
+  color: white;
   text-align: center;
-  font-size: 30px;
-  padding-top: 5px;
-  padding-bottom: 30px;
-}
-
-.EO p {
-  text-align: center;
-  font-size: 30px;
-  padding-top: 5px;
-  padding-bottom: 30px;
-}
-
-.SFR {
+  font-family: Simple Joys;
+  font-size: 100px;
+  padding-top: 40px;
+  padding-bottom: 110px;
+  padding-left: 30px;
+  padding-right: 30px;
   float: left;
-  margin-left: 260px;
-  margin-right: 130px;
+  clear: both;
+  cursor: pointer;
+}
+
+ ul {
+  text-align: left;
+  display: block;
+  margin-left: 30px;
+}
+
+/* .D-tier, .G-tier, .S-tier, .B-tier {
+  color: white;
+  padding: 40px;
+  border: none;
+  margin: 30px;
+  position: relative;
+  top: 600px;
+  left: 200px;
+  z-index: -1;
+} */
+
+.member-tier button:nth-child(3) {
+  width: 600px;
+  background-color: rgb(178, 92, 199);
+  position: relative;
+  left: 430px;
+  margin-top: 40px;
+}
+
+/* .D-tier {
+  background-color: rgb(178, 92, 199);
+} */
+
+.member-tier button:nth-child(4) {
+  width: 800px;
+  background-color: gold;
+  position: relative;
+  left: 330px;
+}
+
+.member-tier button:nth-child(5) {
+  width: 1000px;
+  background-color: silver;
+  position: relative;
+  left: 230px;
+}
+
+.member-tier button:nth-child(6) {
+  width: 1200px;
+  background-color: rgb(4, 160, 221);
+  position: relative;
+  left: 130px;
+  margin-bottom: 80px;
+}
+
+/* Information - Rewards and Offers */
+
+.SFR, .EO, .v-border2 {
+  position: relative;
+  left: 80px;
+  float: left;
+  clear: both;
   padding-top: 10px;
 }
 
-.h-border {
-  width: 12px;
-  height: 1000px;
-  background-color: #A7A7A7;
-  float: left;
-  margin: 30px;
+.SFR h2, .EO h2 {
+  text-align: center;
+  font-size: 60px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  position: relative;
+  left: 300px;
 }
 
-.EO {
- float: left;
- margin-left: 90px;
- margin-right: 120px;
- padding-top: 10px;
+.SFR p, .EO p {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  position: relative;
+  left: 300px;
 }
 
 /* SIGN UP PAGE */

@@ -5,12 +5,6 @@ function myMenu(x) {
 
 // Perk Icon Informartion
 function EliteIcon(x) {
-    var x = document.getElementById("speech-pointer1");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
     var x = document.getElementById("speechR1");
     if (x.style.display === "none") {
         x.style.display = "block";
@@ -20,12 +14,6 @@ function EliteIcon(x) {
 }
 
 function LowIcon(x) {
-    var x = document.getElementById("speech-pointer2");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
     var x = document.getElementById("speechR2");
     if (x.style.display === "none") {
         x.style.display = "block";
@@ -35,12 +23,6 @@ function LowIcon(x) {
 }
 
 function WifiIcon(x) {
-    var x = document.getElementById("speech-pointer3");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
     var x = document.getElementById("speechR3");
     if (x.style.display === "none") {
         x.style.display = "block";
@@ -50,12 +32,6 @@ function WifiIcon(x) {
 }
 
 function PointsIcon(x) {
-    var x = document.getElementById("speech-pointer4");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
     var x = document.getElementById("speechR4");
     if (x.style.display === "none") {
         x.style.display = "block";
@@ -65,12 +41,6 @@ function PointsIcon(x) {
 }
 
 function AppIcon(x) {
-    var x = document.getElementById("speech-pointer5");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
     var x = document.getElementById("speechR5");
     if (x.style.display === "none") {
         x.style.display = "block";
