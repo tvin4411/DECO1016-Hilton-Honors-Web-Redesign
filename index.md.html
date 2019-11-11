@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Title of page and links to the css and javascript file -->
+  <head>
+    <title>Hilton Honors Home</title>
+    <link rel="stylesheet" href="CSS.css"><link>
+    <script type="text/javascript" src="JS.js"></script>
+  </head>
+
+  <!-- Menu class is the top white border containing the menu button, logo, user icon and login & sign up links -->
+  <header class='Wmenu'>
+    <div class="logo"><a href="Landing Page.html"><img src="images/Hilton Honors Logo (White).png" alt="Hilton Honors Black Logo" width="110" height="50"></a></div>
+    <nav class="button" onclick="myMenu(this)">
+      <div class="bar1"><a href="https://hiltonhonors3.hilton.com/en/explore/benefits/index.html" style="text-decoration:none">Benefits</a></div>
+      <div class="bar2"><a href="https://hiltonhonors3.hilton.com/en/earn-use-points/overview/index.html" style="text-decoration:none">Points</a></div>
+      <div class="bar3"><a href="https://hiltonhonors3.hilton.com/en/offers/index.htm" style="text-decoration:none">Offers</a></div>
+      <div class="close"></div>
+      <div class="tri"></div>
+    </nav>
+    <div class="user" onclick="myUser(this)"><img src="images/User (Dark).JPG" alt="User Icon" width="40" height="40">
+      <button class="login"><a href="https://secure3.hilton.com/en/hh/customer/login/index.htm" style="text-decoration: none">Log in</a></button>
+      <button class="signup"><a href="Sign Up Page.html" style="text-decoration: none">Sign up</a></button>
+    </div>
+  </header>
+
+  <!-- Contents of Landing Page -->
+<body>
+<div id="page-container">
+  <div id="content wrap">
+    <main>
+      <!-- Hotel Image and Find a Hotel button -->
+      <section class='container'>
+        <img src="images/Top image landing page.jpg" alt="Hotel by Water">
+        <button onclick="findbtn(this)">Find a Hotel</button>
+          <nav id="hotel-opt">
+            <span onclick="exit(this)"><a href="Landing Page.html"></a></span>
+            <h2>Where to?</h2>
+            <input type="text" name="location" placeholder="City, State, Location or Airport">
+            <br>
+            <input type="date" name="start-cal" placeholder="Start"><h3>TO</h3><input type="date" name="end-cal" placeholder="End">
+            <br>
+            <nav class="external">
+              <a href="Rooms.html" style="text-decoration:none">Rooms</a>
+              <a href="Special Rates.html" style="text-decoration:none">Special Rates</a>
+            </nav>
+            <input type="submit" value="Enter">
+          </nav>
+      </section>
+      <!-- Greeting Quote and Joining button to Sign up page -->
+      <section class='bubble'>
+        <h1>We'd be</h1>
+        <h1><em>honoured</em></h1>
+        <h1>to have you</h1>
+        <p>(plus it's free)</p>
+        <button class="joinbtn"><a href="Sign Up Page.html" style="text-decoration:none">Join Hilton Honors</a></button>
+      </section>
+      <!-- Shows perks as icons and speech bubble of information -->
+      <section class='perks'>
+        <h2>Join for the perks</h2>
+          <p>The perks start the moment you join.</p>
+          <button onmouseover="EliteIcon(this)"><img src="images/Elite.png" alt="Gift Image" width="50" height="50"></button>
+            <p id="speechR1">
+            <strong>Elite-level Benefits</strong><br>
+            Our elite members get access to Rollover Nights, Milestone Bonuses, free breakfaset, and more.<br>
+            <a href="https://hiltonhonors3.hilton.com/en/explore/benefits/index.html">Explore Member Tiers</a>
+            <img src="images/Elite.png" alt="Gift Image" width="45" height="45">
+            </p>
+          <button onmouseover="LowIcon(this)"><img src="images/Low.png" alt="Money Symbol" width="50" height="60"></button>
+            <p id="speechR2">
+            <strong>Lowest Price</strong><br>
+            When you book at Hilton.com, we guarantee you'll always get the lowest price. If you find a lower rate we'll match it and give you an extra 25% off.*<br>
+            <a href="https://hiltonhonors3.hilton.com/en/offers/100115474.htm?cid=OH,MB,WG8539,DDR,PMG_CTA,StudioLP,SingleLink,i1">Terms & Conditions Apply</a>
+            <img src="images/Low.png" alt="Money Symbol" width="45" height="45">
+            </p>
+          <button onmouseover="WifiIcon(this)"><img src="images/Wifi.png" alt="Wifi Icon" width="60" height="60"></button>
+            <p id="speechR3">
+            <strong>Free Wifi</strong><br>
+            Get online throughout the hotel with free standard WiFi during your stay.<br>
+            <a href="https://hiltonhonors3.hilton.com/en/terms/index.html">Terms Apply</a>
+            <img src="images/Wifi.png" alt="Wifi Icon" width="45" height="45">
+            </p>
+          <button onmouseover="PointsIcon(this)"><img src="images/Points.png" alt="Stacked Coins" width="50" height="50"></button>
+            <p id="speechR4">
+            <strong>Earn Points</strong><br>
+            New Members earn 10 points for every $1 spent at our hotels. Plus , the more you stay, the more you earn-up to 20 Points per $1 spent. Earn even more with the Hilton Honors American Express Card.<br>
+            <a href="https://hiltonhonors3.hilton.com/en/earn-use-points/credit-cards/index.html">Terms & Conditions Apply</a>
+            <img src="images/Points.png" alt="Stacked Coins" width="45" height="45">
+            </p>
+          <button onmouseover="AppIcon(this)"><img src="images/App.png" alt="Phone Icon" width="50" height="60"></button>
+            <p id="speechR5">
+            <strong>Exclusive App Features</strong><br>
+            Book a stay, check in, choose your own room, unlock your door, and check-out all in the Hilton Honors app.<br>
+            <a href="https://hiltonhonors3.hilton.com/rs/hilton-honors-mobile-app/">View Features</a>
+            <img src="images/App.png" alt="Phone Icon" width="45" height="45">
+            </p>
+      </section>
+      <!-- Gray border to separate the perks information and member tier information  -->
+      <div class="v-border1"></div>
+      <!-- Member tier shows a pyramid of the different membership levels on the requirements and the added benefits -->
+      <section class='member-tier'>
+        <h2>Membership Tier</h2>
+          <p>Greater rewards awaits you. See the different tiers you can access when you meet the requirements</p>
+        <button onclick="myDia(this)">Diamond</button>
+        <button onclick="myGol(this)">Gold</button>
+        <button onclick="mySil(this)">Silver</button>
+        <button onclick="myBlu(this)">Blue</button>
+        <img src="Images/Member Perks.JPG" arc="Perks Table" width="650" height="600">
+      </section>
+
+      <!-- Diamond Member Tier Information -->
+      <div id='D-tier'>
+        <p>The highest tier is available to members who either:</p>
+          <ul style="list-style-type:circle;">
+            <li>have 30 stays or spent 60 nights in Hilton properties in a calendar year</li>
+            <li>earned 120,000 Honors Base Points in a year.</li>
+          </ul>
+        <br>
+        <p>Benefits include the following:</p>
+          <ul style="list-style-type:circle;">
+            <li>A 50% point bonus</li>
+            <li>A guaranteed room when you make a reservation at least 48 hours prior to your arrival</li>
+            <li>Spa, golf or restaurant discounts</li>
+            <li>Complimentary meals and snacks</li>
+            <li>Point bonuses for stays at participating Hilton Worldwide properties</li>
+          </ul>
+      </div>
+
+      <!-- Gold Member Tier Information -->
+      <div id='G-tier'>
+        <p>You’ll achieve Gold status when you either:</p>
+          <ul style="list-style-type:circle;">
+            <li>had 20 stays or spend 40 nights in Hilton properties.</li>
+            <li>earned 75,000 Honors Base Points in a calendar year.</li>
+          </ul>
+        <br>
+        <p>In addition to the benefits available to Blue and Silver members, you can get:</p>
+          <ul style="list-style-type:circle;">
+            <li>A 25% point bonus</li>
+            <li>Upgrades to a preferred room</li>
+            <li>Complimentary breakfasts</li>
+            <li>Complimentary snacks</li>
+            <li>Point bonuses for stays at participating Hilton properties</li>
+          </ul>
+      </div>
+
+      <!-- Silver Member Tier Information -->
+      <div id='S-tier'>
+        <p>You’ll make it to the second level when you have had 4 stays or spent 10 nights in a Hilton property within a calendar year.</p>
+        <br>
+        <p>This provides you with:</p>
+          <ul style="list-style-type:circle;">
+            <li>A 15% point bonus on the base rate.</li>
+            <li>A free night for Standard Room Reward stays of 5 nights or more.</li>
+            <li>A “Second Guest Stays Free” offer.</li>
+            <li>Complimentary access to fitness centers</li>
+            <li> Two complimentary bottles of water per stay at participating hotels and resorts</li>
+          </ul>
+      </div>
+
+      <!-- Blue Member Tier Information -->
+      <div id='B-tier'>
+        <p>The base level of the memberships you can obtain and it offers the following benefits:</p>
+          <ul style="list-style-type:circle;">
+            <li>Points for eligible spending with program partners.</li>
+            <li>A guaranteed booking discount.</li>
+            <li>Digital check-in.</li>
+            <li>Complimentary in-room and lobby standard Internet access at participating Hilton Worldwide properties.</li>
+            <li>The ability to register your room preferences for faster bookings and check-in.</li>
+            <li>Late check-out at participating Hilton Worldwide properties</li>
+            <li>Express check-out.</li>
+            <li>A “Second Guest Stays Free” offer at participating Hilton Worldwide properties.</li>
+          </ul>
+      </div>
+
+      <!-- Gray border to separate the member tier information and the rewards & benefits informtion  -->
+      <div class="v-border2"></div>
+      <section class='SFR'>
+        <h2>Stay for the Rewards</h2>
+          <p>Redeem your Points on the things that matter most to you.</p>
+
+          <div class="SFR1">
+            <img src="Images/Book with Points.jpg" alt="Chairs by Pool"><strong>Book with Points</strong>
+            <p>Combine Points and money to pay for your stay, starting at just 5,000 Points.</p>
+          </div>
+
+          <div class="SFR2">
+            <img src="Images/Exclusive Experiences.jpg" alt="Live Concert"><strong>Exclusive Experiences</strong>
+              <div class="RBinfo"><p>Put your Points towards incredible travel, music, culinary, and sports experiences.</p>
+              <a href="https://auction.hiltonhonors.com/" style="text-decoration: none">Find Experiences</a>
+            </div>
+
+          <div class="SFR3">
+            <img src="Images/Shop with Points.jpg" alt="Shopping Bag" width="100" height="100"><strong>Shop with Points</strong>
+            <p>Link your accounts and use your Hilton Honors Points to shop at Amazon.com.</p>
+          </div>
+
+          <div class="SFR4">
+            <img src="Images/Free Nights.jpg" alt="Hotel Room" width="100" height="100"><strong>Free Nights</strong>
+            <p>Use your Points to book a night (or an entire stay!) at any hotel, for any occasion, any time.</p>
+          </div>
+
+          <div class="SFR5">
+            <img src="Images/Pool your Points.jpg" alt="Firecracker" width="100" height="100"><strong>Pool your Points</strong>
+            <p>Travel together with friends and family by pooling your Points, starting at 1,000 Points.</p>
+          </div>
+
+      </section>
+
+      <div class="v-border2"></div>
+
+      <section class='EO'>
+        <h2>Exclusive Offers</h2>
+          <p>Take advantage of our member-only promotions and exclusive offers.</p>
+
+          <div class="EO1">
+            <img src="Images/Earn 130K.png" alt="Mountain View" class="EO1img"></a><strong>Earn 130K Bonus Points</strong>
+            <div class="overlay">
+              <div class="EOtext">
+                <p><em>Elevate your status</em><br>
+                  Enjoy automatic Gold Status and earn 130K Bonus Points with the Hilton Honors American Express Surpass® Card. Terms Apply.</p>
+                <a href="https://apply.americanexpress.com/hilton-card/?page_url=375" style="text-decoration: none">More Information</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="EO2">
+            <img src="Images/Best.png" alt="Beach" class="EO2img"></a><strong>Best Price. Best Perks</strong>
+            <div class="overlay">
+              <div class="EOtext">
+                <p><em>If you find a lower rate, we'll match it, plus give you 25% off.*</em><br>
+                  We do our best to always offer you the lowest price, but if you find a lower qualified price* on another site, we will be happy to match it AND give you 25% off* that stay. *Terms and conditions apply.</p>
+                <a href="https://hiltonhonors3.hilton.com/en/offers/100115474.htm?cid=OH,MB,WG8539,DDR,PMG_CTA,StudioLP,SingleLink,i1" style="text-decoration: none">Price Match Guaranteed</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="EO3">
+            <img src="Images/Power Promotion.png" alt="City" class="EO3img"></a><strong>Power Up Promotion</strong>
+            <div class="overlay">
+              <div class="EOtext">
+                <p>Earn up to 3X Hilton Honors Points on all stays through January 5.</p>
+                <a href="https://www.hiltonhonors.com/en_US/20190826_1780/landing?WT.mc_id=zKWBR0WW1MB2OLL3homepg41780HH3_Sep5OHWSignUpCTA6MULTIBR7EN8i89051" style="text-decoration: none">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="EO4">
+            <img src="Images/Ride.png" alt="Traffic" class="EO4img"></a><strong>Ride for Bonus Points</strong>
+            <div class="overlay">
+              <div class="EOtext">
+                <p><em>1,000 Bonus Points are up for grabs</em><br>
+                  You can earn 1,000 Bonus Points when you link your Hilton Honors & Lyft accounts and take a Lyft ride by November 15. And even better, once you’re linked you can earn up to 30k Points per year with Lyft.</p>
+                  <a href="https://hiltonhonorslyft.com/hiltonhonorslyft" style="text-decoration: none">Start Earning</a>
+              </div>
+            </div>
+          </div>
+      </section>
+
+    <section class="bottom-btns"><button class="joinbtn"><a href="Sign Up Page.html" style="text-decoration:none">Join Hilton Honors</a></button></section>
+
+  </main>
+</div>
+  <footer id="footer1">
+    <div class="logo"><a href="Landing Page.html"><img src="images/Hilton Honors Logo (White).png" alt="Hilton Honors Black Logo" width="190" height="110"></a></div>
+    <div>
+      <p>How can we help?<br><a href="tel:+1-855-672-1138">+1-800-4HONORS</a><br>Call us, it's toll free</p><br>
+      <p><a href="https://hiltonhonors3.hilton.com/en/support/index.html">Customer support</a><br>Online reservation assistance</p>
+    </div>
+    <div>
+      <a href="https://hiltonhonors3.hilton.com/en/support/accessibility.html">Web Accessibility</a><br>
+      <a href="https://www3.hilton.com/en/terms/hhonors-discount.html">Hilton Honors Discount Terms & Conditions</a><br>
+      <a href="https://hiltonhonors3.hilton.com/en/policy/global-privacy-statement/index.html">Global Privacy Statement</a><br>
+      <a href="https://www.hilton.com/en/hilton-honors/personal-data-requests/">Personal Data Requests</a><br>
+      <a href="https://hiltonhonors3.hilton.com/en/policy/cookies-statement/index.html">Cookies Staement</a>
+    </div>
+    <div>
+      <a href="https://hiltonhonors3.hilton.com/en/terms/index.html">Hilton Honors Terms & Conditionst</a><br>
+      <a href="https://hiltonhonors3.hilton.com/en/policy/site-usage-agreement/index.html">Site Usage Agreement</a><br>
+      <a href="http://optout.aboutads.info/#!/">Add Choices</a><br>
+      <p>©2019 Hilton</p>
+    </div>
+
+    <button onclick="openFB(this)">Feedback</button>
+      <div class="FB-pop" id="feedback">
+        <span onclick="exit(this)"><a href="Landing Page.html"></a></span>
+        <br>
+
+        <form class="FB-container">
+          <section>
+            <p>How would you rate your experience on this site?</p>
+            <div class="rate">
+              <label for=Hate><input id="option1" name="Hate" type="radio" value="1">Hate</label>
+              <label for=Dislike><input id="option1" name="Dislike" type="radio" value="2">Dislike</label>
+              <label for=Neutral><input id="option1" name="Neutral" type="radio" value="3">Neutral</label>
+              <label for=Like><input id="option1" name="Like" type="radio" value="4">Like</label>
+              <label for=Love><input id="option1" name="Love" type="radio" value="5">Love</label>
+            </div>
+          </section>
+            <br>
+            <section>
+            <p>Please tell us the reason for your comment?</p>
+            <select id="reason" name="reason">
+            <option disabeled label="Please select an option" selected value="">Please select an option</option>
+              <option label="Honors Account" value="option1">Honors Account</option>
+              <option label="Points Activity" value="option2">Points Activity</option>
+              <option label="Missing Stay" value="option3">Missing Stay</option>
+              <option label="Sign in" value="option4">Sign in</option>
+              <option label="Stay Feedback" value="option5">Stay Feedback</option>
+              <option label="Navigation" value="option6">Navigation</option>
+              <option label="Chat" value="option7">Chat</option>
+              <option label="Other" value="option8">Other</option>
+            </select>
+          </section>
+            <br>
+            <section>
+              <p>What would you like to share with us?</p>
+              <input type="text" name="text" class="box">
+            </section>
+            <br>
+            <button type="submit" class="submitFB">Submit</button>
+            <br>
+          <a href="https://usabilla.com/privacy">Privacy Statement</a>
+        </form>
+  </footer>
+</div>
+  </body>
+
+</html>
