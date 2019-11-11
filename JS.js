@@ -112,8 +112,26 @@ function myBlu(x) {
 }
 
 // Form Validation ensures users input is on the right track
-function validateForm() {
+function validate() {
+  var x = document.forms["myform"]["fname"].value;
+  if (x == "") {
+      alert( "Please provide your full name!" );
+      return false;
+    }
+  }
 
-}
+// Submit form
+  function myFunction() {
+    document.getElementById("myform").submit();
+  }
+
+// Reset form
+
 
 // Local Storage
+
+
+// Feedback Pop-up opening it
+function openFB() {
+  document.getElementById("feedback").style.display = "block";
+}
