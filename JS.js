@@ -113,12 +113,87 @@ function myBlu(x) {
 
 // Form Validation ensures users input is on the right track
 function validate() {
-  var x = document.forms["myform"]["fname"].value;
-  if (x == "") {
-      alert( "Please provide your full name!" );
+  var ti = document.forms["myform"]["title"];
+  var fi = document.forms["myform"]["fname"];
+  var la = document.forms["myform"]["lname"];
+  var te = document.forms["myform"]["tel"];
+  var em = document.forms["myform"]["email"];
+  var co = document.forms["myform"]["country"];
+  var ci = document.forms["myform"]["city"];
+  var ad = document.forms["myform"]["address"];
+  var zi = document.forms["myform"]["zip"];
+  var pa = document.forms["myform"]["pass"];
+  var con = document.forms["myform"]["conpass"];
+
+  if (ti.value == "") {
+      alert( "Please select one!" );
+      ti.focus();
       return false;
     }
   }
+  if (fi.value == "") {
+      alert( "Please enter yout first name!" );
+      fi.focus();
+      return false;
+    }
+  }
+  if (la.value == "") {
+      alert( "Please enter your last name!" );
+      la.focus();
+      return false;
+    }
+  }
+  if (te.value == "") {
+      alert( "Please enter your mobile number!" );
+      te.focus();
+      return false;
+    }
+  }
+  if (em.value == "") {
+      alert( "Please enter your email address!" );
+      em.focus();
+      return false;
+    }
+  }
+  if (co.value == "") {
+      alert( "Please select a country" );
+      co.focus();
+      return false;
+    }
+  }
+  if (ci.value == "") {
+      alert( "Please enter your city!" );
+      ci.focus();
+      return false;
+    }
+  }
+  if (ad.value == "") {
+      alert( "Please enter your full address!" );
+      ad.focus();
+      return false;
+    }
+  }
+  if (zi.value == "") {
+      alert( "Please enter your zip code!" );
+      zi.focus();
+      return false;
+    }
+  }
+  if (pa.value == "") {
+      alert( "Please enter a password following the requirements above!" );
+      pa.focus();
+      return false;
+    }
+  }
+  if (con.value == "") {
+      alert( "Please repeat your password!" );
+      con.focus();
+      return false;
+    }
+  }
+
+  return true;
+}
 
 // Submit form
   function myFunction() {
