@@ -133,5 +133,10 @@ function validate() {
 
 // Feedback Pop-up opening it
 function openFB() {
-  document.getElementById("feedback").style.display = "block";
+  var x = document.getElementById("feedback");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
 }

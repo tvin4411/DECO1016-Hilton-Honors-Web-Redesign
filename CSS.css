@@ -1403,7 +1403,7 @@ form select:hover, form input:hover, form .third-twoF input:hover  {
   padding: 10px;
   border-bottom: solid black;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   }
 
   .Ebar1, .Ebar2, .Ebar3 {
@@ -1493,6 +1493,7 @@ form select:hover, form input:hover, form .third-twoF input:hover  {
   width: 100%;
   height: 450px;
   z-index: -1;
+  margin-bottom: 50px;
 }
 
 .endImg h1 {
@@ -1501,6 +1502,7 @@ form select:hover, form input:hover, form .third-twoF input:hover  {
   font-family: Simple Joys;
   font-weight: bold;
   font-size: 150px;
+  text-shadow: 2px 2px black;
   position: absolute;
   top: 100px;
   left: 60px;
@@ -1517,6 +1519,65 @@ form select:hover, form input:hover, form .third-twoF input:hover  {
   margin-left: 50px;
 }
 
+.accountbtn button {
+  background-color: #D9B018;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  border: 5px solid #A7A7A7;
+  padding: 25px 60px;
+  border-radius: 10px;
+  position: absolute;
+  top: 400px;
+  right: 60px;
+}
+
+.MemNum {
+  padding: 20px;
+  border: 4px dashed #D9B018;
+  color: #009CDE;
+  background-color: white;
+  font-family: Segoe UI;
+  font-size: 25px;
+  text-align: center;
+  width: 600px;
+  position: absolute;
+  left: 80px;
+  margin: 20px;
+}
+
+.email-sent img {
+  margin: 10px;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+}
+.email-sent h3 {
+  margin: 10px;
+  position: absolute;
+  top: 79%;
+  left: 23%;
+  font-size: 30px;
+}
+
+.download button {
+  margin: 30px;
+  border: none;
+  position: relative;
+  top:450px;
+  left: 30px;
+}
+
+.AF img {
+  width: 650px;
+  height: 600px;
+  margin-right: 30px;
+  position: relative;
+  bottom: 100px;
+  float: right;
+}
+
+
 /* FOOTER for all pages */
 
 #page-container {
@@ -1528,6 +1589,16 @@ form select:hover, form input:hover, form .third-twoF input:hover  {
   padding-bottom: 200px;
 }
 
+footer {
+  background-color: #F5F5F5;
+  border-top: 3px solid black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  z-index: -99;
+}
+
 #footer1 {
   position: absolute;
   bottom: -3800px;
@@ -1537,15 +1608,10 @@ form select:hover, form input:hover, form .third-twoF input:hover  {
   bottom: -1300px;
   z-index: 99;
 }
-
-footer {
-  background-color: #F5F5F5;
-  border-top: 3px solid black;
+#footer3 {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 200px;
-  z-index: -99;
+  bottom: -500px;
+  z-index: 99;
 }
 
 footer a {
@@ -1609,33 +1675,44 @@ footer button:first-of-type:hover {
   bottom: 200px;
   right: 15px;
   border: 3px solid #f1f1f1;
-  z-index: 99;
+  z-index: 2;
+  background-color: #A7A7A7;
 }
 .FB-container {
   max-width: 600px;
   padding: 10px;
-  background-color: white;
-}
-.FB-container img {
-  width: 100px;
-  height: 100px;
+  background-color: #A7A7A7;
 }
 .FB-container p {
   position: relative;
-  top: -60px;
+  top: -10px;
   margin-bottom: 35px;
+  color: white;
 }
-.FB-container input[type=radio] {
+.FB-container .rate {
   position: absolute;
-  bottom: 200px;
+  bottom: 385px;
+  left: 0;
   padding: 10px;
+  color: white;
+  font-size: 30px;
+  font-family: Simple Joys;
 }
-.FB-container input[type=select], .FB-container input[type=text] {
+.FB-container #reason {
+  position: absolute;
+  bottom: 330px;
+  padding: 10px 100px 10px 10px;
+  border: 1px black solid;
+}
+.FB-container .box {
   width: 100%;
-  padding: 50px;
-  margin: 0 0 30px 0;
-  border: none;
+  height: 150px;
+  padding: 10px;
+  margin: 0 0 20px 0;
+  border: 1px solid black;
   background: #f1f1f1;
+  position: relative;
+  bottom: 30px;
 }
 .FB-container .submitFB {
   background-color: #D9B018;
@@ -1643,7 +1720,6 @@ footer button:first-of-type:hover {
   padding: 10px;
   border: none;
   width: 100%;
-  margin-bottom:10px;
   opacity: 1;
   z-index: 10;
   position: relative;

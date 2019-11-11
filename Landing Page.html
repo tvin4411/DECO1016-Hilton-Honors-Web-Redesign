@@ -282,11 +282,11 @@
 
     <button onclick="openFB(this)">Feedback</button>
       <div class="FB-pop" id="feedback">
-        <div class="logo"><img src="images/Hilton Honors Logo (White).png" alt="Hilton Honors Black Logo" width="100" height="40"></a></div>
         <span onclick="exit(this)"><a href="Landing Page.html"></a></span>
         <br>
 
         <form class="FB-container">
+          <section>
             <p>How would you rate your experience on this site?</p>
             <div class="rate">
               <label for=Hate><input id="option1" name="Hate" type="radio" value="1">Hate</label>
@@ -295,8 +295,9 @@
               <label for=Like><input id="option1" name="Like" type="radio" value="4">Like</label>
               <label for=Love><input id="option1" name="Love" type="radio" value="5">Love</label>
             </div>
+          </section>
             <br>
-
+            <section>
             <p>Please tell us the reason for your comment?</p>
             <select id="reason" name="reason">
             <option disabeled label="Please select an option" selected value="">Please select an option</option>
@@ -309,12 +310,13 @@
               <option label="Chat" value="option7">Chat</option>
               <option label="Other" value="option8">Other</option>
             </select>
+          </section>
             <br>
-
-            <p>What would you like to share with us?</p>
-            <input type="text" name="text">
+            <section>
+              <p>What would you like to share with us?</p>
+              <input type="text" name="text" class="box">
+            </section>
             <br>
-
             <button type="submit" class="submitFB">Submit</button>
             <br>
           <a href="https://usabilla.com/privacy">Privacy Statement</a>
