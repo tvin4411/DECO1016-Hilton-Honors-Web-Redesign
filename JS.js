@@ -3,6 +3,11 @@ function myMenu(x) {
     x.classList.toggle("extend");
 }
 
+// User Icon will open up buttons to navigate to the login or Sign up page
+function myUser(x) {
+    x.classList.toggle("open");
+}
+
 // Find a Hotel Pop-up will appear by clicking the button
 function findbtn(x) {
     var x = document.getElementById("hotel-opt");

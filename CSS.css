@@ -30,7 +30,7 @@
   padding: 10px;
   border-bottom: solid black;
   position: fixed;
-  z-index: 2;
+  z-index: 100;
   }
 
 .bar1, .bar2, .bar3 {
@@ -119,13 +119,13 @@
   top: 5px;
   right: 0;
   padding: 10px;
+  cursor: pointer;
 }
 
-.Wmenu .login, .Wmenu .signup {
-  color: white;
-  padding: 15px 35px 15px 35px;
-  border-radius: 30%;
-  font-weight: bold;
+.Wmenu .user img:hover {
+  opacity: 0.5;
+  transform: scale(1.3, 1.3);
+  transition: 1s ease-in-out;
 }
 
 .Wmenu .login {
@@ -133,6 +133,7 @@
   position: fixed;
   top: 10px;
   right: 200px;
+  visibility: hidden;
 }
 .Wmenu .login:hover {
   background-color:#0a3d7d;
@@ -143,9 +144,18 @@
   position: fixed;
   top: 10px;
   right: 70px;
+  visibility: hidden;
 }
 .Wmenu .signup:hover {
   background-color: #068cc4;
+}
+
+.Wmenu .open .login, .Wmenu .open .signup {
+  color: white;
+  padding: 15px 35px 15px 35px;
+  border-radius: 30%;
+  font-weight: bold;
+  visibility: visible;
 }
 
 /* Hotel Image + Find a Hotel Button */
@@ -598,7 +608,7 @@
 
 .member-tier button {
   height: 40px;
-  border: 4px solid black;
+  border: 4px solid white;
   color: white;
   text-align: center;
   font-family: Simple Joys;
@@ -608,6 +618,11 @@
   float: left;
   clear: both;
   cursor: pointer;
+}
+
+.member-tier button:hover {
+  transition: scale(1.5, 1.5);
+  border: 4px black;
 }
 
 #D-tier, #G-tier, #S-tier, #B-tier {
@@ -649,6 +664,7 @@
  top: 140px;
  padding-left: 300px;
  margin-right: 20px;
+ z-index: 3;
 }
 #D-tier ul:last-child {
  font-size: 25px;
@@ -656,6 +672,7 @@
  top: 330px;
  padding-left: 300px;
  margin-right: 20px;
+  z-index: 3;
 }
 
 .member-tier button:nth-child(4) {
@@ -677,12 +694,14 @@
 #G-tier p:first-of-type {
  position: relative;
  top: 40px;
+ margin-left: 300px;
 }
 #G-tier p:last-of-type {
  text-align: left;
  position: relative;
  top: 10px;
  font-size: 24px;
+  margin-left: 300px;
 }
 #G-tier ul:first-of-type {
  font-size: 25px;
@@ -758,6 +777,7 @@
 
 .SFR, .EO, .v-border2 {
   position: relative;
+  bottom: 10px;
   left: 80px;
   float: left;
   clear: both;
@@ -767,8 +787,7 @@
 .SFR h2, .EO h2 {
   text-align: center;
   font-size: 60px;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding: 30px 0 10px 0;
   position: relative;
   left: 300px;
 }
@@ -776,25 +795,262 @@
 .SFR p, .EO p {
   text-align: center;
   font-size: 30px;
-  padding-top: 5px;
-  padding-bottom: 30px;
+  padding: 5px 0 30px 0;
   position: relative;
   left: 300px;
 }
 
-/* SIGN UP PAGE */
-
-/* Reminders of benefits Icons */
-.sidebar {
-  width: 180px;
-  height: 2000px;
-  margin-left: 0%;
-  background-color: #104C97;
-  shape-outside: content-box;
-  float: left;
+.SFR1 strong, .SFR2 strong, .SFR3 strong, .SFR4 strong, .SFR5 strong {
+  z-index: 7;
+  color: white;
+  font-family: Segoe UI;
+  font-size: 40px;
+  text-shadow: 2px 2px #D9B018;
 }
 
+.SFR1 strong {
+  position: absolute;
+  top: 510px;
+  left: 80px;
+}
+.SFR2 strong {
+  position: absolute;
+  top: 450px;
+  left: 740px;
+}
+.SFR3 strong, .SFR4 strong, .SFR5 strong {
+  position: absolute;
+  top: 630px;
+  font-size: 30px;
+}
+.SFR3 strong {
+  position: absolute;
+  left: 120px;
+}
+.SFR4 strong {
+  position: absolute;
+  left: 520px;
+}
+.SFR5 strong {
+  position: absolute;
+  left: 920px;
+}
+
+.SFR1 p, .SFR2 p  {
+  text-align: center;
+  color: white;
+  z-index: 7;
+  font-size: 25px;
+  font-family: Segoe UI;
+  border: 2px dotted white;
+  background-color: #D9B018;
+  padding: 10px;
+}
+
+.SFR3 p, .SFR4 p, .SFR5 p   {
+  text-align: center;
+  color: white;
+  z-index: 7;
+  font-size: 18px;
+  font-family: Segoe UI;
+  border: 2px dotted white;
+  background-color: #D9B018;
+  padding: 20px;
+}
+
+.SFR1 p {
+  position: absolute;
+  top: 220px;
+  left: 80px;
+  margin-right: 100px;
+}
+.SFR2 p {
+  position: absolute;
+  top: 190px;
+  left: 1200px;
+  padding: 20px 10px 20px 10px;
+}
+.SFR2 a {
+  position: absolute;
+  top: 520px;
+  left: 1140px;
+  border: 2px solid black;
+  border-radius: 15%;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px 60px 10px 60px;
+  z-index: 7;
+}
+.SFR2 a:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #009CDE;
+  border: 3px dashed white;
+  color: white;
+}
+.SFR3 p {
+  position: absolute;
+  top: 680px;
+  left: 130px;
+  margin-right: 400px;
+}
+.SFR4 p {
+  position: absolute;
+  top: 780px;
+  left: 560px;
+}
+.SFR5 p  {
+  position: absolute;
+  top: 630px;
+  left: 1090px;
+}
+
+.SFR1 p:hover, .SFR2 p:hover, .SFR3 p:hover, .SFR4 p:hover, .SFR5 p:hover{
+  transform: scale(1.5, 1.5);
+  z-index: 8;
+  cursor: pointer;
+  border-width: 5px;
+}
+
+.SFR1 img, .SFR2 img {
+  z-index: -3;
+  width: 600px;
+  height: 370px;
+  left: 50px;
+}
+.SFR1 img {
+  position: absolute;
+  left: 50px;
+}
+.SFR2 img {
+  position: absolute;
+  left: 700px;
+}
+
+.SFR3 img, .SFR4 img, .SFR5 img {
+  width: 300px;
+  height: 320px;
+  z-index: -3;
+  display: inline-block;
+  position: absolute;
+  top: 620px;
+}
+.SFR3 img {
+  position: absolute;
+  left: 100px;
+}
+.SFR4 img {
+  position: absolute;
+  left: 500px;
+}
+.SFR5 img {
+  position: absolute;
+  left: 900px;
+  display: block;
+}
+
+.v-border2:last-of-type {
+  margin-top: 800px;
+}
+
+.EO1, .EO2, .EO3, .EO4 {
+  position: relative;
+  width: 50%;
+}
+
+.EO1img, .EO2img, .EO3img, .EO4img, {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+  }
+
+.EO1:hover .overlay, .EO2:hover .overlay, .EO3:hover .overlay,.EO4:hover .overlay,{
+  opacity: 1;
+}
+
+.EOtext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  }
+/* SIGN UP PAGE */
+
+/* Menu bar for Sign up page */
+
+.Wmenu .arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px;
+}
+.Wmenu .arrow:hover {
+  transition: 1s ease;
+  opacity: 0.5;
+  transform: scale(0.8, 0.8);
+}
+
+.Wmenu .user .login2 {
+  background-color:#104C97;
+  position: fixed;
+  top: 10px;
+  right: 80px;
+  visibility: hidden;
+}
+.Wmenu .user .login2:hover {
+  background-color:#0a3d7d;
+}
+.Wmenu .open .login2 {
+  color: white;
+  padding: 15px 35px 15px 35px;
+  border-radius: 30%;
+  font-weight: bold;
+  visibility: visible;
+}
+
+/* Reminders of benefits Icons */
+
+.iconBene img {
+  position: fixed;
+  top: 70px;
+  float: left;
+  clear: both;
+  background-color: #104C97;
+  padding: 30px 10px 20px 10px;
+}
+.iconBene img:nth-of-type(2) {
+  position: fixed;
+  top: 270px;
+}
+.iconBene img:nth-of-type(3) {
+  position: fixed;
+  top: 450px;
+}
+.iconBene img:nth-of-type(4) {
+  position: fixed;
+  top: 650px;
+}
 /* Sign-up Form */
+
 .formhead h1 {
   text-align: center;
   position: absolute;
@@ -805,8 +1061,8 @@
 
 .formhead p em {
   position: absolute;
-  top: 24%;
-  left: 35%;
+  top: 23%;
+  left: 33%;
   font-size: 20px;
   font-family: Segoe UI;
 }
@@ -819,85 +1075,77 @@ form .details {
 }
 
 form .details select {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  border: 2px solid;
+  padding: 20px 0 20px 20px;
+  margin: 15px 0 20px 20px;
+  border: 2px solid black;
   border-radius: 20px;
 }
 
+form select:hover, form input:hover, form .third-twoF input:hover  {
+  background-color: #F5F5F5;
+  border: 2px solid #009CDE;
+  transition: 0.5s ease;
+  color: black;
+}
+
 .firstF input {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 150px;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 1px;
+  padding: 20px 150px 20px 20px;
+  margin: 15px 1px 20px 20px;
   border: 2px solid;
   border-radius: 20px;
 }
 
 .secondF input {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 230px;
-  margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 50px;
+  padding: 20px 230px 20px 20px;
+  margin: 40px 80px 0 20px;
   border: 2px solid;
   border-radius: 20px;
 }
 
 .third-oneF select {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 4px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  padding: 20px 4px 20px 20px;
+  margin: 40px 0 20px 20px;
   border: 2px solid;
   border-radius: 20px;
 }
 .third-oneF input {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 90px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  padding: 20px 90px 20px 20px;
+  margin: 40px 0 20px 20px;
   border: 2px solid;
   border-radius: 20px;
 }
 .third-twoF input:first-of-type {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 430px;
-  margin-right: 20px;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  padding: 20px 430px 20px 20px;
+  margin: 15px 20px 20px 20px;
   border: 2px solid;
   border-radius: 20px;
 }
 .third-twoF input {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 60px;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  padding: 20px 60px 20px 20px;
+  margin: 15px 0 20px 20px;
   border: 2px solid;
   border-radius: 20px;
+}
+
+/* Input Icons */
+
+.iconInputs {
+  position: absolute;
+  top: 265px;
+  left: 370px;
+}
+
+.iconInputs .telIcon {
+  margin-top: 50px;
+}
+.iconInputs .mailIcon {
+  position: absolute;
+  top: 125px;
+  left: 530px;
+}
+.iconInputs .houseIcon {
+  position: absolute;
+  top: 265px;
 }
 
 /* Create a password section  */
@@ -912,12 +1160,12 @@ form .details select {
   position: relative;
   top: 140px;
   left: 280px;
-  margin-top: 50px 0 20px 0;
-  font-size: 35px;
+  margin: 15px 0 20px 0;
+  font-size: 40px;
 }
 .req p em {
   position: relative;
-  top: 160px;
+  top: 140px;
   border: 3px dotted #c9a212;
   float: left;
   padding: 10px 100px 10px 100px;
@@ -934,20 +1182,35 @@ form .details select {
 }
 
 .pass input {
-  padding: 20px 250px 20px 20px;
-  margin: 15px 0 20px 70px;
+  position: relative;
+  bottom: 40px;
+  padding: 20px 200px 20px 20px;
+  margin: 10px 0 35px 200px;
   border: 2px solid;
   border-radius: 20px;
+  font-size: 18px;
 }
-
 .pass input:first-of-type {
-  margin-top: 1150px;
+  margin-top: 1170px;
+}
+.pass input:hover {
+  background-color: #F5F5F5;
+  border: 2px solid #009CDE;
+  transition: 0.5s ease;
+  color: black;
 }
 
-.pass input:nth-child(2) {
-  margin-top: 1900px;
+.checking {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border: 13px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 1150px;
+  margin: 30px;
 }
-
 
 /* Join Button leads to end point page */
 
@@ -956,8 +1219,8 @@ form .details select {
   border: none;
   border-radius: 10px;
   padding: 80px 160px 80px 160px;
-  margin: 100px;
-  margin-left: 80px;
+  margin: 40px;
+  margin-left: 220px;
   color: white;
   font-size: 50px;
   font-weight: bold;
@@ -965,12 +1228,13 @@ form .details select {
 
 .join:hover {
   background-color: #068cc4;
+  transition: 1s ease;
 }
 
 .card img {
   position: absolute;
   top: 1000px;
-  left: 770px;
+  left: 750px;
   z-index: -1;
 }
 
@@ -980,7 +1244,7 @@ form .details select {
   display: block;
   position: absolute;
   top: 1300px;
-  left: 830px;
+  left: 810px;
   padding: 0 247px 21px 50px;
   margin-bottom: 12px;
   -webkit-user-select: none;
@@ -998,7 +1262,7 @@ form .details select {
   opacity: 0;
   height: 0;
   width: 0;
-  padding-left:20px;
+  padding-left:40px;
 }
 .checkagree {
   position: absolute;
@@ -1039,23 +1303,22 @@ form .details select {
 .sLinks p {
   position: absolute;
   top: 1310px;
-  left: 1250px;
+  left: 1220px;
   word-spacing: 12px;
   font-size: 13px;
 }
-
 .TC p {
   position: absolute;
   top: 1450px;
-  left: 900px;
-  padding: 0 40px 0 10px;
+  left: 850px;
+  padding: 0 100px 0 10px;
   line-height: 1.5;
 }
 
 .note p {
   position: absolute;
-  top: 1750px;
-  left: 200px;
+  top: 1700px;
+  left: 180px;
   line-height: 1.5;
   font-size: 13px;
 }
@@ -1081,7 +1344,7 @@ form .details select {
     float: left;
     clear: both;
     position: relative;
-    bottom: 40px;
+    bottom: 50px;
     left: 10px;
     transition: 1s ease-in-out;
     cursor: pointer;
@@ -1123,9 +1386,35 @@ form .details select {
   .Bmenu .user {
     float: right;
     position: fixed;
-    top: 5px;
+    top: 0;
     right: 0;
-    padding: 10px;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  .Bmenu .user img:hover {
+    opacity: 0.5;
+    transform: scale(1.3, 1.3);
+    transition: 1s ease-in-out;
+  }
+
+  .Bmenu .login3 {
+    background-color: #009CDE;
+    position: fixed;
+    top: 10px;
+    right: 80px;
+    visibility: hidden;
+  }
+  .Bmenu .login3:hover {
+    background-color:#D9B018;
+  }
+
+  .Bmenu .open .login3 {
+    color: white;
+    padding: 15px 35px 15px 35px;
+    border-radius: 30%;
+    font-weight: bold;
+    visibility: visible;
   }
 
   /* End Point Image + Quote */
@@ -1137,14 +1426,23 @@ form .details select {
 }
 
 .endImg h1 {
+  float: left;
+  clear: both;
   font-family: Simple Joys;
   font-weight: bold;
+  font-size: 150px;
   position: absolute;
   top: 100px;
-  left: 70px;
+  left: 60px;
+  color: #009CDE;
+  margin-top: 50px;
 }
 
 .endImg h1 em {
   font-family: Segoe UI;
   color: white;
+  font-size: 50px;
+  position: relative;
+  top: 50px;
+  margin-left: 50px;
 }
