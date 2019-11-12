@@ -167,7 +167,7 @@
 
 .container button:first-of-type {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 41%;
   background-color: #D9B018;
   color: white;
@@ -1144,55 +1144,60 @@ form .details {
   left: 30%;
 }
 
-form .details select {
-  padding: 20px 0 20px 20px;
-  margin: 15px 0 20px 20px;
-  border: 2px solid black;
-  border-radius: 20px;
+.form-group {
+  margin-bottom: 60px;
 }
 
-form select, form input, form .third-twoF input  {
-  padding: 20px;
+.form-group select, .form-group input  {
+  padding: 20px 0 20px 20px;
   border: 2px solid;
   border-radius: 20px;
 }
 
-form select:hover, form input:hover, form .third-twoF input:hover  {
+.form-group:nth-of-type(1) input {
+  width: 400px;
+  margin-top: 20px;
+}
+.form-group:nth-of-type(1) select {
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.form-group:nth-of-type(2) input {
+  width: 400px;
+  margin-right: 100px;
+}
+
+.form-group:nth-of-type(3) input {
+  width: 300px;
+  margin-bottom: 30px;
+}
+.form-group:nth-of-type(3) select {
+  width: 300px;
+}
+.form-group:nth-of-type(3) input:nth-of-type(3) {
+  width: 600px;
+}
+.form-group:nth-of-type(3) input:nth-of-type(4) {
+  width: 200px;;
+}
+
+.form-group select:hover, .form-group input:hover {
   background-color: #F5F5F5;
   border: 2px solid #009CDE;
   transition: 0.5s ease;
   color: black;
 }
-
-.firstF input {
-  width: 400px;
-  margin: 15px 1px 20px 20px;
+.form-group select:focus, .form-group input:focus {
+  background-color: #F5F5F5;
+  border: 2px solid lightgreen;
+  transition: 0.8s ease-in-out;
+  color: black;
 }
-
-.secondF input {
-  width: 430px;
-  margin: 40px 60px 0 20px;
-}
-.secondF input:first-of-type {
-  width: 400px;
-  margin: 40px 60px 0 20px;
-}
-
-.third-oneF select {
-  padding: 20px 4px 20px 20px;
-  margin: 70px 0 20px 20px;
-}
-.third-oneF input {
-  width: 260px;
-  margin: 70px 0 20px 20px;
-}
-.third-twoF input:first-of-type {
-  width: 600px;
-  margin: 15px 20px 20px 20px;
-}
-.third-twoF input {
-  width: 150px;
-  margin: 15px 0 20px 20px;
+.form-group select:visited, .form-group input:visited {
+  background-color: #F5F5F5;
+  outline: red;
+  color: black;
 }
 
 /* Input Icons */
@@ -1282,7 +1287,7 @@ form select:hover, form input:hover, form .third-twoF input:hover  {
 
 /* Join Button leads to end point page */
 
-.join {
+form button[type="submit"] {
   background-color: #009CDE;
   border: none;
   border-radius: 10px;
@@ -1293,8 +1298,7 @@ form select:hover, form input:hover, form .third-twoF input:hover  {
   font-size: 50px;
   font-weight: bold;
 }
-
-.join:hover {
+form button[type="submit"]:hover {
   background-color: #068cc4;
   transition: 1s ease;
 }
@@ -1554,8 +1558,9 @@ form select:hover, form input:hover, form .third-twoF input:hover  {
   margin: 10px;
   position: absolute;
   top: 79%;
-  left: 23%;
+  left: 20%;
   font-size: 30px;
+  padding-right: 700px;
 }
 
 .download button {

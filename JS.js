@@ -112,85 +112,78 @@ function myBlu(x) {
 }
 
 // Form Validation ensures users input is on the right track
+// User details
 function validate() {
-  var ti = document.forms["myform"]["title"].value;
-  var fi = document.forms["myform"]["fname"].value;
-  var la = document.forms["myform"]["lname"].value;
-  var te = document.forms["myform"]["tel"].value;
-  var em = document.forms["myform"]["email"].value;
-  var co = document.forms["myform"]["country"].value;
-  var ci = document.forms["myform"]["city"].value;
-  var ad = document.forms["myform"]["address"].value;
-  var zi = document.forms["myform"]["zip"].value;
-  var pa = document.forms["myform"]["pass"].value;
-  var con = document.forms["myform"]["conpass"].value;
-
+  var ti = document.forms["myForm"]["title"].value;
   if (ti == "") {
-      alert( "Please select one!" );
-      return false;
-    }
+    alert("Please select one!");
+    return false;
   }
-  if (fi == "") {
-      alert( "Please enter yout first name!" );
-      return false;
-    }
-  }
-  if (la == "") {
-      alert( "Please enter your last name!" );
-      return false;
-    }
-  }
-  if (te == "") {
-      alert( "Please enter your mobile number!" );
-      return false;
-    }
-  }
-  if (em == "") {
-      alert( "Please enter your email address!" );
-      return false;
-    }
-  }
-  if (co == "") {
-      alert( "Please select a country" );
-      return false;
-    }
-  }
-  if (ci == "") {
-      alert( "Please enter your city!" );
-      return false;
-    }
-  }
-  if (ad == "") {
-      alert( "Please enter your full address!" );
-      return false;
-    }
-  }
-  if (zi == "") {
-      alert( "Please enter your zip code!" );
-      return false;
-    }
-  }
-  if (pa == "") {
-      alert( "Please enter a password following the requirements above!" );
-      return false;
-    }
-  }
-  if (con == "") {
-      alert( "Please repeat your password!" );
-      return false;
-    }
-  }
-
-  return true;
 }
-
-// Submit form
-  function myFunction() {
-    document.getElementById("myform").submit();
+  var fn = document.forms["myForm"]["fname"].value;
+  if (fn == "") {
+    alert("Please enter your first name!");
+    return false;
   }
+}
+  var ln = document.forms["myForm"]["lname"].value;
+  if (ln == "") {
+    alert("Please enter your last name!");
+    return false;
+  }
+}
+  var te = document.forms["myForm"]["tel"].value;
+  if (te == "") {
+    alert("Please enter your phone number!");
+    return false;
+    }
+  }
+  var em = document.forms["myForm"]["email"].value;
+  if (em == "") {
+    alert("Please enter your email address!");
+    return false;
+    }
+  }
+  var co = document.forms["myForm"]["country"].value;
+  if (x == "") {
+    alert("Please select a country!");
+    return false;
+    }
+  }
+  var ci = document.forms["myForm"]["city"].value;
+  if (ci == "") {
+    alert("Please enter a city!");
+    return false;
+    }
+  }
+  var ad = document.forms["myForm"]["address"].value;
+  if (ad == "") {
+    alert("Please enter your home address!");
+    return false;
+    }
+  var zi = document.forms["myForm"]["zip"].value;
+  if (zi == "") {
+    alert("Please enter your post code!");
+    return false;
+    }
+  }
+}
+// Confirming Password
+function confirm() {
+  var pw = document.getElementById("passsword").value;
+  var pc = document.getElementById("passwordConfirm").value;
 
-// Reset form
+  var message = document.getElementById('checking2');
+  var good_color = "#66cc66";
+  var bad_color  = "#ff6666";
 
+if(pw.value == pc.value){
+    pc.style.backgroundColor = good_color;
+    message.style.color      = good_color;
+} else {
+    pc.style.backgroundColor = bad_color;
+    message.style.color      = bad_color;
+}
 
 // Local Storage
 

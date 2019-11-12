@@ -7,19 +7,19 @@
 
     <style>
       /* Styling for Sign Up Page's Reset Button */
-      input[type=reset] {
+      button[type=reset] {
         position: absolute;
-        left: 1200px;
+        left: 1150px;
         background-color: #D9B018;
         color: white;
         border: none;
         border-radius: 20px;
         padding: 20px 60px 20px 60px;
-        margin-bottom: 50px;
         font-size: 25px;
         font-weight: bold;
+        text-decoration:none;
       }
-      input:hover[type=reset] {
+      button:hover[type=reset] {
         background-color: #c9a212;
         border: 3px dotted black;
       }
@@ -56,10 +56,10 @@
           <div class="houseIcon"><img src="Images/Address.png" alt="House" width="70" height="70"></div>
         </section>
 
-        <form name='myform' action="/submit.php" onsubmit="return validate()" method="post">
+        <form name="myForm" action="End Point Page.html" onsubmit="return validate();">
           <section class="details">
-            <section class="firstF">
-            <select id="title" name="title" data-form-required>
+            <section class="form-group">
+            <select id="title" name="title" required>
               <option disabeled label="Title" selected value="">Title</option>
               <option label="Mr." value="option1">Mr.</option>
               <option label="Mrs." value="option2">Mrs.</option>
@@ -67,19 +67,19 @@
               <option label="Miss." value="option4">Miss.</option>
               <option label="Don't specify" value="option5">Don't specify.</option>
             </select>
-            <input type="text" name="fname" placeholder="First Name" data-form-required>
-            <input type="text" name="lname" placeholder="Last Name" data-form-required>
+            <input type="text" name="fname" placeholder="First Name" required>
+            <input type="text" name="lname" placeholder="Last Name" required>
             <br>
             </section>
 
-            <section class="secondF">
-            <input type="tel" name="tel" placeholder="Phone Number" data-form-required>
-            <input type="email" name="email" placeholder="Email" data-form-required>
+            <section class="form-group">
+            <input type="tel" name="tel" placeholder="Phone Number" pattern="[0-9].{10}" required>
+            <input type="email" name="email" placeholder="Email" required>
             <br>
             </section>
 
-            <section class="third-oneF">
-            <select id="country" name="country" data-form-required>
+            <section class="form-group">
+            <select id="country" name="country" required>
               <option disabled label="Country" selected value="">Country</option>
                   <option value="Afghanistan">Afghanistan</option>
                   <option value="Åland Islands">Åland Islands</option>
@@ -326,16 +326,22 @@
                   <option value="Zambia">Zambia</option>
                   <option value="Zimbabwe">Zimbabwe</option>
             </select>
-            <input type="text" name="city" placeholder="City" data-form-required>
+            <input type="text" name="city" placeholder="City" required>
             <input type="text" name="region" placeholder="Region (optional)">
             <br>
-          </section>
-
-          <section class="third-twoF">
-            <input type="text" name="address" placeholder="Address" data-form-required>
-            <input type="number" name="zip" placeholder="Zip Code" data-form-required>
+            <input type="text" name="address" placeholder="Address" required>
+            <input type="number" name="zip" placeholder="Zip Code" pattern="[0-9].{4}" required>
           </section>
         </section>
+
+        <section class="pass">
+          <input type="password" name="pass" id="password" placeholder="Password" onkeyup="confirm();" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9.#@$!%*?&.]).{8,32}" required>
+          <br>
+          <input type="password" name="conpass" id="passwordConfirm" onkeyup="confirm();" placeholder="Confirm Password" required>
+          <span id="checking2" class="checking"></span>
+        </section>
+
+        <button type="Submit" value="Join for Free" onclick="return confirm()">Join for Free</button>
       </form>
 
         <section class="req">
@@ -345,15 +351,6 @@
             <p><em>Conatains at least one lowercase leter</em></p>
             <p><em>One number (0-9) or one special character</em></p>
         </section>
-
-        <section class="pass">
-          <input type="password" name="pass" placeholder="Password" data-form-required>
-          <br>
-          <input type="password" name="conpass" placeholder="Confirm Password" data-form-required>
-          <div class="checking"></div>
-        </section>
-
-        <input class="join" type="submit" value="Join for Free"><a href="End Point Page.html" style="text-decoration:none">Join for Free</a></button>
 
         <div class="card">
           <img src="Images/Checkbox.JPG" alt="Hilton Honors Card" width="700" height="300">
@@ -376,7 +373,7 @@
           <p>By clicking the Join for Free button I agree to the <a href="https://hiltonhonors3.hilton.com/en_US/terms/index.html" style="color:blue">Hilton Honors Program Terms and Conditions</a> and I agree to the collection, use, sharing and transfer of information as set out in the <a href="https://hiltonhonors3.hilton.com/en_US/policy/global-privacy-statement/index.html" style="color:blue">Global Privacy Statement</a> and the <a href="https://hiltonhonors3.hilton.com/en/policy/data-protection-clause/english.html" style="color:blue">Data Protection Clause</a>. I also agree to receive special offers and promotions from Hilton via email and direct mail. I understand that I can unsubscribe from offers and promotions by changing my subscription preferences in my Hilton Honors profile.
         </div>
 
-        <input id="reset" name="reset" type="reset" value="Reset Form">
+        <button id="reset" name="reset" type="reset" value="Reset Form"><a href="Sign Up Page.html">Reset Form</a></button>
 
         <div class="note">
           <p>
