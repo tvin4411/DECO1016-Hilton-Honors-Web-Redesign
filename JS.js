@@ -113,81 +113,70 @@ function myBlu(x) {
 
 // Form Validation ensures users input is on the right track
 function validate() {
-  var ti = document.forms["myform"]["title"];
-  var fi = document.forms["myform"]["fname"];
-  var la = document.forms["myform"]["lname"];
-  var te = document.forms["myform"]["tel"];
-  var em = document.forms["myform"]["email"];
-  var co = document.forms["myform"]["country"];
-  var ci = document.forms["myform"]["city"];
-  var ad = document.forms["myform"]["address"];
-  var zi = document.forms["myform"]["zip"];
-  var pa = document.forms["myform"]["pass"];
-  var con = document.forms["myform"]["conpass"];
+  var ti = document.forms["myform"]["title"].value;
+  var fi = document.forms["myform"]["fname"].value;
+  var la = document.forms["myform"]["lname"].value;
+  var te = document.forms["myform"]["tel"].value;
+  var em = document.forms["myform"]["email"].value;
+  var co = document.forms["myform"]["country"].value;
+  var ci = document.forms["myform"]["city"].value;
+  var ad = document.forms["myform"]["address"].value;
+  var zi = document.forms["myform"]["zip"].value;
+  var pa = document.forms["myform"]["pass"].value;
+  var con = document.forms["myform"]["conpass"].value;
 
-  if (ti.value == "") {
+  if (ti == "") {
       alert( "Please select one!" );
-      ti.focus();
       return false;
     }
   }
-  if (fi.value == "") {
+  if (fi == "") {
       alert( "Please enter yout first name!" );
-      fi.focus();
       return false;
     }
   }
-  if (la.value == "") {
+  if (la == "") {
       alert( "Please enter your last name!" );
-      la.focus();
       return false;
     }
   }
-  if (te.value == "") {
+  if (te == "") {
       alert( "Please enter your mobile number!" );
-      te.focus();
       return false;
     }
   }
-  if (em.value == "") {
+  if (em == "") {
       alert( "Please enter your email address!" );
-      em.focus();
       return false;
     }
   }
-  if (co.value == "") {
+  if (co == "") {
       alert( "Please select a country" );
-      co.focus();
       return false;
     }
   }
-  if (ci.value == "") {
+  if (ci == "") {
       alert( "Please enter your city!" );
-      ci.focus();
       return false;
     }
   }
-  if (ad.value == "") {
+  if (ad == "") {
       alert( "Please enter your full address!" );
-      ad.focus();
       return false;
     }
   }
-  if (zi.value == "") {
+  if (zi == "") {
       alert( "Please enter your zip code!" );
-      zi.focus();
       return false;
     }
   }
-  if (pa.value == "") {
+  if (pa == "") {
       alert( "Please enter a password following the requirements above!" );
-      pa.focus();
       return false;
     }
   }
-  if (con.value == "") {
+  if (con == "") {
       alert( "Please repeat your password!" );
-      con.focus();
       return false;
     }
   }

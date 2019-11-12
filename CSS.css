@@ -1151,6 +1151,12 @@ form .details select {
   border-radius: 20px;
 }
 
+form select, form input, form .third-twoF input  {
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 20px;
+}
+
 form select:hover, form input:hover, form .third-twoF input:hover  {
   background-color: #F5F5F5;
   border: 2px solid #009CDE;
@@ -1159,42 +1165,34 @@ form select:hover, form input:hover, form .third-twoF input:hover  {
 }
 
 .firstF input {
-  padding: 20px 150px 20px 20px;
+  width: 400px;
   margin: 15px 1px 20px 20px;
-  border: 2px solid;
-  border-radius: 20px;
 }
 
 .secondF input {
-  padding: 20px 230px 20px 20px;
-  margin: 40px 80px 0 20px;
-  border: 2px solid;
-  border-radius: 20px;
+  width: 430px;
+  margin: 40px 60px 0 20px;
+}
+.secondF input:first-of-type {
+  width: 400px;
+  margin: 40px 60px 0 20px;
 }
 
 .third-oneF select {
   padding: 20px 4px 20px 20px;
-  margin: 40px 0 20px 20px;
-  border: 2px solid;
-  border-radius: 20px;
+  margin: 70px 0 20px 20px;
 }
 .third-oneF input {
-  padding: 20px 90px 20px 20px;
-  margin: 40px 0 20px 20px;
-  border: 2px solid;
-  border-radius: 20px;
+  width: 260px;
+  margin: 70px 0 20px 20px;
 }
 .third-twoF input:first-of-type {
-  padding: 20px 430px 20px 20px;
+  width: 600px;
   margin: 15px 20px 20px 20px;
-  border: 2px solid;
-  border-radius: 20px;
 }
 .third-twoF input {
-  padding: 20px 60px 20px 20px;
+  width: 150px;
   margin: 15px 0 20px 20px;
-  border: 2px solid;
-  border-radius: 20px;
 }
 
 /* Input Icons */
@@ -1202,7 +1200,7 @@ form select:hover, form input:hover, form .third-twoF input:hover  {
 .iconInputs {
   position: absolute;
   top: 265px;
-  left: 370px;
+  left: 350px;
 }
 
 .iconInputs .telIcon {
@@ -1215,7 +1213,7 @@ form select:hover, form input:hover, form .third-twoF input:hover  {
 }
 .iconInputs .houseIcon {
   position: absolute;
-  top: 265px;
+  top: 286px;
 }
 
 /* Create a password section  */
@@ -1605,7 +1603,7 @@ footer {
 }
 #footer2 {
   position: absolute;
-  bottom: -1300px;
+  bottom: -1150px;
   z-index: 99;
 }
 #footer3 {
