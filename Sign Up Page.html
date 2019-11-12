@@ -23,10 +23,70 @@
         background-color: #c9a212;
         border: 3px dotted black;
       }
-
     </style>
+
+    <!-- Form Validation ensures users input is on the right track -->
+    <script>
+    function validate() {
+      var ti = document.forms["myForm"]["title"].value;
+      if (ti == "") {
+        alert("Please select one!");
+        return false;
+      }
+    }
+      var fn = document.forms["myForm"]["fname"].value;
+      if (fn == "") {
+        alert("Please enter your first name!");
+        return false;
+      }
+    }
+      var ln = document.forms["myForm"]["lname"].value;
+      if (ln == "") {
+        alert("Please enter your last name!");
+        return false;
+      }
+    }
+      var te = document.forms["myForm"]["tel"].value;
+      if (te == "") {
+        alert("Please enter your phone number!");
+        return false;
+        }
+      }
+      var em = document.forms["myForm"]["email"].value;
+      if (em == "") {
+        alert("Please enter your email address!");
+        return false;
+        }
+      }
+      var co = document.forms["myForm"]["country"].value;
+      if (x == "") {
+        alert("Please select a country!");
+        return false;
+        }
+      }
+      var ci = document.forms["myForm"]["city"].value;
+      if (ci == "") {
+        alert("Please enter a city!");
+        return false;
+        }
+      }
+      var ad = document.forms["myForm"]["address"].value;
+      if (ad == "") {
+        alert("Please enter your home address!");
+        return false;
+        }
+      var zi = document.forms["myForm"]["zip"].value;
+      if (zi == "") {
+        alert("Please enter your post code!");
+        return false;
+        }
+      }
+    }
+    </script>
+
   </head>
 
+<!-- The white menu bar containing a logo and back arrow linking back to main page as well as user icon to show login button in case user relaises they have an account -->
   <header class='Wmenu'>
     <div class="logo"><a href="index.html"><img src="Images/Hilton Honors Logo (White).png" alt="Hilton Honors Logo" width="110" height="50"></a></div>
     <div class="user" onclick="myUser(this)"><img src="Images/User (Dark).JPG" alt="User Icon" width="40" height="40">
@@ -37,6 +97,7 @@
 
   <body>
     <main>
+      <!-- Sidebar of icons reminding users of the avaliable perks gained from joining -->
         <section class="iconBene">
           <img src="Images/1 Icon.png" alt="Money" width="150" height="215"></div>
           <img src="Images/2 Icon.png" alt="Wifi" width="150" height="200"></div>
@@ -44,11 +105,13 @@
           <img src="Images/4 Icon.png" alt="Coin" width="150" height="250"></div>
         </section>
 
+        <!-- Beginning of form with introduction  -->
         <section class="formhead">
         <h1>Join Hilton Honors</h1>
             <p><em>* All field are required unless marked optional</em></p>
         </section>
 
+        <!-- icons are beside the inputs and are used for decorative purposes -->
         <section class="iconInputs">
           <div class="nameIcon"><img src="Images/Name.png" alt="Face" width="70" height="70"></div>
           <div class="telIcon"><img src="Images/Tel.png" alt="Phone" width="70" height="70"></div>
@@ -56,6 +119,7 @@
           <div class="houseIcon"><img src="Images/Address.png" alt="House" width="70" height="70"></div>
         </section>
 
+        <!-- Content below is the form for the sign up page - it ensures users fill in the inputs to the page's exact specifications -->
         <form name="myForm" action="End Point Page.html" onsubmit="return validate();">
           <section class="details">
             <section class="form-group">
@@ -335,13 +399,12 @@
         </section>
 
         <section class="pass">
-          <input type="password" name="pass" id="password" placeholder="Password" onkeyup="confirm();" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9.#@$!%*?&.]).{8,32}" required>
+          <input type="password" name="pass" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9.#@$!%*?&.]).{8,32}" required>
           <br>
-          <input type="password" name="conpass" id="passwordConfirm" onkeyup="confirm();" placeholder="Confirm Password" required>
-          <span id="checking2" class="checking"></span>
+          <input type="password" name="conpass" placeholder="Confirm Password" required>
         </section>
 
-        <button type="Submit" value="Join for Free" onclick="return confirm()">Join for Free</button>
+        <button type="Submit" value="Join for Free">Join for Free</button>
       </form>
 
         <section class="req">
@@ -352,6 +415,7 @@
             <p><em>One number (0-9) or one special character</em></p>
         </section>
 
+        <!-- Card image beside password inputs allow uses to check a box to find more information on the card -->
         <div class="card">
           <img src="Images/Checkbox.JPG" alt="Hilton Honors Card" width="700" height="300">
         </div>
@@ -369,10 +433,12 @@
           </p>
         </div>
 
+        <!-- Shows terms and conditions -->
         <div class="TC">
           <p>By clicking the Join for Free button I agree to the <a href="https://hiltonhonors3.hilton.com/en_US/terms/index.html" style="color:blue">Hilton Honors Program Terms and Conditions</a> and I agree to the collection, use, sharing and transfer of information as set out in the <a href="https://hiltonhonors3.hilton.com/en_US/policy/global-privacy-statement/index.html" style="color:blue">Global Privacy Statement</a> and the <a href="https://hiltonhonors3.hilton.com/en/policy/data-protection-clause/english.html" style="color:blue">Data Protection Clause</a>. I also agree to receive special offers and promotions from Hilton via email and direct mail. I understand that I can unsubscribe from offers and promotions by changing my subscription preferences in my Hilton Honors profile.
         </div>
 
+        <!-- reset button will clear inputs and put user back to top of page -->
         <button id="reset" name="reset" type="reset" value="Reset Form"><a href="Sign Up Page.html">Reset Form</a></button>
 
         <div class="note">
@@ -384,6 +450,8 @@
         </div>
     </main>
   <div>
+
+    <!-- Footer remains at bottom of page containing a working feedback button, other links and logo to go to landinging page -->
     <footer id="footer2">
       <div class="logo"><a href="index.html"><img src="Images/Hilton Honors Logo (White).png" alt="Hilton Honors Black Logo" width="190" height="110"></a></div>
       <div>
@@ -404,6 +472,7 @@
         <p>©2019 Hilton</p>
       </div>
 
+      <!-- button used to open the pop-up feedback at the bottom-right of screen -->
       <button onclick="openFB(this)">Feedback</button>
         <div class="FB-pop" id="feedback">
           <br>

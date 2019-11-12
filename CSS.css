@@ -1273,18 +1273,6 @@ form .details {
   color: black;
 }
 
-.checking {
-  height: 80px;
-  width: 80px;
-  background-color: white;
-  border: 13px solid black;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  top: 1150px;
-  margin: 30px;
-}
-
 /* Join Button leads to end point page */
 
 form button[type="submit"] {
