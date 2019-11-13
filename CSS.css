@@ -1714,9 +1714,9 @@ footer button:first-of-type:hover {
 
 /* Media Queries */
 /* For Desktop */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   html body {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -1724,6 +1724,10 @@ footer button:first-of-type:hover {
 @media only screen and (max-width: 320px) {
   html body {
     flex-direction: column;
-    width: 50%
+    max-width: 50%
+  }
+  * img {
+    flex-direction: column;
+    max-width: 50%
   }
 }
