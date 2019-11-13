@@ -111,12 +111,13 @@ function myBlu(x) {
     }
 }
 
-// Feedback Pop-up opening it
-function openFB() {
-  var x = document.getElementById("feedback");
-  if (x.style.display === "none") {
-      x.style.display = "block";
-  } else {
-      x.style.display = "none";
-  }
+// Local Storage used to store in user's first name and emaill address from input
+function validate() {
+  var fname = document.getElementById('userFname').value;
+  sessionStorage.setItem('firstName', fname);
+}
+
+function validate() {
+  var email = document.getElementById('userEmail').value;
+  sessionStorage.setItem('emailAddress', email);
 }

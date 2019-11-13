@@ -28,7 +28,9 @@
 <div id="page-container">
   <div id="content wrap">
     <main>
+
       <!-- Hotel Image and Find a Hotel button -->
+    <div id="content">
       <section class='container'>
         <img src="Images/Top image landing page.jpg" alt="Hotel by Water">
         <button onclick="findbtn(this)">Find a Hotel</button>
@@ -46,6 +48,9 @@
             <input type="submit" value="Enter">
           </nav>
       </section>
+    </div>
+
+      <div id="content">
       <!-- Greeting Quote and Joining button to Sign up page -->
       <section class='bubble'>
         <h1>We'd be</h1>
@@ -54,48 +59,59 @@
         <p>(plus it's free)</p>
         <button class="joinbtn"><a href="Sign Up Page.html" style="text-decoration:none">Join Hilton Honors</a></button>
       </section>
+
       <!-- Shows perks as icons and speech bubble of information -->
       <section class='perks'>
-        <h2>Join for the perks</h2>
-          <p>The perks start the moment you join.</p>
+        <div class="block">
+          <div class="perktext">
+            <h2>Join for the perks</h2>
+            <p>The perks start the moment you join.</p>
+          </div>
           <button onmouseover="EliteIcon(this)"><img src="Images/Elite.png" alt="Gift Image" width="50" height="50"></button>
             <p id="speechR1">
             <strong>Elite-level Benefits</strong><br>
             Our elite members get access to Rollover Nights, Milestone Bonuses, free breakfaset, and more.<br>
             <a href="https://hiltonhonors3.hilton.com/en/explore/benefits/index.html">Explore Member Tiers</a>
-            <img src="Images/Elite.png" alt="Gift Image" width="45" height="45">
+            <img src="Images/Elite.png" alt="Gift Image">
             </p>
-          <button onmouseover="LowIcon(this)"><img src="Images/Low.png" alt="Money Symbol" width="50" height="60"></button>
+          <button onmouseover="LowIcon(this)"><img src="Images/Low.png" alt="Money Symbol" width="40" height="40"></button>
             <p id="speechR2">
             <strong>Lowest Price</strong><br>
             When you book at Hilton.com, we guarantee you'll always get the lowest price. If you find a lower rate we'll match it and give you an extra 25% off.*<br>
             <a href="https://hiltonhonors3.hilton.com/en/offers/100115474.htm?cid=OH,MB,WG8539,DDR,PMG_CTA,StudioLP,SingleLink,i1">Terms & Conditions Apply</a>
-            <img src="Images/Low.png" alt="Money Symbol" width="45" height="45">
+            <img src="Images/Low.png" alt="Money Symbol">
             </p>
           <button onmouseover="WifiIcon(this)"><img src="Images/Wifi.png" alt="Wifi Icon" width="60" height="60"></button>
             <p id="speechR3">
             <strong>Free Wifi</strong><br>
             Get online throughout the hotel with free standard WiFi during your stay.<br>
             <a href="https://hiltonhonors3.hilton.com/en/terms/index.html">Terms Apply</a>
-            <img src="Images/Wifi.png" alt="Wifi Icon" width="45" height="45">
+            <img src="Images/Wifi.png" alt="Wifi Icon">
             </p>
           <button onmouseover="PointsIcon(this)"><img src="Images/Points.png" alt="Stacked Coins" width="50" height="50"></button>
             <p id="speechR4">
             <strong>Earn Points</strong><br>
             New Members earn 10 points for every $1 spent at our hotels. Plus , the more you stay, the more you earn-up to 20 Points per $1 spent. Earn even more with the Hilton Honors American Express Card.<br>
             <a href="https://hiltonhonors3.hilton.com/en/earn-use-points/credit-cards/index.html">Terms & Conditions Apply</a>
-            <img src="Images/Points.png" alt="Stacked Coins" width="45" height="45">
+            <img src="Images/Points.png" alt="Stacked Coins">
             </p>
           <button onmouseover="AppIcon(this)"><img src="Images/App.png" alt="Phone Icon" width="50" height="60"></button>
             <p id="speechR5">
             <strong>Exclusive App Features</strong><br>
             Book a stay, check in, choose your own room, unlock your door, and check-out all in the Hilton Honors app.<br>
             <a href="https://hiltonhonors3.hilton.com/rs/hilton-honors-mobile-app/">View Features</a>
-            <img src="Images/App.png" alt="Phone Icon" width="45" height="45">
+            <img src="Images/App.png" alt="Phone Icon">
             </p>
+          </div>
       </section>
+    </div>
+
+    <div id="content">
       <!-- Gray border to separate the perks information and member tier information  -->
       <div class="v-border1"></div>
+    </div>
+
+    <div id="content">
       <!-- Member tier shows a pyramid of the different membership levels on the requirements and the added benefits -->
       <section class='member-tier'>
         <h2>Membership Tier</h2>
@@ -171,9 +187,14 @@
             <li>A “Second Guest Stays Free” offer at participating Hilton Worldwide properties.</li>
           </ul>
       </div>
+    </div>
 
+    <div id="content">
       <!-- Gray border to separate the member tier information and the rewards & benefits informtion  -->
       <div class="v-border2"></div>
+    </div>
+
+    <div id="content">
       <section class='SFR'>
         <h2>Stay for the Rewards</h2>
           <p>Redeem your Points on the things that matter most to you.</p>
@@ -203,12 +224,16 @@
             <img src="Images/Pool your Points.jpg" alt="Firecracker" width="100" height="100"><strong>Pool your Points</strong>
             <p>Travel together with friends and family by pooling your Points, starting at 1,000 Points.</p>
           </div>
-
       </section>
+    </div>
+</div>
 
+    <div id="content">
       <!-- The v border allows content to be kept separate -->
       <div class="v-border2"></div>
+    </div>
 
+    <div id="content">
       <!-- The EO information is activated when an image under this section is hovered by user by overlaying the image to show the text in front of it  -->
       <section class='EO'>
         <h2>Exclusive Offers</h2>
@@ -257,9 +282,12 @@
             </div>
           </div>
       </section>
+</div>
 
+    <div id="content">
     <!-- similar to the top join button but expands quiet largely when hovered -->
     <section class="bottom-btns"><button class="joinbtn"><a href="Sign Up Page.html" style="text-decoration:none">Join Hilton Honors</a></button></section>
+  </div>
 
   </main>
 </div>
@@ -285,46 +313,8 @@
       <p>©2019 Hilton</p>
     </div>
 
-    <button onclick="openFB(this)">Feedback</button>
-      <div class="FB-pop" id="feedback">
-        <br>
+    <button class="FB-pop" id="feedback">Feedback</button>
 
-        <form class="FB-container">
-          <section>
-            <p>How would you rate your experience on this site?</p>
-            <div class="rate">
-              <label for=Hate><input id="option1" name="Hate" type="radio" value="1">Hate</label>
-              <label for=Dislike><input id="option1" name="Dislike" type="radio" value="2">Dislike</label>
-              <label for=Neutral><input id="option1" name="Neutral" type="radio" value="3">Neutral</label>
-              <label for=Like><input id="option1" name="Like" type="radio" value="4">Like</label>
-              <label for=Love><input id="option1" name="Love" type="radio" value="5">Love</label>
-            </div>
-          </section>
-            <br>
-            <section>
-            <p>Please tell us the reason for your comment?</p>
-            <select id="reason" name="reason">
-            <option disabeled label="Please select an option" selected value="">Please select an option</option>
-              <option label="Honors Account" value="option1">Honors Account</option>
-              <option label="Points Activity" value="option2">Points Activity</option>
-              <option label="Missing Stay" value="option3">Missing Stay</option>
-              <option label="Sign in" value="option4">Sign in</option>
-              <option label="Stay Feedback" value="option5">Stay Feedback</option>
-              <option label="Navigation" value="option6">Navigation</option>
-              <option label="Chat" value="option7">Chat</option>
-              <option label="Other" value="option8">Other</option>
-            </select>
-          </section>
-            <br>
-            <section>
-              <p>What would you like to share with us?</p>
-              <input type="text" name="text" class="box">
-            </section>
-            <br>
-            <button type="submit" class="submitFB">Submit</button>
-            <br>
-          <a href="https://usabilla.com/privacy">Privacy Statement</a>
-        </form>
   </footer>
 </div>
   </body>

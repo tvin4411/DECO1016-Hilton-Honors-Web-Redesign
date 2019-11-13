@@ -2,7 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  }
+}
+
+html,body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+}
 
 * a {
   color: white;
@@ -167,7 +175,7 @@
 
 .container button:first-of-type {
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 41%;
   background-color: #D9B018;
   color: white;
@@ -475,25 +483,32 @@
 /* Bottom-btns join button is at the bottom of page */
 .bottom-btns .joinbtn {
   position: relative;
-  bottom: -3300px;
-  left: -200px;
+  bottom: -500px;
+  left: 550px;
+  right: 50%;
   border: 4px solid black;
   padding: 50px 70px 50px 70px;
   font-weight: bold;
 }
 
 /* Perks Information */
-.perks {
-  text-align: center;
+.perks .block  {
   background-color: #104C97;
+  width: 1481px;
   height: 1000px;
-  z-index: -2;
+  z-index: -99;
+  display: block;
+  content: "";
 }
 
-.perks h2 {
-  padding-top: 35px;
+.perks h2, .perks p {
+  position: relative;
+  width: 110%;
+  height: 100%;
   font-size: 40px;
   color: white;
+  padding: 30px 0 10px 0;
+  text-align: center;
 }
 
 .perks p {
@@ -513,8 +528,8 @@
   margin-bottom: 70px;
   transition: background-color 0.5s ease-in;
   position: relative;
-  bottom: 220px;
-  left: 1370px;
+  top: -240px;
+  right: -1370px;
 }
 .perks button:hover {
   background-color: #068cc4;
@@ -530,9 +545,11 @@
   display: none;
   position: relative;
   right: 30px;
-  padding: 15px;
+  width: 530px;
+  height: 120px;
   margin-left: 850px;
   margin-right: 90px;
+  padding: 5px;
 }
 
 #speechR1:first-line, #speechR2:first-line, #speechR3:first-line, #speechR4:first-line, #speechR5:first-line {
@@ -541,14 +558,17 @@
 
 #speechR1 a, #speechR2 a, #speechR3 a, #speechR4 a, #speechR5 a {
   color: blue;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 #speechR1 img, #speechR2 img, #speechR3 img, #speechR4 img, #speechR5 img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 15%;
+  left: 43%;
   border-radius: 50px;
+  opacity: 0.2;
+  width:80px;
+  height:80px;
 }
 
 #speechR1 {
@@ -569,6 +589,7 @@
 #speechR4 {
   position: relative;
   top: 150px;
+  height: 130px;
 }
 
 #speechR5 {
@@ -580,25 +601,25 @@
 
 .v-border1, .v-border2 {
   height: 5px;
-  width: 90%;
+  width: 1300px;
   background-color: #A7A7A7;
   padding: 10px;
-  margin-top: 30px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 100px;
+  position: relative;
+  top:-100px;
 }
 
 /* Information - Member Tier */
 
 .member-tier {
   position: relative;
+  top: -50px;
 }
 
 .member-tier h2 {
   text-align: center;
   font-size: 60px;
-  padding-top: 30px;
   padding-bottom: 10px;
 }
 
@@ -606,13 +627,15 @@
   text-align: center;
   font-size: 30px;
   padding-top: 5px;
-  padding-right: 70px;
+  padding-right: 150px;
+  position: relative;
+  left: 5%;
 }
 
 .member-tier img {
   position: absolute;
-  top: 200px;
-  right: 20px;
+  top: 155px;
+  right: 0;
   z-index: -2;
   border: 4px dotted #D9B018;
 }
@@ -788,11 +811,13 @@
 
 .SFR, .EO, .v-border2 {
   position: relative;
-  bottom: 10px;
-  left: 80px;
+  top: -800px;
   float: left;
   clear: both;
-  padding-top: 10px;
+}
+.SFR {
+  position: relative;
+  left:50px;
 }
 
 .SFR h2, .EO h2 {
@@ -800,7 +825,7 @@
   font-size: 60px;
   padding: 30px 0 10px 0;
   position: relative;
-  left: 300px;
+  left: 350px;
 }
 
 .SFR p, .EO p {
@@ -808,7 +833,7 @@
   font-size: 30px;
   padding: 5px 0 30px 0;
   position: relative;
-  left: 300px;
+  left: 350px;
 }
 
 .SFR1 strong, .SFR2 strong, .SFR3 strong, .SFR4 strong, .SFR5 strong {
@@ -995,6 +1020,8 @@
   width: 600px;
   height: 560px;
   margin: 20px;
+  position: relative;
+  left: 70px;
 }
 
 .EO1 strong, .EO2 strong, .EO3 strong, .EO4 strong {
@@ -1006,10 +1033,10 @@
   text-align: center;
   position: relative;
   bottom: 500px;
-  left: 80px;
+  left: 140px;
 }
 .EO1 strong {
-  left: 40px;
+  left: 110px;
 }
 
 .EO1 em, .EO2 em, .EO3 em, .EO4 em {
@@ -1020,7 +1047,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 70px;
   right: 0;
   height: 90%;
   width: 100%;
@@ -1255,15 +1282,21 @@ form .details {
 }
 
 .pass input {
-  position: relative;
-  bottom: 40px;
+  position: absolute;
+  left: 50px;
+  bottom: -450px;
   padding: 20px 200px 20px 20px;
   margin: 10px 0 35px 200px;
   border: 2px solid;
   border-radius: 20px;
   font-size: 18px;
+  float: left;
+  clear: both;
 }
 .pass input:first-of-type {
+  position: absolute;
+  left: 50px;
+  bottom: -350px;
   margin-top: 1170px;
 }
 .pass input:hover {
@@ -1275,18 +1308,20 @@ form .details {
 
 /* Join Button leads to end point page */
 
-form button[type="submit"] {
+button[type="submit"] {
   background-color: #009CDE;
   border: none;
   border-radius: 10px;
   padding: 80px 160px 80px 160px;
   margin: 40px;
-  margin-left: 220px;
   color: white;
   font-size: 50px;
   font-weight: bold;
+  position: absolute;
+  bottom: -800px;
+  left: 150px;
 }
-form button[type="submit"]:hover {
+button[type="submit"]:hover {
   background-color: #068cc4;
   transition: 1s ease;
 }
@@ -1498,6 +1533,7 @@ form button[type="submit"]:hover {
   left: 60px;
   color: #009CDE;
   margin-top: 50px;
+  display: block;
 }
 
 .endImg h1 em {
@@ -1575,29 +1611,37 @@ form button[type="submit"]:hover {
   position: relative;
   min-height: 100vh;
 }
-
 #content-wrap {
   padding-bottom: 200px;
+  display: inline-block;
+  float: left;
+  clear: both;
+}
+#content {
+  float: left;
+  clear: both;
 }
 
 footer {
-  background-color: #F5F5F5;
+  background-color: white;
   border-top: 3px solid black;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: 200px;
-  z-index: -99;
+  margin: 0;
+  position: relative;
+  bottom: 0;
+  float: left;
+  clear: both;
 }
 
 #footer1 {
-  position: absolute;
-  bottom: -3800px;
+  position: relative;
+  bottom: -600px;
 }
 #footer2 {
   position: absolute;
+  left: 150px;
   bottom: -1150px;
-  z-index: 99;
 }
 #footer3 {
   position: absolute;
@@ -1648,11 +1692,11 @@ footer button:first-of-type {
   font-weight: bold;
   padding: 16px 15px;
   border: 3px #D9B018 solid;
-  position: absolute;
-  bottom: 23px;
-  right: 28px;
+  position: relative;
+  bottom: 20px;
+  right: -1000px;
   width: 280px;
-  z-index: -3;
+  z-index: 99;
 }
 footer button:first-of-type:hover {
   background-color: #009CDE;
@@ -1661,61 +1705,25 @@ footer button:first-of-type:hover {
 }
 
 .FB-pop {
-  display: none;
-  position: absolute;
-  bottom: 200px;
+  position: relative;
+  bottom: 750px;
   right: 15px;
-  border: 3px solid #f1f1f1;
   z-index: 2;
   background-color: #A7A7A7;
 }
-.FB-container {
-  max-width: 600px;
-  padding: 10px;
-  background-color: #A7A7A7;
+
+/* Media Queries */
+/* For Desktop */
+@media only screen and (max-width: 768px) {
+  html body {
+    width: 100%;
+  }
 }
-.FB-container p {
-  position: relative;
-  top: -10px;
-  margin-bottom: 35px;
-  color: white;
-}
-.FB-container .rate {
-  position: absolute;
-  bottom: 385px;
-  left: 0;
-  padding: 10px;
-  color: white;
-  font-size: 30px;
-  font-family: Simple Joys;
-}
-.FB-container #reason {
-  position: absolute;
-  bottom: 330px;
-  padding: 10px 100px 10px 10px;
-  border: 1px black solid;
-}
-.FB-container .box {
-  width: 100%;
-  height: 150px;
-  padding: 10px;
-  margin: 0 0 20px 0;
-  border: 1px solid black;
-  background: #f1f1f1;
-  position: relative;
-  bottom: 30px;
-}
-.FB-container .submitFB {
-  background-color: #D9B018;
-  color: white;
-  padding: 10px;
-  border: none;
-  width: 100%;
-  opacity: 1;
-  z-index: 10;
-  position: relative;
-  left: 0;
-}
-.FB-container .submitFB:hover {
-  opacity: 0.8;
+
+/* For Mobiles */
+@media only screen and (max-width: 320px) {
+  html body {
+    flex-direction: column;
+    width: 50%
+  }
 }

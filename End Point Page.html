@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport content="width=device=width, intial-scale="1.0">
   <head>
     <title>Hilton Honors Membership</title>
     <link rel="stylesheet" href="CSS.css"><link>
     <script type="text/javascript" src="JS.js"></script>
   </head>
+
+  <!-- Script will call local storage of user's first name and email address -->
+  <script>
+    window.onload = function() {
+      document.getElementById('callName').innerText = "You're in " + sessionStorage.getItem('firstName') + "!";
+      document.getElementById('callEmail').innerText = "Email vertification has been sent to " + sessionStorage.getItem('emailAddress');
+    };
+  </script>
 
   <!-- similar to the white bar menu but blue with white logo, white navigate bars and user icon which allows user to go straight to their account or login when pressed to show button-->
   <header class='Bmenu'>
@@ -28,7 +37,7 @@
     <main>
       <section class='endImg'>
         <img src="Images/End Point Image.jpg" alt="Sunset Beach Image">
-        <h1>You're in!</h1>
+        <h1 id="callName"></h1>
         <h1><em>now start enjoying instant benefits<em></h1>
       </section>
 
@@ -38,11 +47,11 @@
       </section>
 
       <!-- Below inform the user of their unique member number, email vertication, download stores for the app and information on what the app has to offer them -->
-      <section class="MemNum"><h2>Member Number: 000000000<h2></section>
+      <section class="MemNum"><h2>Member Number: 000000000</h2></section>
 
       <div class="email-sent">
         <img src="Images/Email sent.JPG">
-        <h3>Account vertification has been sent to your email address<h3>
+        <h3 id="callEmail"><h3>
       </div>
 
       <div class="download">
@@ -75,46 +84,7 @@
         <p>©2019 Hilton</p>
       </div>
 
-      <button onclick="openFB(this)">Feedback</button>
-        <div class="FB-pop" id="feedback">
-          <br>
-
-          <form class="FB-container">
-            <section>
-              <p>How would you rate your experience on this site?</p>
-              <div class="rate">
-                <label for=Hate><input id="option1" name="Hate" type="radio" value="1">Hate</label>
-                <label for=Dislike><input id="option1" name="Dislike" type="radio" value="2">Dislike</label>
-                <label for=Neutral><input id="option1" name="Neutral" type="radio" value="3">Neutral</label>
-                <label for=Like><input id="option1" name="Like" type="radio" value="4">Like</label>
-                <label for=Love><input id="option1" name="Love" type="radio" value="5">Love</label>
-              </div>
-            </section>
-              <br>
-              <section>
-              <p>Please tell us the reason for your comment?</p>
-              <select id="reason" name="reason">
-              <option disabeled label="Please select an option" selected value="">Please select an option</option>
-                <option label="Honors Account" value="option1">Honors Account</option>
-                <option label="Points Activity" value="option2">Points Activity</option>
-                <option label="Missing Stay" value="option3">Missing Stay</option>
-                <option label="Sign in" value="option4">Sign in</option>
-                <option label="Stay Feedback" value="option5">Stay Feedback</option>
-                <option label="Navigation" value="option6">Navigation</option>
-                <option label="Chat" value="option7">Chat</option>
-                <option label="Other" value="option8">Other</option>
-              </select>
-            </section>
-              <br>
-              <section>
-                <p>What would you like to share with us?</p>
-                <input type="text" name="text" class="box">
-              </section>
-              <br>
-              <button type="submit" class="submitFB">Submit</button>
-              <br>
-            <a href="https://usabilla.com/privacy">Privacy Statement</a>
-          </form>
+      <button class="FB-pop" id="feedback">Feedback</button>
     </footer>
   </div>
   </body>

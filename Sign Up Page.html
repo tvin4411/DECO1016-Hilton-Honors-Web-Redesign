@@ -9,6 +9,7 @@
       /* Styling for Sign Up Page's Reset Button */
       button[type=reset] {
         position: absolute;
+        bottom: -900px;
         left: 1150px;
         background-color: #D9B018;
         color: white;
@@ -106,12 +107,15 @@
         </section>
 
         <!-- Beginning of form with introduction  -->
+        <div id="content">
         <section class="formhead">
         <h1>Join Hilton Honors</h1>
             <p><em>* All field are required unless marked optional</em></p>
         </section>
+      </div>
 
         <!-- icons are beside the inputs and are used for decorative purposes -->
+        <div id="content">
         <section class="iconInputs">
           <div class="nameIcon"><img src="Images/Name.png" alt="Face" width="70" height="70"></div>
           <div class="telIcon"><img src="Images/Tel.png" alt="Phone" width="70" height="70"></div>
@@ -120,10 +124,10 @@
         </section>
 
         <!-- Content below is the form for the sign up page - it ensures users fill in the inputs to the page's exact specifications -->
-        <form name="myForm" action="End Point Page.html" onsubmit="return validate();">
+        <form name="myForm" class="form" action="End Point Page.html" onsubmit="return validate();">
           <section class="details">
             <section class="form-group">
-            <select id="title" name="title" required>
+            <select id="userTitle" name="title" required>
               <option disabeled label="Title" selected value="">Title</option>
               <option label="Mr." value="option1">Mr.</option>
               <option label="Mrs." value="option2">Mrs.</option>
@@ -131,14 +135,14 @@
               <option label="Miss." value="option4">Miss.</option>
               <option label="Don't specify" value="option5">Don't specify.</option>
             </select>
-            <input type="text" name="fname" placeholder="First Name" required>
+            <input id="userFname" type="text" name="fname" placeholder="First Name" required>
             <input type="text" name="lname" placeholder="Last Name" required>
             <br>
             </section>
 
             <section class="form-group">
             <input type="tel" name="tel" placeholder="Phone Number" pattern="[0-9].{10}" required>
-            <input type="email" name="email" placeholder="Email" required>
+            <input id="userEmail" type="email" name="email" placeholder="Email" required>
             <br>
             </section>
 
@@ -396,17 +400,18 @@
             <input type="text" name="address" placeholder="Address" required>
             <input type="number" name="zip" placeholder="Zip Code" pattern="[0-9].{4}" required>
           </section>
-        </section>
+        </div>
 
-        <section class="pass">
-          <input type="password" name="pass" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9.#@$!%*?&.]).{8,32}" required>
-          <br>
-          <input type="password" name="conpass" placeholder="Confirm Password" required>
-        </section>
+          <section class="pass">
+            <input type="password" name="pass" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9.#@$!%*?&.]).{8,32}" required>
+            <input type="password" name="conpass" placeholder="Confirm Password" required>
+          </section>
 
-        <button type="Submit" value="Join for Free">Join for Free</button>
+          <button type="submit" value="Join for Free">Join for Free</button>
+        </section>
       </form>
 
+      <div id="content">
         <section class="req">
           <h2>Create your password!</h2>
             <p><em>Must be between 8 and 32 characters</em></p>
@@ -414,6 +419,7 @@
             <p><em>Conatains at least one lowercase leter</em></p>
             <p><em>One number (0-9) or one special character</em></p>
         </section>
+      </div>
 
         <!-- Card image beside password inputs allow uses to check a box to find more information on the card -->
         <div class="card">
@@ -473,46 +479,8 @@
       </div>
 
       <!-- button used to open the pop-up feedback at the bottom-right of screen -->
-      <button onclick="openFB(this)">Feedback</button>
-        <div class="FB-pop" id="feedback">
-          <br>
+      <button class="FB-pop" id="feedback">Feedback</button
 
-          <form class="FB-container">
-            <section>
-              <p>How would you rate your experience on this site?</p>
-              <div class="rate">
-                <label for=Hate><input id="option1" name="Hate" type="radio" value="1">Hate</label>
-                <label for=Dislike><input id="option1" name="Dislike" type="radio" value="2">Dislike</label>
-                <label for=Neutral><input id="option1" name="Neutral" type="radio" value="3">Neutral</label>
-                <label for=Like><input id="option1" name="Like" type="radio" value="4">Like</label>
-                <label for=Love><input id="option1" name="Love" type="radio" value="5">Love</label>
-              </div>
-            </section>
-              <br>
-              <section>
-              <p>Please tell us the reason for your comment?</p>
-              <select id="reason" name="reason">
-              <option disabeled label="Please select an option" selected value="">Please select an option</option>
-                <option label="Honors Account" value="option1">Honors Account</option>
-                <option label="Points Activity" value="option2">Points Activity</option>
-                <option label="Missing Stay" value="option3">Missing Stay</option>
-                <option label="Sign in" value="option4">Sign in</option>
-                <option label="Stay Feedback" value="option5">Stay Feedback</option>
-                <option label="Navigation" value="option6">Navigation</option>
-                <option label="Chat" value="option7">Chat</option>
-                <option label="Other" value="option8">Other</option>
-              </select>
-            </section>
-              <br>
-              <section>
-                <p>What would you like to share with us?</p>
-                <input type="text" name="text" class="box">
-              </section>
-              <br>
-              <button type="submit" class="submitFB">Submit</button>
-              <br>
-            <a href="https://usabilla.com/privacy">Privacy Statement</a>
-          </form>
     </footer>
   </body>
 
