@@ -121,3 +121,12 @@ function validate() {
   var email = document.getElementById('userEmail').value;
   sessionStorage.setItem('emailAddress', email);
 }
+
+//Feedback overlay to open and close
+function openFB() {
+  document.getElementById("FB-pop").style.width = "100%";
+}
+
+function closeFB() {
+  document.getElementById("FB-pop").style.width = "0%";
+}

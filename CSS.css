@@ -4,12 +4,12 @@
   padding: 0;
 }
 
-html,body {
-      width: 100%;
-      height: 100%;
-      margin: 0px;
-      padding: 0px;
-      overflow-x: hidden;
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 * a {
@@ -473,7 +473,7 @@ html,body {
 }
 .bubble .joinbtn:hover, .bottom-btns .joinbtn:hover  {
   background-color: #068cc4;
-  transform: scale(1.5, 1.5);
+  transform: scale(1.2, 1.2);
 }
 .bubble .joinbtn {
   position: relative;
@@ -903,14 +903,15 @@ html,body {
 .SFR2 p {
   position: absolute;
   top: 190px;
-  left: 1200px;
+  left: 1220px;
   padding: 20px 10px 20px 10px;
+  font-size: 20px;
 }
 .SFR2 a {
   position: absolute;
   top: 220px;
   left: 860px;
-  border: 2px solid white;
+  border: 4px solid white;
   border-radius: 15%;
   color: white;
   text-align: center;
@@ -922,13 +923,13 @@ html,body {
 .SFR2 a:hover {
   transition: 0.3s ease-in-out;
   background-color: #009CDE;
-  border: 3px dashed white;
+  border: 5px dashed white;
   color: white;
 }
 .SFR3 p {
   position: absolute;
-  top: 680px;
-  left: 130px;
+  top: 690px;
+  left: 120px;
   margin-right: 400px;
 }
 .SFR4 p {
@@ -939,11 +940,12 @@ html,body {
 .SFR5 p  {
   position: absolute;
   top: 630px;
-  left: 1090px;
+  left: 1070px;
+  font-size: 15px;
 }
 
 .SFR1 p:hover, .SFR2 p:hover, .SFR3 p:hover, .SFR4 p:hover, .SFR5 p:hover{
-  transform: scale(1.5, 1.5);
+  transform: scale(1.2, 1.2);
   z-index: 8;
   cursor: pointer;
   border-width: 5px;
@@ -1428,7 +1430,7 @@ button[type="submit"]:hover {
   padding: 10px;
   border-bottom: solid black;
   position: fixed;
-  z-index: 4;
+  z-index: 100;
   }
 
   .Ebar1, .Ebar2, .Ebar3 {
@@ -1686,30 +1688,135 @@ footer div:nth-child(4) {
 }
 
 /* Feedback pop-up in footer */
-footer button:first-of-type {
+
+.FBbtn span, .FBbtnSU span {
+  position: absolute;
+  z-index: 1;
   background-color: white;
-  color: black;
+  border: 4px #009CDE solid;
+  color: #009CDE;
+  font-size: 20px;
+  font-family: Segoe UI;
   font-weight: bold;
-  padding: 16px 15px;
-  border: 3px #D9B018 solid;
-  position: relative;
-  bottom: 20px;
-  right: -1000px;
-  width: 280px;
-  z-index: 99;
+  padding: 13px 60px 13px 60px;
+  cursor: pointer;
 }
-footer button:first-of-type:hover {
-  background-color: #009CDE;
-  color: white;
-  transition: 0.8s ease-in-out;
+.FBbtn span {
+  bottom: 30px;
+  right: 50px;
+}
+.FBbtnSU span {
+  bottom: 10px;
+  right: 165px;
+  padding: 10px 60px 10px 60px;
 }
 
-.FB-pop {
-  position: relative;
-  bottom: 750px;
-  right: 15px;
+.FB-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
   z-index: 2;
-  background-color: #A7A7A7;
+  left: 0;
+  top: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.FB-content {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 100%;
+  margin-top: 20px;
+  font-family: Segoe UI;
+  color: #D9B018;
+  font-size: 23px;
+}
+
+#FB-pop span {
+  text-align: right;
+  position: relative;
+  top: -120px;
+  left: 55%;
+  opacity: 1;
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+  font-size: 80px;
+  font-family: Simple Joys;
+}
+#FB-pop span:hover {
+  transition: 0.8s ease-in-out;
+  opacity: 0.6;
+}
+
+.FB-content h4 {
+  color: white;
+}
+
+#FB-pop input[type=checkbox] {
+  margin: 17px;
+  margin-bottom: 37px;
+  height: 22px;
+  width: 22px;
+}
+#FB-pop label {
+  margin-right: 30px;
+}
+
+.FB-content select {
+  margin: 17px;
+  margin-bottom: 37px;
+  padding: 10px 260px 10px 10px;
+  border: 4px solid #D9B018;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+}
+
+.FB-content textarea {
+  margin: 17px;
+  width: 70%;
+  height: 180px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 4px solid #D9B018;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 15px;
+  font-family: Segoe UI;
+  resize: none;
+}
+
+.FB-content select:hover, .FB-content textarea:hover {
+  border-color: #009CDE;
+  transition: 0.6s ease-in-out;
+}
+
+.FB-content a {
+  color: #009CDE;
+  font-size: small;
+  margin: 10px;
+  position: relative;
+  top: 30px;
+}
+
+.FB-content .submitFB {
+  border: 4px solid white;
+  background-color: #009CDE;
+  color: white;
+  font-size: 25px;
+  padding: 10px 70px 10px 70px;
+  position: relative;
+  bottom: 25px;
+  left: 55%;
+  transition: 0.5s ease-in-out;
+}
+.FB-content .submitFB:hover {
+  background-color: #068cc4;
+  border-radius: 8px;
 }
 
 /* Media Queries */
@@ -1724,10 +1831,13 @@ footer button:first-of-type:hover {
 @media only screen and (max-width: 320px) {
   html body {
     flex-direction: column;
-    max-width: 50%
+    max-width: 50%;
   }
   * img {
     flex-direction: column;
-    max-width: 50%
+    max-width: 50%;
+  }
+  input {
+    max-width: 20%;
   }
 }
