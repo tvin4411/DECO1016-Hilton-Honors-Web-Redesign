@@ -20,12 +20,26 @@
     <div class="user" onclick="myUser(this)"><img src="Images/User (Dark).JPG" alt="User Icon" width="40" height="40">
       <button class="login"><a href="https://secure3.hilton.com/en/hh/customer/login/index.htm" style="text-decoration: none">Log in</a></button>
       <button class="signup"><a href="Sign Up Page.html" style="text-decoration: none">Sign up</a></button>
+      <button onclick="SMALLfindbtn(this)">Find a Hotel</button>
+        <nav id="SMALLhotel-opt">
+          <span onclick="SMALLexit(this)"><a href="index.html"></a></span>
+          <h2>Where to?</h2>
+          <input type="text" name="location" placeholder="City, State, Location or Airport">
+          <br>
+          <input type="date" name="start-cal" placeholder="Start"><h3>TO</h3><input type="date" name="end-cal" placeholder="End">
+          <br>
+          <nav class="external">
+            <a href="Rooms.html" style="text-decoration:none">Rooms</a>
+            <a href="Special Rates.html" style="text-decoration:none">Special Rates</a>
+          </nav>
+          <input type="submit" value="Enter">
+        </nav>
     </div>
   </header>
 
   <!-- Contents of Landing Page -->
 <body>
-<div id="page-container">
+<div id="page-container"
   <div id="content wrap">
     <main>
 

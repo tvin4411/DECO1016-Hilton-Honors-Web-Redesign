@@ -18,9 +18,26 @@ function findbtn(x) {
     }
 }
 
+function SMALLfindbtn(x) {
+    var x = document.getElementById("SMALLhotel-opt");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 // Closes Find a Hotel Pop-up and returns to landing page
 function exit(x) {
     var x = document.getElementById("hotel-opt");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function SMALLexit(x) {
+    var x = document.getElementById("SMALLhotel-opt");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
