@@ -132,12 +132,15 @@ function myBlu(x) {
 function validate() {
   var fname = document.getElementById('userFname').value;
   sessionStorage.setItem('firstName', fname);
-}
 
-function validate() {
   var email = document.getElementById('userEmail').value;
   sessionStorage.setItem('emailAddress', email);
 }
+
+// Gives a random 9 number for the member
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
 
 //Feedback overlay to open and close
 function openFB() {

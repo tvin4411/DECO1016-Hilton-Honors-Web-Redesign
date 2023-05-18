@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport content="width=device=width, intial-scale="1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <head>
     <title>Hilton Honors Membership</title>
     <link rel="stylesheet" href="CSS.css"><link>
@@ -12,6 +12,7 @@
     window.onload = function() {
       document.getElementById('callName').innerText = "You're in " + sessionStorage.getItem('firstName') + "!";
       document.getElementById('callEmail').innerText = "Email vertification has been sent to " + sessionStorage.getItem('emailAddress');
+      document.getElementById('memberNumber').innerHTML = getRndInteger(1,1000000000);
     };
   </script>
 
@@ -47,7 +48,7 @@
       </section>
 
       <!-- Below inform the user of their unique member number, email vertication, download stores for the app and information on what the app has to offer them -->
-      <section class="MemNum"><h2>Member Number: 000000000</h2></section>
+      <section class="MemNum">Member Number: <h2 id="memberNumber"></h2></section>
 
       <div class="email-sent">
         <img src="Images/Email sent.JPG">
