@@ -493,68 +493,75 @@
   <div>
 
     <!-- Footer remains at bottom of page containing a working feedback button, other links and logo to go to landinging page -->
-    <footer id="footer2">
-      <div class="logo"><a href="index.html"><img src="Images/Hilton Honors Logo (White).png"
-            alt="Hilton Honors Black Logo" width="190" height="110"></a></div>
-      <div>
-        <p>How can we help?<br><a href="tel:+1-855-672-1138">+1-800-4HONORS</a><br>Call us, it's toll free</p><br>
-        <p><a href="https://hiltonhonors3.hilton.com/en/support/index.html">Customer support</a><br>Online reservation
-          assistance</p>
-      </div>
-      <div>
-        <a href="https://hiltonhonors3.hilton.com/en/support/accessibility.html">Web Accessibility</a><br>
-        <a href="https://www3.hilton.com/en/terms/hhonors-discount.html">Hilton Honors Discount Terms &
-          Conditions</a><br>
-        <a href="https://hiltonhonors3.hilton.com/en/policy/global-privacy-statement/index.html">Global Privacy
-          Statement</a><br>
-        <a href="https://www.hilton.com/en/hilton-honors/personal-data-requests/">Personal Data Requests</a><br>
-        <a href="https://hiltonhonors3.hilton.com/en/policy/cookies-statement/index.html">Cookies Staement</a>
-      </div>
-      <div>
-        <a href="https://hiltonhonors3.hilton.com/en/terms/index.html">Hilton Honors Terms & Conditionst</a><br>
-        <a href="https://hiltonhonors3.hilton.com/en/policy/site-usage-agreement/index.html">Site Usage
-          Agreement</a><br>
-        <a href="http://optout.aboutads.info/#!/">Add Choices</a><br>
-        <p>©2019 Hilton</p>
-      </div>
-
-      <!-- button used to open the pop-up feedback at the bottom-right of screen -->
-      <div class="FBbtnSU"><span onclick="openFB(this)">Feedback</span></div>
-
-      <div id="FB-pop" class="FB-overlay">
-        <div class="FB-content">
-          <img src="Images/Hilton Honors Logo (White).png" alt="Hilton Honors Black Logo" width="230" height="120">
-          <span onclick="closeFB(this)"><a href="index.html"></a>Close</span>
-          <h4>How would you rate your experience on this site?</h4>
-          <label><input type="checkbox" value="1" name="hate">Hate</label>
-          <label><input type="checkbox" value="2" name="dislike">Dislike</label>
-          <label><input type="checkbox" value="3" name="neutral">Neutral</label>
-          <label><input type="checkbox" value="4" name="like">Like</label>
-          <label><input type="checkbox" value="5" name="love">Love</label>
-          <br>
-          <h4>Please select the reason for your rating</h4>
-          <select id="reason" name="reason">
-            <option disabled label="Please select an option" selected value="">Please select an option</option>
-            <option value="Honors Account">Honors Account</option>
-            <option value="Points Activity">Points Activity</option>
-            <option value="Missing Stay">Missing Stay</option>
-            <option value="Sign In">Sign In</option>
-            <option value="Stay Feedback">Stay Feedback</option>
-            <option value="Navigation">Navigation</option>
-            <option value="Chat">Chat</option>
-            <option value="Other">Other</option>
-          </select>
-          <br>
-          <h4>What would you like to share with us?</h4>
-          <textarea></textarea>
-          <br>
-          <a href="https://usabilla.com/privacy">Privacy Statement</a>
-          <a href="https://go.usabilla.com/powered_by_usabilla?utm_source=live_button&utm_medium=powered-link">Powered
-            by Usabilla</a>
-          <br>
-          <input class="submitFB" type="submit">
-        </div>
-      </div>
+    <footer>
+      <table>
+        <tr>
+          <td class="logo">
+              <a href="index.html"><img src="Images/Hilton Honors Logo (White).png" alt="Hilton Honors Black Logo" width="190" height="110"></a>
+          </td>
+          <td>
+              <p>How can we help?<br><a href="tel:+1-855-672-1138">+1-800-4HONORS</a><br>Call us, it's toll free</p><br>
+              <p><a href="https://hiltonhonors3.hilton.com/en/support/index.html">Customer support</a><br>Online reservation
+                assistance</p>
+          </td>
+          <td>
+            <div>
+              <a href="https://hiltonhonors3.hilton.com/en/support/accessibility.html">Web Accessibility</a><br>
+              <a href="https://www3.hilton.com/en/terms/hhonors-discount.html">Hilton Honors Discount Terms & Conditions</a><br>
+              <a href="https://hiltonhonors3.hilton.com/en/policy/global-privacy-statement/index.html">Global Privacy
+                Statement</a><br>
+              <a href="https://www.hilton.com/en/hilton-honors/personal-data-requests/">Personal Data Requests</a><br>
+              <a href="https://hiltonhonors3.hilton.com/en/policy/cookies-statement/index.html">Cookies Staement</a>
+            </div>
+          </td>
+          <td>
+            <div>
+              <a href="https://hiltonhonors3.hilton.com/en/terms/index.html">Hilton Honors Terms & Conditionst</a><br>
+              <a href="https://hiltonhonors3.hilton.com/en/policy/site-usage-agreement/index.html">Site Usage Agreement</a><br>
+              <a href="http://optout.aboutads.info/#!/">Add Choices</a>
+              <br>
+              <p>©2019 Hilton</p>
+            </div>
+          </td>
+          <td>
+            <div class="FBbtn"><span onclick="openFB(this)">Feedback</span></div>
+          </td>
+          <div id="FB-pop" class="FB-overlay">
+            <div class="FB-content">
+              <img src="Images/Hilton Honors Logo (White).png" alt="Hilton Honors Black Logo" width="230" height="120">
+              <span onclick="closeFB(this)"><a href="index.html"></a>Close</span>
+              <h4>How would you rate your experience on this site?</h4>
+              <label><input type="checkbox" value="1" name="hate">Hate</label>
+              <label><input type="checkbox" value="2" name="dislike">Dislike</label>
+              <label><input type="checkbox" value="3" name="neutral">Neutral</label>
+              <label><input type="checkbox" value="4" name="like">Like</label>
+              <label><input type="checkbox" value="5" name="love">Love</label>
+              <br>
+              <h4>Please select the reason for your rating</h4>
+              <select id="reason" name="reason">
+                <option disabled label="Please select an option" selected value="">Please select an option</option>
+                <option value="Honors Account">Honors Account</option>
+                <option value="Points Activity">Points Activity</option>
+                <option value="Missing Stay">Missing Stay</option>
+                <option value="Sign In">Sign In</option>
+                <option value="Stay Feedback">Stay Feedback</option>
+                <option value="Navigation">Navigation</option>
+                <option value="Chat">Chat</option>
+                <option value="Other">Other</option>
+              </select>
+              <br>
+              <h4>What would you like to share with us?</h4>
+              <textarea></textarea>
+              <br>
+              <a href="https://usabilla.com/privacy">Privacy Statement</a>
+              <a href="https://go.usabilla.com/powered_by_usabilla?utm_source=live_button&utm_medium=powered-link">Powered by
+                Usabilla</a>
+              <br>
+              <input class="submitFB" type="submit">
+            </div>
+          </div>
+        </tr>
+      </table>    
     </footer>
 </body>
 

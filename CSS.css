@@ -28,6 +28,20 @@ html, body {
   cursor: pointer;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+#content {
+  display: flex;
+  justify-content: center;
+  float: left;
+  clear: both;
+  margin: 10px 0;
+  border-top: 5px solid #A7A7A7;
+  width: 100%;
+}
+
 /* LANDING PAGE */
 
 /* Head Bar */
@@ -175,7 +189,7 @@ html, body {
 .Wmenu .open .login, .Wmenu .open .signup, .Wmenu .open button:last-of-type{
   color: white;
   padding: 15px 35px 15px 35px;
-  border-radius: 30%;
+  border-radius: 20px;
   font-weight: bold;
   visibility: visible;
 }
@@ -298,15 +312,14 @@ html, body {
 }
 
 /* Hotel Image + Find a Hotel Button Pop Up (Big version) */
-.container img {
-  width: 140%;
-  height: 800px;
-  padding: 70px 0 30px 0;
+.titleImage {
+  width: 100%;
+  height: 50%;
 }
 
 .container button:first-of-type {
   position: absolute;
-  top: 10%;
+  top: 30%;
   left: 41%;
   background-color: #D9B018;
   color: white;
@@ -548,15 +561,15 @@ html, body {
 }
 
 /* Continuation of LANDING PAGE */
+.bubblePerks {
+  background-color: #104C97;
+}
 
 /* Join Button & Phrase */
 .bubble {
-  float: left;
+  margin: 20px;
   padding: 50px;
-  position: relative;
-  top: 180px;
-  left: 70px;
-  width: 700px;
+  width: 650px;
   height: 400px;
   border: solid white 8px;
   border-radius: 80px;
@@ -615,34 +628,30 @@ html, body {
   left: 110px;
 }
 /* Bottom-btns join button is at the bottom of page */
-.bottom-btns .joinbtn {
-  position: relative;
-  bottom: -500px;
-  left: 550px;
-  right: 50%;
+.bottom-btns {
+  margin: 0 auto;
+  padding: 50px 50px 80px 50px;
+}
+.joinbtn {
   border: 4px solid black;
-  padding: 50px 70px 50px 70px;
+  padding: 50px 70px;
   font-weight: bold;
 }
 
 /* Perks Information */
-.perks .block  {
-  background-color: #104C97;
-  width: 1481px;
-  height: 1000px;
-  z-index: -99;
-  display: block;
-  content: "";
+.perkText {
+  padding: 20px 0;
+}
+.perkText h2, .perkText p {
+  padding: 3px 10px;
+  color: white;
+  text-align: center;
 }
 
-.perks h2, .perks p {
-  position: relative;
-  width: 110%;
-  height: 100%;
-  font-size: 40px;
-  color: white;
-  padding: 30px 0 10px 0;
-  text-align: center;
+.perks {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .perks p {
@@ -652,18 +661,13 @@ html, body {
 }
 
 .perks button {
-  float: left;
-  clear: both;
+  margin: 10px;
   width: 95px;
   height: 95px;
   border-radius: 50%;
   background-color: #009CDE;
   border: 2px white solid;
-  margin-bottom: 70px;
   transition: background-color 0.5s ease-in;
-  position: relative;
-  top: -240px;
-  right: -1370px;
 }
 .perks button:hover {
   background-color: #068cc4;
@@ -676,13 +680,6 @@ html, body {
   border: 5px double #D9B018;
   color: black;
   font-size: 15px;
-  display: none;
-  position: relative;
-  right: 30px;
-  width: 530px;
-  height: 120px;
-  margin-left: 850px;
-  margin-right: 90px;
   padding: 5px;
 }
 
@@ -691,64 +688,18 @@ html, body {
 }
 
 #speechR1 a, #speechR2 a, #speechR3 a, #speechR4 a, #speechR5 a {
+  display: flex;
   color: blue;
-  font-size: 15px;
-}
-
-#speechR1 img, #speechR2 img, #speechR3 img, #speechR4 img, #speechR5 img {
-  position: absolute;
-  top: 15%;
-  left: 43%;
-  border-radius: 50px;
-  opacity: 0.2;
-  width:80px;
-  height:80px;
-}
-
-#speechR1 {
-  position: relative;
-  top: 30px;
-}
-
-#speechR2 {
-  position: relative;
-  top: 70px;
-}
-
-#speechR3 {
-  position: relative;
-  top: 110px;
-}
-
-#speechR4 {
-  position: relative;
-  top: 150px;
-  height: 130px;
-}
-
-#speechR5 {
-  position: relative;
-  top: 180px;
-}
-
-/* The vertical borders splitting information content */
-
-.v-border1, .v-border2 {
-  height: 5px;
-  width: 1300px;
-  background-color: #A7A7A7;
-  padding: 10px;
-  display: block;
-  margin-left: 100px;
-  position: relative;
-  top:-100px;
+  font-size: 10px;
+  justify-content: flex-end;
 }
 
 /* Information - Member Tier */
 
-.member-tier {
-  position: relative;
-  top: -50px;
+.member-tier table {
+  display: flex;
+  justify-content: center;
+  border-spacing: 30px;
 }
 
 .member-tier h2 {
@@ -760,31 +711,40 @@ html, body {
 .member-tier p {
   text-align: center;
   font-size: 30px;
-  padding-top: 5px;
-  padding-right: 150px;
-  position: relative;
-  left: 5%;
-}
-
-.member-tier img {
-  position: absolute;
-  right: -5em;
-  z-index: -2;
-  border: 4px dotted #D9B018;
 }
 
 .member-tier button {
+  display: flex;
+  justify-content: center;
   height: 40px;
+  padding: 40px 10px 100px 0px;
+  margin-left: auto;
+  margin-right: auto;
   border: 4px solid white;
   color: white;
   text-align: center;
   font-family: Simple Joys;
   font-size: 50px;
   font-weight: bold;
-  padding: 40px 10px 100px 0px;
-  float: left;
-  clear: both;
   cursor: pointer;
+}
+
+.member-tier .diamond {
+  width: 300px;
+  background-color: rgb(178, 92, 199);
+}
+.member-tier .gold {
+  width: 350px;
+  background-color: #D9B018;
+}
+.member-tier .silver {
+  width: 400px;
+  background-color: rgb(143, 143, 143);
+}
+.member-tier .blue {
+  width: 450px;
+  background-color: rgb(4, 160, 221);
+  margin-bottom: 40px;
 }
 
 .member-tier button:hover {
@@ -792,178 +752,147 @@ html, body {
   border: 4px dashed black;
 }
 
-#D-tier, #G-tier, #S-tier, #B-tier {
-  color: white;
-  width: 930px;
-  height: 620px;
-  border: 6px dashed black;
+.member-tier div {
+  width: 650px;
   margin: 25px;
-  position: relative;
-  bottom: 10px;
-  left: 500px;
-  display:none;
-  z-index: -1;
+}
+.member-tier ul {
+  display: block;
+  list-style-type: circle;
 }
 
-.member-tier button:nth-child(3) {
-  width: 300px;
-  background-color: rgb(178, 92, 199);
-  position: relative;
-  left: 280px;
-  margin-top: 40px;
+.perksTable {
+  height: 600px;
+  border: 4px dotted #D9B018;
 }
+
+#D-tier, #G-tier, #S-tier, #B-tier {
+  display: none;
+  padding: 40px;
+  border: 6px dashed black;
+  color: white;
+}
+#D-tier p, #G-tier p, #S-tier p, #B-tier p {
+  font-size: 25px;
+}
+
 #D-tier {
   background-color: rgb(178, 92, 199);
-}
-#D-tier p {
- text-align: left;
- font-size: 30px;
- font-weight: bold;
- position: relative;
- top: 55px;
- left: -60px;
- margin-bottom: 120px;
-}
-#D-tier ul:first-of-type {
- font-size: 25px;
- position: absolute;
- top: 140px;
- padding-left: 250px;
- margin-right: 20px;
- z-index: 3;
-}
-#D-tier ul:last-child {
- font-size: 25px;
- position: absolute;
- top: 330px;
- padding-left: 300px;
- margin-right: 20px;
-z-index: 3;
-}
-
-.member-tier button:nth-child(4) {
-  width: 450px;
-  background-color: #D9B018;
-  position: relative;
-  left: 200px;
 }
 #G-tier {
   background-color: #D9B018;
 }
-#G-tier p {
-  text-align: left;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 140px;
-  padding-right: 150px;
-}
-#G-tier p:first-of-type {
- position: relative;
- top: 40px;
- margin-left: 300px;
-}
-#G-tier p:last-of-type {
- text-align: left;
- position: absolute;
- top: 280px;
- left: 300px;
- font-size: 24px;
-}
-#G-tier ul:first-of-type {
- font-size: 25px;
- position: absolute;
- top: 130px;
- padding-left: 300px;
- margin-right: 20px;
-}
-#G-tier ul:last-child {
- font-size: 25px;
- position: absolute;
- top: 360px;
- padding-left: 350px;
- margin-right: 20px;
-}
-
-.member-tier button:nth-child(5) {
-  width: 600px;
-  background-color: silver;
-  position: relative;
-  left: 120px;
-}
 #S-tier {
-  background-color: silver;
-}
-#S-tier p {
- text-align: left;
- font-size: 30px;
- font-weight: bold;
- position: relative;
- top: 50px;
- left: -50px;
- margin-bottom: 40px;
-}
-#S-tier ul {
- font-size: 25px;
- position: absolute;
- top: 290px;
- left: -100px;
- padding-left: 420px;
-}
-
-.member-tier button:nth-child(6) {
-  width: 750px;
-  background-color: rgb(4, 160, 221);
-  position: relative;
-  left: 40px;
-  margin-bottom: 40px;
+  background-color: rgb(143, 143, 143);
 }
 #B-tier {
   background-color: rgb(4, 160, 221);
 }
-#B-tier p {
- text-align: left;
- font-size: 30px;
- font-weight: bold;
- position: relative;
- top: 40px;
- left: -20px;
- margin-bottom: 140px;
-}
-#B-tier ul {
- font-size: 24px;
- position: absolute;
- top: 150px;
- left:-40px;
- padding-left: 350px;
-}
 
 /* Information - Rewards and Offers */
-
-.SFR, .EO, .v-border2 {
-  position: relative;
-  top: -800px;
-  float: left;
-  clear: both;
-}
-.SFR {
-  position: relative;
-  left:50px;
-}
 
 .SFR h2, .EO h2 {
   text-align: center;
   font-size: 60px;
   padding: 30px 0 10px 0;
-  position: relative;
-  left: 350px;
 }
 
 .SFR p, .EO p {
   text-align: center;
   font-size: 30px;
   padding: 5px 0 30px 0;
-  position: relative;
-  left: 350px;
+}
+
+/* Erase */
+.SFR table td {
+  border: 2px solid black;
+}
+
+.SFR table {
+  display: flex;
+  justify-content: center;
+  border-spacing: 15px;
+}
+
+.SFR div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.SFR1, .SFR2 {
+  width: 500px;
+  height: 400px;
+  padding: 20px 10px;
+  background-size: cover;
+}
+.SFR1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("Images/Book with Points.jpg");
+}
+.SFR2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("Images/Exclusive Experiences.jpg");
+}
+
+.SFR1 p, .SFR2 p  {
+  padding: 10px 50px;
+  border: 2px dotted white;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-family: Segoe UI;
+  background-color: #D9B018;
+}
+.SFR2 a {
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background-color: black;
+  padding: 20px;
+  margin: 10px;
+  font-size: 25px;
+}
+.SFR2 a:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #009CDE;
+  border: 5px dashed white;
+  color: white;
+}
+
+
+.SFR3 p, .SFR4 p, .SFR5 p   {
+  padding: 20px 30px;
+  border: 2px dotted white;
+  text-align: center;
+  font-size: 15px;
+  font-family: Segoe UI;
+  color: white;
+  background-color: #D9B018;
+  z-index: 7;
+}
+
+.SFR3, .SFR4, .SFR5 {
+  width: 300px;
+  height: 320px;
+  padding: 20px 10px;
+  background-size: cover;
+}
+.SFR3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("Images/Shop with Points.jpg");
+}
+.SFR4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("Images/Free Nights.jpg");
+}
+.SFR5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("Images/Pool your Points.jpg");
+}
+
+.SFR1 p:hover, .SFR2 p:hover, .SFR3 p:hover, .SFR4 p:hover, .SFR5 p:hover{
+  transform: scale(1.1, 1.1);
+  z-index: 8;
+  cursor: pointer;
+  border-width: 5px;
 }
 
 .SFR1 strong, .SFR2 strong, .SFR3 strong, .SFR4 strong, .SFR5 strong {
@@ -974,246 +903,78 @@ z-index: 3;
   text-shadow: 2px 2px #D9B018;
 }
 
-.SFR1 strong {
-  position: absolute;
-  top: 500px;
-  left: 80px;
-}
-.SFR2 strong {
-  position: absolute;
-  top: 450px;
-  left: 740px;
-}
-.SFR3 strong, .SFR4 strong, .SFR5 strong {
-  position: absolute;
-  top: 630px;
-  font-size: 30px;
-}
-.SFR3 strong {
-  position: absolute;
-  left: 120px;
-}
-.SFR4 strong {
-  position: absolute;
-  left: 520px;
-}
-.SFR5 strong {
-  position: absolute;
-  left: 920px;
-}
 
-.SFR1 p, .SFR2 p  {
-  text-align: center;
-  color: white;
-  z-index: 7;
-  font-size: 15px;
+/* Exclusiv Offers */
+
+.EO table {
+  border-spacing: 50px;
+}
+.EO table td {
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+}
+.EO th strong {
+  color: #D9B018;
   font-family: Segoe UI;
-  border: 2px dotted white;
-  background-color: #D9B018;
-  padding: 10px;
-}
-
-.SFR3 p, .SFR4 p, .SFR5 p   {
+  font-size: 50px;
+  text-shadow: 2px 2px #009CDE;
   text-align: center;
-  color: white;
-  z-index: 7;
-  font-size: 15px;
-  font-family: Segoe UI;
-  border: 2px dotted white;
-  background-color: #D9B018;
-  padding: 20px;
-}
-
-.SFR1 p {
-  position: absolute;
-  top: 220px;
-  left: 80px;
-  margin-right: 100px;
-}
-.SFR2 p {
-  position: absolute;
-  top: 190px;
-  left: 1220px;
-  padding: 20px 10px 20px 10px;
-}
-.SFR2 a {
-  position: absolute;
-  top: 220px;
-  left: 860px;
-  border: 4px solid white;
-  border-radius: 15%;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  background-color: black;
-  padding: 20px 90px 20px 90px;
-  font-size: 25px;
-}
-.SFR2 a:hover {
-  transition: 0.3s ease-in-out;
-  background-color: #009CDE;
-  border: 5px dashed white;
-  color: white;
-}
-.SFR3 p {
-  position: absolute;
-  top: 690px;
-  left: 120px;
-  margin-right: 400px;
-}
-.SFR4 p {
-  position: absolute;
-  top: 780px;
-  left: 560px;
-}
-.SFR5 p  {
-  position: absolute;
-  top: 630px;
-  left: 1070px;
-  font-size: 15px;
-}
-
-.SFR1 p:hover, .SFR2 p:hover, .SFR3 p:hover, .SFR4 p:hover, .SFR5 p:hover{
-  transform: scale(1.2, 1.2);
-  z-index: 8;
-  cursor: pointer;
-  border-width: 5px;
-}
-
-.SFR1 img, .SFR2 img {
-  z-index: -3;
-  width: 600px;
-  height: 370px;
-  left: 50px;
-}
-.SFR1 img {
-  position: absolute;
-  left: 50px;
-}
-.SFR2 img {
-  position: absolute;
-  left: 700px;
-}
-
-.SFR3 img, .SFR4 img, .SFR5 img {
-  width: 300px;
-  height: 320px;
-  z-index: -3;
-  display: inline-block;
-  position: absolute;
-  top: 620px;
-}
-.SFR3 img {
-  position: absolute;
-  left: 100px;
-}
-.SFR4 img {
-  position: absolute;
-  left: 500px;
-}
-.SFR5 img {
-  position: absolute;
-  left: 900px;
-  display: block;
-}
-
-.v-border2:last-of-type {
-  margin-top: 800px;
-}
-
-.EO h2, .EO p  {
-  position: static;
-  padding-left: 200px;
 }
 
 .EO1, .EO2, .EO3, .EO4 {
-  position: absolute;
-  float: left;
-  clear: both;
+  width: 500px;
+  height: 500px;
+  background-size: cover;
 }
 .EO1 {
-  left: 10px;
+  background-image: url("Images/Earn 130K.png");
 }
 .EO2 {
-  top: 850px;
-  left: 10px;
+  background-image: url("Images/Best.png");
 }
 .EO3 {
-  left: 700px;
+  background-image: url("Images/Power Promotion.png");
 }
 .EO4 {
-  top: 850px;
-  left: 700px;
-}
-
-.EO1img, .EO2img, .EO3img, .EO4img {
-  display: block;
-  width: 600px;
-  height: 560px;
-  margin: 20px;
-  position: relative;
-  left: 70px;
-}
-
-.EO1 strong, .EO2 strong, .EO3 strong, .EO4 strong {
-  z-index: 3;
-  color: white;
-  font-family: Segoe UI;
-  font-size: 50px;
-  text-shadow: 2px 2px #D9B018;
-  text-align: center;
-  position: relative;
-  bottom: 500px;
-  left: 140px;
-}
-.EO1 strong {
-  left: 110px;
-}
-
-.EO1 em, .EO2 em, .EO3 em, .EO4 em {
-  font-size: 38px;
+  background-image: url("Images/Ride.png");
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 70px;
-  right: 0;
-  height: 90%;
   width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 20px;
   opacity: 0;
   transition: .5s ease;
-  background-color: #000;
-  }
-
+}
 .EO1:hover .overlay, .EO2:hover .overlay, .EO3:hover .overlay, .EO4:hover .overlay {
   opacity: 0.8;
 }
 
 .EOtext {
+  display: flex;
+  flex-direction: column;
+  padding: 150px 50px 30px 50px;
   color: white;
-  position: absolute;
-  top: 300px;
-  left: -30px;
-  transform: scale(0.8, 0.8) translate(-15%, -50%);
-  display: inline-inline-block;
-  }
+}
 
+.EO1 p, .EO2 p, .EO3 p, .EO4 p {
+  font-size: 20px;
+}
+.EO1 em, .EO2 em, .EO3 em, .EO4 em {
+  font-size: 25px;
+}
 .EO1 a, .EO2 a, .EO3 a, .EO4 a {
-  padding: 30px;
+  width: 50%;
+  padding: 25px;
+  margin-left: auto;
   border: 2px solid white;
-  border-radius: 15%;
+  border-radius: 15px;
   background-color: #104C97;
   color: white;
   font-weight: bold;
   font-size: 20px;
-  opacity: 0.8;
-  position: absolute;
-  bottom: -100px;
-  right: -100px;
 }
-
 .EO1 a:hover, .EO2 a:hover, .EO3 a:hover, .EO4 a:hover {
   border: 3px dashed;
   background-color: #009CDE;
@@ -1714,49 +1475,22 @@ button[type="submit"]:hover {
   float: right;
 }
 
-
 /* FOOTER for all pages */
 
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-#content-wrap {
-  padding-bottom: 200px;
-  display: inline-block;
-  /* float: left; */
-  clear: both;
-}
-#content {
-  float: left;
-  clear: both;
-}
-
 footer {
-  background-color: white;
-  border-top: 3px solid black;
+  position: relative;
+  bottom: 0;
   width: 100%;
   height: 200px;
   margin: 0;
-  position: relative;
-  bottom: 0;
+  border-top: 3px solid black;
   float: left;
   clear: both;
+  background-color: white;
 }
 
-#footer1 {
-  position: relative;
-  bottom: -600px;
-}
-#footer2 {
-  position: absolute;
-  left: 90px;
-  bottom: -1150px;
-}
-#footer3 {
-  position: absolute;
-  bottom: -500px;
-  z-index: 99;
+footer td {
+  padding: 25px;
 }
 
 footer a {
@@ -1765,40 +1499,17 @@ footer a {
   font-size: 15px;
 }
 footer p {
-  font-weight:500;
+  font-weight: 500;
 }
 
 footer .logo {
   margin: 30px;
 }
 
-footer div:nth-child(2) {
-  float: left;
-  clear: both;
-  margin: 10px;
-  position: absolute;
-  bottom: 20px;
-  left: 250px;
-}
-footer div:nth-child(3) {
-  float: right;
-  margin: 20px;
-  position: absolute;
-  bottom: 10px;
-  right: 570px;
-}
-footer div:nth-child(4) {
-  float: right;
-  margin: 20px;
-  position: absolute;
-  bottom: 50px;
-  right: 290px;
-}
 
 /* Feedback pop-up in footer */
 
 .FBbtn span, .FBbtnSU span {
-  position: absolute;
   z-index: 1;
   background-color: white;
   border: 4px #009CDE solid;
