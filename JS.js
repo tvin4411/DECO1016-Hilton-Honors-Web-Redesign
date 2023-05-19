@@ -128,15 +128,6 @@ function myBlu(x) {
     }
 }
 
-// Local Storage used to store in user's first name and emaill address from input
-function validate() {
-  var fname = document.getElementById('userFname').value;
-  sessionStorage.setItem('firstName', fname);
-
-  var email = document.getElementById('userEmail').value;
-  sessionStorage.setItem('emailAddress', email);
-}
-
 // Gives a random 9 number for the member
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;

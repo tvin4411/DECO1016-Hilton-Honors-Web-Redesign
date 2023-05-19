@@ -32,14 +32,17 @@ html, body {
   position: relative;
   min-height: 100vh;
 }
-#content {
+.content {
   display: flex;
   justify-content: center;
   float: left;
   clear: both;
   margin: 10px 0;
-  border-top: 5px solid #A7A7A7;
   width: 100%;
+}
+.h-border {
+  padding: 40px 0;
+  border-top: 5px solid #A7A7A7;
 }
 
 /* LANDING PAGE */
@@ -803,7 +806,6 @@ html, body {
   padding: 5px 0 30px 0;
 }
 
-/* Erase */
 .SFR table td {
   border: 2px solid black;
 }
@@ -1016,43 +1018,44 @@ html, body {
   visibility: visible;
 }
 
-/* Reminders of benefits Icons */
-
-.iconBene {
-  z-index: 99;
-  position: fixed;
-  top: 4em;
-  background-color: #104C97;
+/* Title */
+.headIcon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin-top: 70px;
 }
-.iconBene img {
-  width: 95px;
-  height: 140px;
-  margin: 25px 0;
-  float: left;
-  clear: both;
-}
-
-/* Sign-up Form */
 
 .formhead h1 {
-  position: absolute;
-  top: 12%;
-  left: 40%;
   font-size: 50px;
 }
-
 .formhead p em {
-  position: absolute;
-  top: 23%;
-  left: 40%;
+  padding: 15px 0;
   font-size: 20px;
   font-family: Segoe UI;
 }
 
-form .details {
-  position: relative;
-  top: 15em;
-  left: 20%;
+/* Reminders of benefits Icons */
+
+.iconBene {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #104C97;
+}
+.iconBene img {
+  width: 65px;
+  height: 80px;
+}
+
+/* Sign-up Form */
+
+.form .content-items {
+  display: flex;
+  justify-content: center;
 }
 
 .form-layout {
@@ -1071,15 +1074,12 @@ form .details {
 
 .form-group:nth-of-type(1) input {
   width: 300px;
-  margin: 5px;
 }
 .form-group:nth-of-type(2) table td input[type=tel]{
   width: 250px;
-  margin-right: 20px;
 }
 .form-group:nth-of-type(2) table td input[type=email] {
   width: 350px;
-  margin-left: 15px;
 }
 .form-group:nth-of-type(3) input {
   width: 200px;
@@ -1121,17 +1121,12 @@ form .details {
 }
 
 /* Create a password section  */
-.req {
-  position: absolute;
-  top: 45em;
-  left: 20%;
-}
-.req h2 {
-  position: relative;
-  left: 300px;
+
+.formPass h2 {
   margin: 15px 0 20px 0;
   font-size: 40px;
 }
+
 .req table {
   border-collapse: separate;
   border-spacing: 20px;
@@ -1141,34 +1136,27 @@ form .details {
   background-color: rgb(231, 195, 65, 0.5);
   padding: 10px 100px 10px 100px;
 }
-.req p em {
-  position: relative;
-  top: 140px;
+.req em {
   float: left;
-  margin-top: 20px;
+  margin: 10px;
   text-align: center;
   font-size: 20px;
   font-family: Segoe UI;
 }
 
+/* Password Inputs */
 .pass {
-  float: left;
-  clear: both;
+  width: 40%;
 }
 .pass input {
-  position: absolute;
-  left: 50px;
-  bottom: -0.5em;
-  padding: 20px 200px 20px 20px;
-  margin: 10px 0 35px 200px;
+  float: left;
+  clear: both;
+  width: 350px;
+  padding: 20px 10px;
+  margin: 15px 10px;
   border: 2px solid;
   border-radius: 20px;
   font-size: 18px;
-}
-.pass input:first-of-type {
-  position: absolute;
-  left: 50px;
-  bottom: 5em;
 }
 .pass input:hover {
   background-color: #F5F5F5;
@@ -1177,65 +1165,50 @@ form .details {
   color: black;
 }
 
-/* Join Button leads to end point page */
-
-button[type="submit"] {
-  position: absolute;
-  bottom: -825px;
-  left: 30%;
-  padding: 60px 140px;
-  margin: 40px;
-  background-color: #009CDE;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  font-size: 50px;
-  font-weight: bold;
-}
-button[type="submit"]:hover {
-  background-color: #068cc4;
-  transition: 1s ease;
-}
-
+/* Card Interactive */
 .card img {
-  position: absolute;
-  top: 57em;
-  left: 700px;
-  z-index: -1;
+  width: 600px;
+  height: 200px;
+}
+
+/* Links are active within image and will lead to a different page + Terms & Conditions + Fine print */
+.sLinks p {
+  position: relative;
+  top: -20px;
+  padding: 0 25px;
+  word-spacing: 12px;
+  font-size: 10px;
 }
 
 /* Image next to password input allows users to check it if interested in the card or not */
 
+.card strong {
+  position: relative;
+  left: 45px;
+}
+
 .checkbox {
-  display: block;
-  position: absolute;
-  top: 60em;
-  left: 760px;
-  padding: 0 0px 21px 38px;
-  margin-bottom: 12px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  position: relative;
+  left: 10px;
+  padding: 10px;
   user-select: none;
   font-size: 20px;
   color: white;
   background-color: #1d1d1d;
-  border: 2px #1d1d1d solid;
-  border-left-width: 30px;
+  cursor: pointer;
 }
 .checkbox input {
   position: absolute;
   opacity: 0;
   height: 0;
   width: 0;
-  padding-left:40px;
 }
 .checkagree {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
+  top: 10px;
+  left: 10px;
+  height: 23px;
+  width: 23px;
   background-color: white;
 }
 .checkbox:hover input ~ .checkagree {
@@ -1253,8 +1226,8 @@ button[type="submit"]:hover {
   display: block;
 }
 .checkbox .checkagree:after {
-  left: 9px;
-  top: 5px;
+  left: 8px;
+  top: 3px;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -1264,27 +1237,42 @@ button[type="submit"]:hover {
   transform: rotate(45deg);
 }
 
-/* Links are active within image and will lead to a different page + Terms & Conditions + Fine print */
+/* Join Button leads to end point page */
 
-.sLinks p {
-  position: absolute;
-  top: 1310px;
-  left: 1220px;
-  word-spacing: 12px;
-  font-size: 13px;
+.joinFormBtn {
+  padding: 60px 140px;
+  margin: 40px;
+  background-color: #009CDE;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+.joinFormBtn:hover {
+  background-color: #068cc4;
+  transition: 1s ease;
+}
+
+/* Terms & Conditions Paragraph */
+.TC {
+  display: none;
+  width: 40%;
+  padding: 60px 20px;
 }
 .TC p {
-  position: absolute;
-  top: 80em;
-  left: 750px;
-  padding: 0 40px 0 10px;
   line-height: 1.5;
 }
 
+/* Allows T&C to show up when join button is hovered over */
+.joinFormBtn:hover + .TC {
+  display: block;
+}
+
+/* Extra notes */
 .note p {
-  position: absolute;
-  top: 104em;
-  left: 180px;
+  padding: 20px;
+  text-align: right;
   line-height: 1.5;
   font-size: 13px;
 }
@@ -1649,10 +1637,6 @@ footer .logo {
     top: 13em;
   }
   /* Sign Up Page */
-  .pass {
-    position: absolute;
-    top: 75em;
-  }
   .checkbox strong {
     padding-right: 260px;
   }
