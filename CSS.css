@@ -625,10 +625,17 @@ body {
 
 /* Continuation of LANDING PAGE */
 .bubblePerks {
+  width: 100%;
   background-color: #104C97;
 }
 
 /* Join Button & Phrase */
+.bubbleParent {
+  display: flex;
+  justify-content: center;
+  margin: 80px 20px;
+}
+
 .bubble {
   margin: 20px;
   padding: 50px;
@@ -723,6 +730,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  display: flex;
+  justify-content: center;
 }
 
 .perks p {
@@ -733,8 +742,8 @@ body {
 
 .perks button {
   margin: 10px;
-  width: 95px;
-  height: 95px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   background-color: #009CDE;
   border: 2px white solid;
@@ -747,11 +756,13 @@ body {
   cursor: pointer;
 }
 
+
 #speechR1,
 #speechR2,
 #speechR3,
 #speechR4,
 #speechR5 {
+  display: none;
   background-color: white;
   border: 5px double #D9B018;
   color: black;
