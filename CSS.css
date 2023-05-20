@@ -1224,35 +1224,35 @@ body {
   font-size: 20px;
 }
 
-.form-group:nth-of-type(1) input {
+.form-group #userFname, .form-group #userLname {
   width: 300px;
 }
 
-.form-group:nth-of-type(2) table td input[type=tel] {
+.form-group #userNum {
   width: 250px;
 }
 
-.form-group:nth-of-type(2) table td input[type=email] {
+.form-group #userEmail {
   width: 350px;
 }
 
-.form-group:nth-of-type(3) input {
-  width: 200px;
-}
-
-.form-group:nth-of-type(3) select {
+.form-group #userCountry {
   width: 300px;
 }
 
-.form-group:nth-of-type(3) table tr:last-of-type input[type=text] {
+.form-group #userCity {
+  width: 200px;
+}
+
+.form-group #userAddress {
   width: 400px;
 }
 
-.form-group:nth-of-type(3) table tr:last-of-type input[type=number] {
+.form-group #userZip {
   width: 150px;
 }
 
-.form-group select:hover,
+.form-group select:hover, 
 .form-group input:hover {
   background-color: #F5F5F5;
   border: 2px solid #009CDE;
@@ -1260,18 +1260,11 @@ body {
   color: black;
 }
 
-.form-group select:focus,
+.form-group select:focus, 
 .form-group input:focus {
   background-color: #F5F5F5;
-  border: 2px solid lightgreen;
+  outline: 2px solid lightgreen;
   transition: 0.8s ease-in-out;
-  color: black;
-}
-
-.form-group select:visited,
-.form-group input:visited {
-  background-color: #F5F5F5;
-  outline: red;
   color: black;
 }
 
@@ -1290,7 +1283,7 @@ body {
 
 .formPass h2 {
   margin: 15px 0 20px 0;
-  font-size: 40px;
+  font-size: 40px; 
 }
 
 .req table {
@@ -1320,9 +1313,9 @@ body {
 .pass input {
   float: left;
   clear: both;
-  width: 350px;
+  width: 360px;
   padding: 20px 10px;
-  margin: 15px 10px;
+  margin: 15px 50px;
   border: 2px solid;
   border-radius: 20px;
   font-size: 18px;
@@ -1333,6 +1326,12 @@ body {
   border: 2px solid #009CDE;
   transition: 0.5s ease;
   color: black;
+}
+
+.pass #message {
+  float: left;
+  clear: both;
+  padding: 10px 50px;
 }
 
 /* Card Interactive */
@@ -1416,7 +1415,7 @@ body {
 
 /* Join Button leads to end point page */
 
-.joinFormBtn {
+#joinFormBtn {
   padding: 60px 140px;
   margin: 40px;
   background-color: #009CDE;
@@ -1427,7 +1426,7 @@ body {
   font-weight: bold;
 }
 
-.joinFormBtn:hover {
+#joinFormBtn:hover {
   background-color: #068cc4;
   transition: 1s ease;
 }
@@ -1444,7 +1443,7 @@ body {
 }
 
 /* Allows T&C to show up when join button is hovered over */
-.joinFormBtn:hover+.TC {
+#joinFormBtn:hover+.TC {
   display: block;
 }
 
