@@ -4,7 +4,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -16,7 +17,12 @@ html, body {
   color: white;
 }
 
-* h1, * h2, * h3, * p, * a, * ul {
+* h1,
+* h2,
+* h3,
+* p,
+* a,
+* ul {
   font-family: Segoe UI;
 }
 
@@ -24,7 +30,9 @@ html, body {
   font-family: Simple Joys;
 }
 
-* input, * select, * button {
+* input,
+* select,
+* button {
   cursor: pointer;
 }
 
@@ -32,6 +40,7 @@ html, body {
   position: relative;
   min-height: 100vh;
 }
+
 .content {
   display: flex;
   justify-content: center;
@@ -40,6 +49,7 @@ html, body {
   margin: 10px 0;
   width: 100%;
 }
+
 .h-border {
   padding: 40px 0;
   border-top: 5px solid #A7A7A7;
@@ -56,9 +66,11 @@ html, body {
   border-bottom: solid black;
   position: fixed;
   z-index: 100;
-  }
+}
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 65px;
   height: 8px;
   background-color: #D9B018;
@@ -72,18 +84,23 @@ html, body {
   cursor: pointer;
 }
 
-.extend .bar1, .extend .bar2, .extend .bar3 {
+.extend .bar1,
+.extend .bar2,
+.extend .bar3 {
   background-color: black;
   border: 0.5px solid #D9B018;
   padding: 3px;
   opacity: 0.9;
 }
+
 .extend .bar1 {
   transform: scale(3, 8) translate(15px, 1.5px);
 }
+
 .extend .bar2 {
   transform: scale(3, 8) translate(15px, 7px);
 }
+
 .extend .bar3 {
   transform: scale(3, 8) translate(15px, 12.5px);
 }
@@ -93,6 +110,7 @@ html, body {
   transition: width 0.6s ease-in;
   transition-delay: 0.5s;
 }
+
 .extend a {
   transform: scale(1, 0.5) translate(18.5px, -6.5px);
   visibility: visible;
@@ -102,6 +120,7 @@ html, body {
   font-size: 6px;
   font-weight: bold;
 }
+
 .extend a:hover {
   color: #D9B018;
 }
@@ -117,10 +136,11 @@ html, body {
   left: 10px;
   transition: 1s ease-in-out;
 }
+
 .extend .close {
   transform: scale(3, 6) translate(15px, 24px);
   visibility: visible;
-  background-color:  #009CDE;
+  background-color: #009CDE;
   border: 0.5px solid #D9B018;
   opacity: 0.9;
 }
@@ -133,14 +153,15 @@ html, body {
   width: 0;
   height: 0;
   border-left: 13px solid transparent;
-	border-right: 13px solid transparent;
-	border-bottom: 23px solid white;
+  border-right: 13px solid transparent;
+  border-bottom: 23px solid white;
 }
+
 .extend .tri:hover {
   transition: 0.7s ease-in-out;
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
-	border-bottom: 23px solid #D9B018;
+  border-bottom: 23px solid #D9B018;
 }
 
 .Wmenu .logo {
@@ -164,32 +185,36 @@ html, body {
 }
 
 .Wmenu .login {
-  background-color:#104C97;
+  background-color: #104C97;
   position: fixed;
   top: 10px;
   right: 200px;
   visibility: hidden;
 }
+
 .Wmenu .login:hover {
   transition: 0.3s ease-in-out;
-  transform: scale(1.1,1.1);
-  background-color:#0a3d7d;
+  transform: scale(1.1, 1.1);
+  background-color: #0a3d7d;
 }
 
 .Wmenu .signup {
-  background-color:#009CDE;
+  background-color: #009CDE;
   position: fixed;
   top: 10px;
   right: 70px;
   visibility: hidden;
 }
+
 .Wmenu .signup:hover {
   transition: 0.3s ease-in-out;
-  transform: scale(1.1,1.1);
+  transform: scale(1.1, 1.1);
   background-color: #068cc4;
 }
 
-.Wmenu .open .login, .Wmenu .open .signup, .Wmenu .open button:last-of-type{
+.Wmenu .open .login,
+.Wmenu .open .signup,
+.Wmenu .open button:last-of-type {
   color: white;
   padding: 15px 35px 15px 35px;
   border-radius: 20px;
@@ -211,9 +236,10 @@ html, body {
   font-weight: bold;
   visibility: hidden;
 }
+
 .user button:last-of-type:hover {
   transition: 0.3s ease-in-out;
-  transform: scale(1.1,1.1);
+  transform: scale(1.1, 1.1);
   background-color: #c9a112cb;
 }
 
@@ -231,6 +257,7 @@ html, body {
   opacity: 0.98;
   display: none;
 }
+
 .user #SMALLhotel-opt span {
   position: absolute;
   right: 35px;
@@ -240,10 +267,13 @@ html, body {
   opacity: 1;
   cursor: pointer;
 }
+
 .user #SMALLhotel-opt span:hover {
   opacity: 0.3;
 }
-.user #SMALLhotel-opt span:before, .user #SMALLhotel-opt span:after {
+
+.user #SMALLhotel-opt span:before,
+.user #SMALLhotel-opt span:after {
   position: absolute;
   left: 15px;
   content: ' ';
@@ -251,18 +281,22 @@ html, body {
   width: 4px;
   background-color: white;
 }
+
 .user #SMALLhotel-opt span:before {
   transform: rotate(45deg);
 }
+
 .user #SMALLhotel-opt span:after {
   transform: rotate(-45deg);
 }
+
 .user #SMALLhotel-opt h2 {
   text-align: left;
   color: white;
   font-size: 55px;
   font-family: Simple Joys;
 }
+
 .user #SMALLhotel-opt h3 {
   text-align: center;
   color: white;
@@ -270,18 +304,22 @@ html, body {
   font-family: Simple Joys;
   margin: 10px;
 }
+
 .user #SMALLhotel-opt input {
   background-color: white;
   border: 2px solid #A7A7A7;
   color: #A7A7A7;
   font-size: 15px;
 }
+
 .user #SMALLhotel-opt input:first-of-type {
   padding: 10px;
   width: 350px;
   margin-bottom: 20px;
 }
-.user #SMALLhotel-opt input:nth-of-type(2), .user #SMALLhotel-opt input:nth-of-type(3) {
+
+.user #SMALLhotel-opt input:nth-of-type(2),
+.user #SMALLhotel-opt input:nth-of-type(3) {
   text-align: center;
   font-size: 18px;
   padding: 5px;
@@ -289,6 +327,7 @@ html, body {
   width: 350px;
   margin-bottom: 10px;
 }
+
 .user #SMALLhotel-opt .external a {
   background-color: white;
   color: #A7A7A7;
@@ -298,6 +337,7 @@ html, body {
   top: 20px;
   margin-left: 15px;
 }
+
 .user #SMALLhotel-opt input:last-child {
   border: 3px solid white;
   background-color: #D9B018;
@@ -310,6 +350,7 @@ html, body {
   bottom: -60px;
   left: 80px;
 }
+
 .user #SMALLhotel-opt input:last-child:hover {
   background-color: #c9a112cb;
 }
@@ -333,6 +374,7 @@ html, body {
   border-radius: 20px;
   transition: background-color 1s ease-in;
 }
+
 .container button:first-of-type:hover {
   background-color: #c9a112cb;
 }
@@ -365,7 +407,9 @@ html, body {
 .container #hotel-opt span:hover {
   opacity: 0.3;
 }
-.container #hotel-opt span:before, .container #hotel-opt span:after {
+
+.container #hotel-opt span:before,
+.container #hotel-opt span:after {
   position: absolute;
   left: 15px;
   content: ' ';
@@ -373,9 +417,11 @@ html, body {
   width: 5px;
   background-color: white;
 }
+
 .container #hotel-opt span:before {
   transform: rotate(45deg);
 }
+
 .container #hotel-opt span:after {
   transform: rotate(-45deg);
 }
@@ -408,7 +454,8 @@ html, body {
   margin-bottom: 20px;
 }
 
-.container #hotel-opt input:nth-of-type(2), .container #hotel-opt input:nth-of-type(3) {
+.container #hotel-opt input:nth-of-type(2),
+.container #hotel-opt input:nth-of-type(3) {
   text-align: center;
   font-size: 20px;
   padding: 10px;
@@ -444,7 +491,8 @@ html, body {
 /* ROOMS PAGE & SPECIAL RATES PAGE */
 
 /* Arrow to go back to landing page for Rooms and Special Rates */
-.roomBar a, .srBar a {
+.roomBar a,
+.srBar a {
   color: black;
   position: relative;
   top: 20px;
@@ -453,11 +501,13 @@ html, body {
   font-family: Segoe UI;
 }
 
-.roomBar a:hover, .srBar a:hover {
+.roomBar a:hover,
+.srBar a:hover {
   color: #009CDE;
 }
 
-.roomBar, .srBar {
+.roomBar,
+.srBar {
   background-color: white;
   height: 120px;
   width: 100%;
@@ -467,38 +517,43 @@ html, body {
   z-index: 2;
 }
 
-#roomForm input[type=submit], #srForm input[type=submit] {
-    border: 3px dotted white;
-    border-radius: 10px;
-    background-color: #D9B018;
-    padding: 20px 100px 20px 100px;
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    top: 500px;
-    left: 600px;
+#roomForm input[type=submit],
+#srForm input[type=submit] {
+  border: 3px dotted white;
+  border-radius: 10px;
+  background-color: #D9B018;
+  padding: 20px 100px 20px 100px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 500px;
+  left: 600px;
 }
 
-#roomForm input[type=submit]:hover, #srForm input[type=submit]:hover {
-    border: 3px dotted #D9B018;
-    background-color: #104C97;
+#roomForm input[type=submit]:hover,
+#srForm input[type=submit]:hover {
+  border: 3px dotted #D9B018;
+  background-color: #104C97;
 }
 
-.roomBar h1, .srBar h1 {
+.roomBar h1,
+.srBar h1 {
   color: black;
   font-family: Simple Joys;
   text-align: center;
   font-size: 60px;
 }
 
-.roomCon p, .srCon p {
+.roomCon p,
+.srCon p {
   color: black;
   text-align: center;
   font-size: 40px;
   margin: 25px;
 }
 
-.roomCon em, .srCon em {
+.roomCon em,
+.srCon em {
   font-family: Segoe UI;
 }
 
@@ -506,15 +561,18 @@ html, body {
 #roomForm div {
   position: relative;
   top: 40px;
-  left: 100px;;
+  left: 100px;
+  ;
   float: left;
   margin: 10px;
 }
+
 .roomCon label {
   font-size: 30px;
   font-family: Segoe UI;
   font-weight: bold;
 }
+
 .roomCon input {
   border: 4px solid #009CDE;
   padding: 20px;
@@ -527,7 +585,8 @@ html, body {
   font-size: 25px;
 }
 
-#srForm label, #srForm input {
+#srForm label,
+#srForm input {
   float: left;
   clear: both;
   margin: 7px;
@@ -559,6 +618,7 @@ html, body {
   color: black;
   border: 3px dashed #009CDE;
 }
+
 #srForm input[type=text]:focus {
   background-color: lightgray;
 }
@@ -581,7 +641,7 @@ html, body {
 
 .bubble h1 {
   text-align: center;
-  color:white;
+  color: white;
   font-size: 50px;
 }
 
@@ -600,7 +660,7 @@ html, body {
 .bubble em {
   position: relative;
   bottom: 40px;
-  color:#009CDE;
+  color: #009CDE;
   font-size: 110px;
 }
 
@@ -608,11 +668,12 @@ html, body {
   position: relative;
   bottom: 75px;
   text-align: center;
-  color:white;
+  color: white;
   font-size: 20px;
 }
 
-.bubble .joinbtn, .bottom-btns .joinbtn {
+.bubble .joinbtn,
+.bottom-btns .joinbtn {
   z-index: 1;
   background-color: #009CDE;
   font-size: 30px;
@@ -621,20 +682,25 @@ html, body {
   border-radius: 10px;
   transition: 0.4s ease-in;
 }
-.bubble .joinbtn:hover, .bottom-btns .joinbtn:hover  {
+
+.bubble .joinbtn:hover,
+.bottom-btns .joinbtn:hover {
   background-color: #068cc4;
   transform: scale(1.1, 1.1);
 }
+
 .bubble .joinbtn {
   position: relative;
   bottom: 60px;
   left: 110px;
 }
+
 /* Bottom-btns join button is at the bottom of page */
 .bottom-btns {
   margin: 0 auto;
   padding: 50px 50px 80px 50px;
 }
+
 .joinbtn {
   border: 4px solid black;
   padding: 50px 70px;
@@ -645,7 +711,9 @@ html, body {
 .perkText {
   padding: 20px 0;
 }
-.perkText h2, .perkText p {
+
+.perkText h2,
+.perkText p {
   padding: 3px 10px;
   color: white;
   text-align: center;
@@ -672,13 +740,18 @@ html, body {
   border: 2px white solid;
   transition: background-color 0.5s ease-in;
 }
+
 .perks button:hover {
   background-color: #068cc4;
   border: 4px dashed #D9B018;
   cursor: pointer;
 }
 
-#speechR1, #speechR2, #speechR3, #speechR4, #speechR5 {
+#speechR1,
+#speechR2,
+#speechR3,
+#speechR4,
+#speechR5 {
   background-color: white;
   border: 5px double #D9B018;
   color: black;
@@ -686,11 +759,19 @@ html, body {
   padding: 5px;
 }
 
-#speechR1:first-line, #speechR2:first-line, #speechR3:first-line, #speechR4:first-line, #speechR5:first-line {
+#speechR1:first-line,
+#speechR2:first-line,
+#speechR3:first-line,
+#speechR4:first-line,
+#speechR5:first-line {
   font-size: 22px;
 }
 
-#speechR1 a, #speechR2 a, #speechR3 a, #speechR4 a, #speechR5 a {
+#speechR1 a,
+#speechR2 a,
+#speechR3 a,
+#speechR4 a,
+#speechR5 a {
   display: flex;
   color: blue;
   font-size: 10px;
@@ -736,14 +817,17 @@ html, body {
   width: 300px;
   background-color: rgb(178, 92, 199);
 }
+
 .member-tier .gold {
   width: 350px;
   background-color: #D9B018;
 }
+
 .member-tier .silver {
   width: 400px;
   background-color: rgb(143, 143, 143);
 }
+
 .member-tier .blue {
   width: 450px;
   background-color: rgb(4, 160, 221);
@@ -759,6 +843,7 @@ html, body {
   width: 650px;
   margin: 25px;
 }
+
 .member-tier ul {
   display: block;
   list-style-type: circle;
@@ -769,38 +854,50 @@ html, body {
   border: 4px dotted #D9B018;
 }
 
-#D-tier, #G-tier, #S-tier, #B-tier {
+#D-tier,
+#G-tier,
+#S-tier,
+#B-tier {
   display: none;
   padding: 40px;
   border: 6px dashed black;
   color: white;
 }
-#D-tier p, #G-tier p, #S-tier p, #B-tier p {
+
+#D-tier p,
+#G-tier p,
+#S-tier p,
+#B-tier p {
   font-size: 25px;
 }
 
 #D-tier {
   background-color: rgb(178, 92, 199);
 }
+
 #G-tier {
   background-color: #D9B018;
 }
+
 #S-tier {
   background-color: rgb(143, 143, 143);
 }
+
 #B-tier {
   background-color: rgb(4, 160, 221);
 }
 
 /* Information - Rewards and Offers */
 
-.SFR h2, .EO h2 {
+.SFR h2,
+.EO h2 {
   text-align: center;
   font-size: 60px;
   padding: 30px 0 10px 0;
 }
 
-.SFR p, .EO p {
+.SFR p,
+.EO p {
   text-align: center;
   font-size: 30px;
   padding: 5px 0 30px 0;
@@ -822,20 +919,24 @@ html, body {
   justify-content: flex-end;
 }
 
-.SFR1, .SFR2 {
+.SFR1,
+.SFR2 {
   width: 500px;
   height: 400px;
   padding: 20px 10px;
   background-size: cover;
 }
+
 .SFR1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("Images/Book with Points.jpg");
-}
-.SFR2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("Images/Exclusive Experiences.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Book with Points.jpg");
 }
 
-.SFR1 p, .SFR2 p  {
+.SFR2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Exclusive Experiences.jpg");
+}
+
+.SFR1 p,
+.SFR2 p {
   padding: 10px 50px;
   border: 2px dotted white;
   text-align: center;
@@ -844,6 +945,7 @@ html, body {
   font-family: Segoe UI;
   background-color: #D9B018;
 }
+
 .SFR2 a {
   border: 2px solid white;
   border-radius: 30px;
@@ -855,6 +957,7 @@ html, body {
   margin: 10px;
   font-size: 25px;
 }
+
 .SFR2 a:hover {
   transition: 0.3s ease-in-out;
   background-color: #009CDE;
@@ -863,7 +966,9 @@ html, body {
 }
 
 
-.SFR3 p, .SFR4 p, .SFR5 p   {
+.SFR3 p,
+.SFR4 p,
+.SFR5 p {
   padding: 20px 30px;
   border: 2px dotted white;
   text-align: center;
@@ -874,30 +979,43 @@ html, body {
   z-index: 7;
 }
 
-.SFR3, .SFR4, .SFR5 {
+.SFR3,
+.SFR4,
+.SFR5 {
   width: 300px;
   height: 320px;
   padding: 20px 10px;
   background-size: cover;
 }
+
 .SFR3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("Images/Shop with Points.jpg");
-}
-.SFR4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("Images/Free Nights.jpg");
-}
-.SFR5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("Images/Pool your Points.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Shop with Points.jpg");
 }
 
-.SFR1 p:hover, .SFR2 p:hover, .SFR3 p:hover, .SFR4 p:hover, .SFR5 p:hover{
+.SFR4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Free Nights.jpg");
+}
+
+.SFR5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Pool your Points.jpg");
+}
+
+.SFR1 p:hover,
+.SFR2 p:hover,
+.SFR3 p:hover,
+.SFR4 p:hover,
+.SFR5 p:hover {
   transform: scale(1.1, 1.1);
   z-index: 8;
   cursor: pointer;
   border-width: 5px;
 }
 
-.SFR1 strong, .SFR2 strong, .SFR3 strong, .SFR4 strong, .SFR5 strong {
+.SFR1 strong,
+.SFR2 strong,
+.SFR3 strong,
+.SFR4 strong,
+.SFR5 strong {
   z-index: 7;
   color: white;
   font-family: Segoe UI;
@@ -911,10 +1029,12 @@ html, body {
 .EO table {
   border-spacing: 50px;
 }
+
 .EO table td {
   border-radius: 20px;
   box-shadow: 10px 10px;
 }
+
 .EO th strong {
   color: #D9B018;
   font-family: Segoe UI;
@@ -923,20 +1043,27 @@ html, body {
   text-align: center;
 }
 
-.EO1, .EO2, .EO3, .EO4 {
+.EO1,
+.EO2,
+.EO3,
+.EO4 {
   width: 500px;
   height: 500px;
   background-size: cover;
 }
+
 .EO1 {
   background-image: url("Images/Earn 130K.png");
 }
+
 .EO2 {
   background-image: url("Images/Best.png");
 }
+
 .EO3 {
   background-image: url("Images/Power Promotion.png");
 }
+
 .EO4 {
   background-image: url("Images/Ride.png");
 }
@@ -949,7 +1076,11 @@ html, body {
   opacity: 0;
   transition: .5s ease;
 }
-.EO1:hover .overlay, .EO2:hover .overlay, .EO3:hover .overlay, .EO4:hover .overlay {
+
+.EO1:hover .overlay,
+.EO2:hover .overlay,
+.EO3:hover .overlay,
+.EO4:hover .overlay {
   opacity: 0.8;
 }
 
@@ -960,13 +1091,24 @@ html, body {
   color: white;
 }
 
-.EO1 p, .EO2 p, .EO3 p, .EO4 p {
+.EO1 p,
+.EO2 p,
+.EO3 p,
+.EO4 p {
   font-size: 20px;
 }
-.EO1 em, .EO2 em, .EO3 em, .EO4 em {
+
+.EO1 em,
+.EO2 em,
+.EO3 em,
+.EO4 em {
   font-size: 25px;
 }
-.EO1 a, .EO2 a, .EO3 a, .EO4 a {
+
+.EO1 a,
+.EO2 a,
+.EO3 a,
+.EO4 a {
   width: 50%;
   padding: 25px;
   margin-left: auto;
@@ -977,7 +1119,11 @@ html, body {
   font-weight: bold;
   font-size: 20px;
 }
-.EO1 a:hover, .EO2 a:hover, .EO3 a:hover, .EO4 a:hover {
+
+.EO1 a:hover,
+.EO2 a:hover,
+.EO3 a:hover,
+.EO4 a:hover {
   border: 3px dashed;
   background-color: #009CDE;
   transition: 0.5s ease-in-out;
@@ -994,6 +1140,7 @@ html, body {
   left: 0;
   padding: 15px;
 }
+
 .Wmenu .arrow:hover {
   transition: 1s ease;
   opacity: 0.5;
@@ -1001,15 +1148,17 @@ html, body {
 }
 
 .Wmenu .user .login2 {
-  background-color:#104C97;
+  background-color: #104C97;
   position: fixed;
   top: 10px;
   right: 80px;
   visibility: hidden;
 }
+
 .Wmenu .user .login2:hover {
-  background-color:#0a3d7d;
+  background-color: #0a3d7d;
 }
+
 .Wmenu .open .login2 {
   color: white;
   padding: 15px 35px 15px 35px;
@@ -1030,6 +1179,7 @@ html, body {
 .formhead h1 {
   font-size: 50px;
 }
+
 .formhead p em {
   padding: 15px 0;
   font-size: 20px;
@@ -1046,6 +1196,7 @@ html, body {
   margin: 20px 0;
   background-color: #104C97;
 }
+
 .iconBene img {
   width: 65px;
   height: 80px;
@@ -1063,7 +1214,8 @@ html, body {
   border-spacing: 50px;
 }
 
-.form-layout tr select, .form-layout tr input  {
+.form-layout tr select,
+.form-layout tr input {
   margin-bottom: 10px;
   margin-right: 10px;
   padding: 15px 0 15px 20px;
@@ -1075,38 +1227,49 @@ html, body {
 .form-group:nth-of-type(1) input {
   width: 300px;
 }
-.form-group:nth-of-type(2) table td input[type=tel]{
+
+.form-group:nth-of-type(2) table td input[type=tel] {
   width: 250px;
 }
+
 .form-group:nth-of-type(2) table td input[type=email] {
   width: 350px;
 }
+
 .form-group:nth-of-type(3) input {
   width: 200px;
 }
+
 .form-group:nth-of-type(3) select {
   width: 300px;
 }
+
 .form-group:nth-of-type(3) table tr:last-of-type input[type=text] {
   width: 400px;
 }
+
 .form-group:nth-of-type(3) table tr:last-of-type input[type=number] {
   width: 150px;
 }
 
-.form-group select:hover, .form-group input:hover {
+.form-group select:hover,
+.form-group input:hover {
   background-color: #F5F5F5;
   border: 2px solid #009CDE;
   transition: 0.5s ease;
   color: black;
 }
-.form-group select:focus, .form-group input:focus {
+
+.form-group select:focus,
+.form-group input:focus {
   background-color: #F5F5F5;
   border: 2px solid lightgreen;
   transition: 0.8s ease-in-out;
   color: black;
 }
-.form-group select:visited, .form-group input:visited {
+
+.form-group select:visited,
+.form-group input:visited {
   background-color: #F5F5F5;
   outline: red;
   color: black;
@@ -1114,7 +1277,10 @@ html, body {
 
 /* Input Icons */
 
-.nameIcon, .telIcon, .mailIcon, .houseIcon {
+.nameIcon,
+.telIcon,
+.mailIcon,
+.houseIcon {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -1131,11 +1297,13 @@ html, body {
   border-collapse: separate;
   border-spacing: 20px;
 }
+
 .req tr td {
   border: 3px dotted #c9a212;
   background-color: rgb(231, 195, 65, 0.5);
   padding: 10px 100px 10px 100px;
 }
+
 .req em {
   float: left;
   margin: 10px;
@@ -1148,6 +1316,7 @@ html, body {
 .pass {
   width: 40%;
 }
+
 .pass input {
   float: left;
   clear: both;
@@ -1158,6 +1327,7 @@ html, body {
   border-radius: 20px;
   font-size: 18px;
 }
+
 .pass input:hover {
   background-color: #F5F5F5;
   border: 2px solid #009CDE;
@@ -1197,12 +1367,14 @@ html, body {
   background-color: #1d1d1d;
   cursor: pointer;
 }
+
 .checkbox input {
   position: absolute;
   opacity: 0;
   height: 0;
   width: 0;
 }
+
 .checkagree {
   position: absolute;
   top: 10px;
@@ -1211,20 +1383,25 @@ html, body {
   width: 23px;
   background-color: white;
 }
-.checkbox:hover input ~ .checkagree {
+
+.checkbox:hover input~.checkagree {
   background-color: #D9B018;
 }
-.checkbox input:checked ~ .checkagree {
+
+.checkbox input:checked~.checkagree {
   background-color: #009CDE;
 }
+
 .checkagree:after {
   content: "";
   position: absolute;
   display: none;
 }
-.checkbox input:checked ~ .checkagree:after {
+
+.checkbox input:checked~.checkagree:after {
   display: block;
 }
+
 .checkbox .checkagree:after {
   left: 8px;
   top: 3px;
@@ -1249,6 +1426,7 @@ html, body {
   font-size: 50px;
   font-weight: bold;
 }
+
 .joinFormBtn:hover {
   background-color: #068cc4;
   transition: 1s ease;
@@ -1260,12 +1438,13 @@ html, body {
   width: 40%;
   padding: 60px 20px;
 }
+
 .TC p {
   line-height: 1.5;
 }
 
 /* Allows T&C to show up when join button is hovered over */
-.joinFormBtn:hover + .TC {
+.joinFormBtn:hover+.TC {
   display: block;
 }
 
@@ -1288,183 +1467,199 @@ html, body {
   border-bottom: solid black;
   position: fixed;
   z-index: 100;
-  }
-
-  .Ebar1, .Ebar2, .Ebar3 {
-    width: 65px;
-    height: 8px;
-    background-color: white;
-    margin: 3px auto;
-    float: left;
-    clear: both;
-    position: relative;
-    bottom: 50px;
-    left: 10px;
-    transition: 1s ease-in-out;
-    cursor: pointer;
-  }
-
-  .extend .Ebar1, .extend .Ebar2, .extend .Ebar3 {
-    background-color: black;
-    border: 0.5px solid #D9B018;
-    padding: 3px;
-  }
-
-  .extend .Ebar1 {
-    transform: scale(3, 8) translate(15px, 1.5px);
-  }
-  .extend .Ebar2 {
-    transform: scale(3, 8) translate(15px, 7px);
-  }
-  .extend .Ebar3 {
-    transform: scale(3, 8) translate(15px, 12.5px);
-  }
-
-  .close {
-    visibility: hidden;
-    width: 65px;
-    height: 8px;
-    background-color: white;
-    border: none;
-    position: relative;
-    bottom: 10px;
-    left: 10px;
-    transition: 1s ease-in-out;
-  }
-
-  .Bmenu .logo {
-    margin: 0 auto 0 auto;
-    width: 100px;
-  }
-
-  .Bmenu .user {
-    float: right;
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 15px;
-    cursor: pointer;
-  }
-
-  .Bmenu .user img:hover {
-    opacity: 0.5;
-    transform: scale(1.3, 1.3);
-    transition: 1s ease-in-out;
-  }
-
-  .Bmenu .login3 {
-    background-color: #009CDE;
-    position: fixed;
-    top: 10px;
-    right: 80px;
-    visibility: hidden;
-  }
-  .Bmenu .login3:hover {
-    background-color:#D9B018;
-  }
-
-  .Bmenu .open .login3 {
-    color: white;
-    padding: 15px 35px 15px 35px;
-    border-radius: 30%;
-    font-weight: bold;
-    visibility: visible;
-  }
-
-  /* End Point Image + Quote */
-
-.endImg img {
-  width: 100%;
-  height: 450px;
-  z-index: -1;
-  margin-bottom: 50px;
 }
 
-.endImg h1 {
+.Ebar1,
+.Ebar2,
+.Ebar3 {
   float: left;
   clear: both;
+  position: relative;
+  bottom: 50px;
+  left: 10px;
+  width: 65px;
+  height: 8px;
+  background-color: white;
+  margin: 3px auto;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.extend .Ebar1,
+.extend .Ebar2,
+.extend .Ebar3 {
+  padding: 3px;
+  border: 0.5px solid #D9B018;
+  background-color: black;
+}
+
+.extend .Ebar1 {
+  transform: scale(3, 8) translate(15px, 1.5px);
+}
+
+.extend .Ebar2 {
+  transform: scale(3, 8) translate(15px, 7px);
+}
+
+.extend .Ebar3 {
+  transform: scale(3, 8) translate(15px, 12.5px);
+}
+
+.close {
+  visibility: hidden;
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+  width: 65px;
+  height: 8px;
+  border: none;
+  background-color: white;
+  transition: 1s ease-in-out;
+}
+
+.Bmenu .logo {
+  margin: 0 auto 0 auto;
+  width: 100px;
+}
+
+.Bmenu .user {
+  float: right;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.Bmenu .user img:hover {
+  opacity: 0.5;
+  transform: scale(1.3, 1.3);
+  transition: 1s ease-in-out;
+}
+
+.Bmenu .login3 {
+  background-color: #009CDE;
+  position: fixed;
+  top: 10px;
+  right: 80px;
+  visibility: hidden;
+}
+
+.Bmenu .login3:hover {
+  background-color: #D9B018;
+}
+
+.Bmenu .open .login3 {
+  color: white;
+  padding: 15px 35px 15px 35px;
+  border-radius: 30%;
+  font-weight: bold;
+  visibility: visible;
+}
+
+/* End Point Image + Quote */
+.endImg {
+  width: 100%;
+  background-image: url("Images/End Point Image.jpg");
+  background-size: cover;
+  padding: 50px 30px;
+  z-index: -1;
+  box-shadow: 0 10px 5px grey;
+}
+.endImg table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.endImg .headings {
+  padding: 30px 30px 0 30px;
+}
+.endImg #callName {
   font-family: Simple Joys;
   font-weight: bold;
   font-size: 150px;
   text-shadow: 2px 2px black;
-  position: absolute;
-  top: 100px;
-  left: 60px;
   color: #009CDE;
-  margin-top: 50px;
-  display: block;
 }
-
 .endImg h1 em {
-  font-family: Segoe UI;
-  color: white;
-  font-size: 50px;
   position: relative;
-  top: 50px;
-  margin-left: 50px;
+  top: -20px;
+  padding-left: 30px;
+  color: white;
+  font-family: Segoe UI;
+  font-size: 50px;
 }
 
-.accountbtn button {
+.headButton {
+  position: relative;
+  top: -100px;
+  margin: 30px;
+}
+.accountbtn {
+  padding: 25px 60px;
+  border: 5px solid #A7A7A7;
+  border-radius: 10px;
   background-color: #D9B018;
   color: white;
   font-weight: bold;
   font-size: 40px;
-  border: 5px solid #A7A7A7;
-  padding: 25px 60px;
-  border-radius: 10px;
-  position: absolute;
-  top: 400px;
-  right: 60px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+.accountbtn:hover {
+  border-color: #c2c1c1;
+  background-color: #eabf26;;
+}
+
+/* End Point Page Content */
+.endLayout {
+  margin: 80px 0 150px 0;
+  border-spacing: 40px;
+}
+.endLayout table {
+  border-spacing: 30px;
 }
 
 .MemNum {
+  width: 600px;
   padding: 20px;
+  margin: 20px;
   border: 4px dashed #D9B018;
   color: #009CDE;
   background-color: white;
   font-family: Segoe UI;
   font-size: 25px;
   text-align: center;
-  width: 600px;
-  position: absolute;
-  left: 80px;
-  margin: 20px;
 }
 
 .email-sent img {
-  margin: 10px;
-  position: absolute;
-  top: 90%;
-  left: 3%;
+  float: right;
+  margin: 10px; 
 }
 .email-sent h3 {
   margin: 10px;
-  position: absolute;
-  top: 89%;
-  left: 20%;
   font-size: 30px;
-  padding-right: 700px;
 }
 
+.download div {
+  display: flex;
+  justify-content: space-around;
+}
 .download button {
-  margin: 30px;
   border: none;
-  position: relative;
-  top:450px;
-  left: 30px;
+  border-radius: 15px;
+  transition: 1s ease;
+}
+.download button:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .AF img {
-  width: 650px;
-  height: 600px;
-  margin-right: 30px;
-  position: relative;
-  bottom: 100px;
-  float: right;
+  width: 550px;
+  height: 500px;
 }
 
 /* FOOTER for all pages */
-
 footer {
   position: relative;
   bottom: 0;
@@ -1486,6 +1681,7 @@ footer a {
   line-height: 30px;
   font-size: 15px;
 }
+
 footer p {
   font-weight: 500;
 }
@@ -1497,7 +1693,8 @@ footer .logo {
 
 /* Feedback pop-up in footer */
 
-.FBbtn span, .FBbtnSU span {
+.FBbtn span,
+.FBbtnSU span {
   z-index: 1;
   background-color: white;
   border: 4px #009CDE solid;
@@ -1508,10 +1705,15 @@ footer .logo {
   padding: 15px 60px 15px 60px;
   cursor: pointer;
 }
+
 .FBbtn span {
   bottom: 30px;
   right: 50px;
 }
+.FBbtn span:hover {
+  background-color: rgb(241, 238, 238);
+}
+
 .FBbtnSU span {
   bottom: 10px;
   right: 165px;
@@ -1553,9 +1755,9 @@ footer .logo {
   font-size: 40px;
   font-family: Simple Joys;
 }
+
 #FB-pop span:hover {
-  transition: 0.8s ease-in-out;
-  opacity: 0.6;
+  color: #D9B018;
 }
 
 .FB-content h4 {
@@ -1568,6 +1770,7 @@ footer .logo {
   height: 22px;
   width: 22px;
 }
+
 #FB-pop label {
   margin-right: 30px;
 }
@@ -1597,7 +1800,8 @@ footer .logo {
   resize: none;
 }
 
-.FB-content select:hover, .FB-content textarea:hover {
+.FB-content select:hover,
+.FB-content textarea:hover {
   border-color: #009CDE;
   transition: 0.6s ease-in-out;
 }
@@ -1621,6 +1825,7 @@ footer .logo {
   left: 55%;
   transition: 0.5s ease-in-out;
 }
+
 .FB-content .submitFB:hover {
   background-color: #068cc4;
   border-radius: 8px;
@@ -1629,34 +1834,43 @@ footer .logo {
 /* Media Queries */
 /* 1440px - Large Laptop  */
 @media only screen and (max-width: 1440px) {
+
   /* Landing Page */
   .perks button {
     left: 100em;
   }
+
   .member-tier img {
     top: 13em;
   }
+
   /* Sign Up Page */
   .checkbox strong {
     padding-right: 260px;
   }
+
   button[type="submit"] {
     height: 20%;
   }
+
   /* End Point Page */
   .download button {
     top: 30em;
   }
+
   .email-sent img {
     top: 45em;
   }
+
   .email-sent #callEmail {
     top: 23.5em;
   }
+
   #footer3 {
     top: 80em;
   }
 }
+
 /* 1024px - Large Laptop  */
 @media only screen and (max-width: 1024px) {
   /* Landing Page */
@@ -1664,6 +1878,7 @@ footer .logo {
     
   } */
 }
+
 /* For Desktop */
 @media only screen and (min-width: 768px) {
   html body {
@@ -1677,10 +1892,12 @@ footer .logo {
     flex-direction: column;
     max-width: 50%;
   }
+
   * img {
     flex-direction: column;
     max-width: 50%;
   }
+
   input {
     max-width: 20%;
   }
