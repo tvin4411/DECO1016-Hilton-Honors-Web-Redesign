@@ -19,12 +19,6 @@
     background-color: white;
   }
   
-  /* Logo */
-  .Bmenu .logo {
-    margin: 0 auto;
-    width: 100px;
-  }
-  
   /* User Icon */
   .Bmenu .user {
     position: relative;

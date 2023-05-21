@@ -56,6 +56,16 @@ body {
 }
 
 /* Head Navigation Bar */
+
+ /* Logo */
+ .headLogo {
+  position: fixed;
+  left: 45%;
+  width: 100px;
+  margin: 10px;
+  z-index: 101;
+ } 
+
 .Wmenu {
   display: flex;
   justify-content: space-between;
@@ -155,10 +165,6 @@ body {
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
   border-bottom: 23px solid #D9B018;
-}
-
-.Wmenu .logo {
-  width: 100px;
 }
 
 .user {

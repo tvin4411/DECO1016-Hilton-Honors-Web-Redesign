@@ -136,7 +136,10 @@
     border-spacing: 20px;
 }
 
-.req tr td {
+.req #reqLength,
+.req #reqNumSpe,
+.req #reqUp,
+.req #reqLow {
     border: 3px dotted #c9a212;
     background-color: rgb(231, 195, 65, 0.5);
     padding: 10px 100px 10px 100px;

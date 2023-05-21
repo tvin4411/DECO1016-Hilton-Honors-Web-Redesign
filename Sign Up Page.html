@@ -169,6 +169,22 @@
 
       var repeat = document.getElementById("repeatPass").value;
       if (create == "" && repeat == "")  {
+        document.getElementById("reqLength").style.borderColor = "#c9a212";
+        document.getElementById("reqLength").style.backgroundColor = "rgb(231, 195, 65, 0.5)";
+        document.getElementById("reqLength").style.color = "black";
+
+        document.getElementById("reqNumSpe").style.borderColor = "#c9a212";
+        document.getElementById("reqNumSpe").style.backgroundColor = "rgb(231, 195, 65, 0.5)";
+        document.getElementById("reqNumSpe").style.color = "black";
+
+        document.getElementById("reqUp").style.borderColor = "#c9a212";
+        document.getElementById("reqUp").style.backgroundColor = "rgb(231, 195, 65, 0.5)";
+        document.getElementById("reqUp").style.color = "black";
+
+        document.getElementById("reqLow").style.borderColor = "#c9a212";
+        document.getElementById("reqLow").style.backgroundColor = "rgb(231, 195, 65, 0.5)";
+        document.getElementById("reqLow").style.color = "black";
+
         document.getElementById("message").innerHTML = '*Please input password';
         document.getElementById("message").style.color = "black";
       } else {
@@ -198,12 +214,17 @@
 </head>
 
 <!-- The white menu bar containing a logo and back arrow linking back to main page as well as user icon to show login button in case user relaises they have an account -->
+<section>
+  <!-- Logo -->
+  <div class="headLogo">
+    <a href="index.html"><img src="Images/Hilton Honors Logo (White).png" alt="Hilton Honors Black Logo" width="110"
+        height="50"></a>
+  </div>
+</section>
+
 <header class='Wmenu'>
   <div class="arrow">
     <a href="index.html"><img src="Images/Arrow.png" alt="Arrow" width="80" height="40"></a>
-  </div>
-  <div class="logo">
-    <a href="index.html"><img src="Images/Hilton Honors Logo (White).png" alt="Hilton Honors Logo" width="110" height="50"></a>
   </div>
   <div class="user" onclick="myUser(this)">
     <div>
