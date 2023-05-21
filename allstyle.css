@@ -1,0 +1,461 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+* a {
+  color: white;
+}
+
+* h1,
+* h2,
+* h3,
+* p,
+* a,
+* ul {
+  font-family: Segoe UI;
+}
+
+* em {
+  font-family: Simple Joys;
+}
+
+* input,
+* select,
+* button {
+  cursor: pointer;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  float: left;
+  clear: both;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.h-border {
+  padding: 40px 0;
+  border-top: 5px solid #A7A7A7;
+}
+
+/* Head Navigation Bar */
+.Wmenu {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  padding: 10px;
+  border-bottom: solid black;
+  background-color: white;
+  z-index: 100;
+}
+
+.linesButton a {
+  visibility: hidden;
+  transition: width 0.6s ease-in;
+  transition-delay: 0.5s;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 65px;
+  height: 8px;
+  background-color: #D9B018;
+  margin: 6px auto;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.extend .bar1,
+.extend .bar2,
+.extend .bar3 {
+  background-color: black;
+  border: 0.5px solid #D9B018;
+  padding: 3px;
+  opacity: 0.9;
+}
+
+.extend .bar1 {
+  transform: scale(3, 8) translate(15px, 1.5px);
+}
+
+.extend .bar2 {
+  transform: scale(3, 8) translate(15px, 7px);
+}
+
+.extend .bar3 {
+  transform: scale(3, 8) translate(15px, 12.5px);
+}
+
+.extend a {
+  transform: scale(1, 0.5) translate(18.5px, -6.5px);
+  visibility: visible;
+  float: left;
+  clear: both;
+  text-align: center;
+  font-size: 6px;
+  font-weight: bold;
+}
+
+.extend a:hover {
+  color: #D9B018;
+}
+
+.close {
+  visibility: hidden;
+  width: 65px;
+  height: 8px;
+  background-color: white;
+  border: none;
+  transition: 1s ease-in-out;
+}
+
+.extend .close {
+  transform: scale(3, 6) translate(15px, 24px);
+  visibility: visible;
+  background-color: #009CDE;
+  border: 0.5px solid #D9B018;
+  opacity: 0.9;
+}
+
+.extend .tri {
+  transform: translate(55px, 117px);
+  transition: 1s linear;
+  visibility: visible;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  margin: 10px;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 23px solid white;
+}
+
+.extend .tri:hover {
+  transition: 0.7s ease-in-out;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 23px solid #D9B018;
+}
+
+.Wmenu .logo {
+  width: 100px;
+}
+
+.user {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.user button {
+  position: relative;
+  top: -20px;
+  margin: 10px;
+}
+
+.user img {
+  position: relative;
+  top: -5px;
+}
+.Wmenu .user img:hover {
+  opacity: 0.5;
+  transform: scale(1.3, 1.3);
+  transition: 1s ease-in-out;
+}
+
+.Wmenu .signup {
+  background-color: #009CDE;
+  visibility: hidden;
+}
+
+.Wmenu .login {
+  background-color: #104C97;
+  visibility: hidden;
+}
+.Wmenu .login:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1, 1.1);
+  background-color: #0a3d7d;
+}
+
+.Wmenu .signup:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1, 1.1);
+  background-color: #068cc4;
+}
+
+.open .login,
+.Wmenu .open .signup,
+.Wmenu .open #smallFind {
+  color: white;
+  padding: 15px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  visibility: visible;
+}
+
+/* FOOTER for all pages */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  border-top: 3px solid black;
+  float: left;
+  clear: both;
+  background-color: white;
+}
+
+footer td {
+  padding: 25px;
+}
+
+footer a {
+  color: blue;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+footer p {
+  font-weight: 500;
+}
+
+footer .logo {
+  margin: 30px;
+}
+
+
+/* Feedback pop-up in footer */
+
+.FBbtn span,
+.FBbtnSU span {
+  z-index: 1;
+  background-color: white;
+  border: 4px #009CDE solid;
+  color: #009CDE;
+  font-size: 20px;
+  font-family: Segoe UI;
+  font-weight: bold;
+  padding: 15px 60px 15px 60px;
+  cursor: pointer;
+}
+
+.FBbtn span {
+  bottom: 30px;
+  right: 50px;
+}
+.FBbtn span:hover {
+  background-color: rgb(241, 238, 238);
+}
+
+.FBbtnSU span {
+  bottom: 10px;
+  right: 165px;
+  padding: 10px 60px 10px 60px;
+}
+
+.FB-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.FB-content {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 100%;
+  margin-top: 20px;
+  font-family: Segoe UI;
+  color: #D9B018;
+  font-size: 23px;
+}
+
+#FB-pop span {
+  text-align: right;
+  position: relative;
+  top: -120px;
+  left: 55%;
+  opacity: 1;
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+  font-size: 40px;
+  font-family: Simple Joys;
+}
+
+#FB-pop span:hover {
+  color: #D9B018;
+}
+
+.FB-content h4 {
+  color: white;
+}
+
+#FB-pop input[type=checkbox] {
+  margin: 17px;
+  margin-bottom: 37px;
+  height: 22px;
+  width: 22px;
+}
+
+#FB-pop label {
+  margin-right: 30px;
+}
+
+.FB-content select {
+  margin: 17px;
+  margin-bottom: 37px;
+  padding: 10px 260px 10px 10px;
+  border: 4px solid #D9B018;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+}
+
+.FB-content textarea {
+  margin: 17px;
+  width: 70%;
+  height: 180px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 4px solid #D9B018;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 15px;
+  font-family: Segoe UI;
+  resize: none;
+}
+
+.FB-content select:hover,
+.FB-content textarea:hover {
+  border-color: #009CDE;
+  transition: 0.6s ease-in-out;
+}
+
+.FB-content a {
+  color: #009CDE;
+  font-size: small;
+  margin: 10px;
+  position: relative;
+  top: 30px;
+}
+
+.FB-content .submitFB {
+  border: 4px solid white;
+  background-color: #009CDE;
+  color: white;
+  font-size: 25px;
+  padding: 10px 70px 10px 70px;
+  position: relative;
+  bottom: 25px;
+  left: 55%;
+  transition: 0.5s ease-in-out;
+}
+
+.FB-content .submitFB:hover {
+  background-color: #068cc4;
+  border-radius: 8px;
+}
+
+/* Media Queries */
+/* 1440px - Large Laptop  */
+@media only screen and (max-width: 1440px) {
+
+  /* Landing Page */
+  .perks button {
+    left: 100em;
+  }
+
+  .member-tier img {
+    top: 13em;
+  }
+
+  /* Sign Up Page */
+  .checkbox strong {
+    padding-right: 260px;
+  }
+
+  button[type="submit"] {
+    height: 20%;
+  }
+
+  /* End Point Page */
+  .download button {
+    top: 30em;
+  }
+
+  .email-sent img {
+    top: 45em;
+  }
+
+  .email-sent #callEmail {
+    top: 23.5em;
+  }
+
+  #footer3 {
+    top: 80em;
+  }
+}
+
+/* 1024px - Large Laptop  */
+@media only screen and (max-width: 1024px) {
+  /* Landing Page */
+  /* body {
+    
+  } */
+}
+
+/* For Desktop */
+@media only screen and (min-width: 768px) {
+  html body {
+    max-width: 100%;
+  }
+}
+
+/* For Mobiles */
+@media only screen and (max-width: 320px) {
+  html body {
+    flex-direction: column;
+    max-width: 50%;
+  }
+
+  * img {
+    flex-direction: column;
+    max-width: 50%;
+  }
+
+  input {
+    max-width: 20%;
+  }
+}

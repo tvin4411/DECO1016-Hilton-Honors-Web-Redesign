@@ -1,0 +1,140 @@
+/* ROOMS PAGE & SPECIAL RATES PAGE */
+
+/* Arrow to go back to landing page for Rooms and Special Rates */
+.roomBar a,
+.srBar a {
+    color: black;
+    font-size: 35px;
+    font-family: Segoe UI;
+}
+
+.roomBar a:hover,
+.srBar a:hover {
+    color: #009CDE;
+}
+
+.roomBar,
+.srBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 120px;
+    padding: 30px;
+    border-bottom: 6px solid #D9B018;
+    z-index: 2;
+}
+
+.roomCon p,
+.srCon p {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    margin: 25px;
+}
+
+.roomCon em,
+.srCon em {
+    font-family: Segoe UI;
+}
+
+#roomForm input[type=submit],
+#srForm input[type=submit] {
+    border: 3px dotted white;
+    border-radius: 10px;
+    background-color: #D9B018;
+    padding: 20px 100px 20px 100px;
+    color: white;
+    font-weight: bold;
+
+}
+
+#roomForm input[type=submit]:hover,
+#srForm input[type=submit]:hover {
+    border: 3px dotted #D9B018;
+    background-color: #104C97;
+}
+
+.roomBar h1,
+.srBar h1 {
+    color: black;
+    font-family: Simple Joys;
+    text-align: center;
+    font-size: 60px;
+}
+
+/* Separate details for Room Page */
+#roomForm {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px;
+}
+
+#roomForm div {
+    margin: 10px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.roomCon label {
+    font-size: 30px;
+    font-family: Segoe UI;
+    font-weight: bold;
+}
+
+.roomCon input {
+    border: 4px solid #009CDE;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.roomCon input[type=submit] {
+    width: 50%;
+    margin: 30px auto;
+}
+
+/* Separate details for Special Rates Page */
+#srForm {
+    display: flex;
+    justify-content: center;
+}
+
+.srCon p {
+    font-size: 25px;
+}
+
+#srForm label,
+#srForm input {
+    margin: 10px;
+    font-weight: bold;
+    font-family: Segoe UI;
+}
+
+#srForm label {
+    margin: 15px;
+    font-size: 25px;
+    color: #009CDE;
+}
+
+#srForm input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+}
+
+#srForm input[type=text] {
+    width: 100%;
+    padding: 20px;
+    margin-top: 30px;
+    border: 3px dashed #009CDE;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+#srForm input[type=text]:focus {
+    background-color: lightgray;
+}

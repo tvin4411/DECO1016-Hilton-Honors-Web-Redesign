@@ -3,9 +3,9 @@
 
 <head>
   <title>Hilton Honors Sign Up</title>
-  <link rel="stylesheet" href="CSS.css">
-  <link>
-  <script type="text/javascript" src="JS.js"></script>
+  <link rel="stylesheet" href="allstyle.css"><link>
+  <link rel="stylesheet" href="signup.css"><link>
+  <script type="text/javascript" src="javascript.js"></script>
 
   <style>
     /* Styling for Sign Up Page's Reset Button */
@@ -168,15 +168,21 @@
       }
 
       var repeat = document.getElementById("repeatPass").value;
-      if (repeat == create) {
+      if (create == "" && repeat == "")  {
+        document.getElementById("message").innerHTML = '*Please input password';
+        document.getElementById("message").style.color = "black";
+      } else {
+        if (repeat == create) {
         document.getElementById("message").innerHTML = '*Passwords are the same!';
         document.getElementById("message").style.color = "green";
         return true;
-      } else {
-        document.getElementById("message").innerHTML = '*Passwords are not the same!';
-        document.getElementById("message").style.color = "red";
-        return false;
+        } else {
+          document.getElementById("message").innerHTML = '*Passwords are not the same!';
+          document.getElementById("message").style.color = "red";
+          return false;
+        }
       }
+      
     }
 
     // Local Storage used to store in user's first name and emaill address from input
@@ -193,13 +199,20 @@
 
 <!-- The white menu bar containing a logo and back arrow linking back to main page as well as user icon to show login button in case user relaises they have an account -->
 <header class='Wmenu'>
-  <div class="logo"><a href="index.html"><img src="Images/Hilton Honors Logo (White).png" alt="Hilton Honors Logo"
-        width="110" height="50"></a></div>
-  <div class="user" onclick="myUser(this)"><img src="Images/User (Dark).JPG" alt="User Icon" width="40" height="40">
-    <button class="login2"><a href="https://secure3.hilton.com/en/hh/customer/login/index.htm"
-        style="text-decoration: none">Log in</a></button>
+  <div class="arrow">
+    <a href="index.html"><img src="Images/Arrow.png" alt="Arrow" width="80" height="40"></a>
   </div>
-  <div class="arrow"><a href="index.html"><img src="Images/Arrow.png" alt="Arrow" width="80" height="40"></a></div>
+  <div class="logo">
+    <a href="index.html"><img src="Images/Hilton Honors Logo (White).png" alt="Hilton Honors Logo" width="110" height="50"></a>
+  </div>
+  <div class="user" onclick="myUser(this)">
+    <div>
+      <img src="Images/User (Dark).JPG" alt="User Icon" width="40" height="40">
+    </div>
+    <div>
+      <button class="login"><a href="https://secure3.hilton.com/en/hh/customer/login/index.htm" style="text-decoration: none">Log in</a></button>
+    </div>
+  </div>
 </header>
 
 <body>

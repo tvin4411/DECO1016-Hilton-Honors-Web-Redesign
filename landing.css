@@ -1,0 +1,798 @@
+/* LANDING PAGE */
+
+  /* Small version of find a hotel button in white menu bar */
+  .user #smallFind {
+    width: 170px;
+    border-radius: 30%;
+    background-color: #D9B018;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    visibility: hidden;
+  }
+  
+  .user #smallFind:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1, 1.1);
+    background-color: #c9a112cb;
+  }
+  
+  /* Small version of find a hotel pop up */
+  .user #SMALLhotel-opt {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 6px;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    border: 4px solid #D9B018;
+    border-radius: 20px;
+    opacity: 0.98;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .user #SMALLhotel-opt span {
+    position: absolute;
+    right: 35px;
+    top: 26px;
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .user #SMALLhotel-opt span:hover {
+    opacity: 0.3;
+  }
+  
+  .user #SMALLhotel-opt span:before,
+  .user #SMALLhotel-opt span:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 30px;
+    width: 4px;
+    background-color: white;
+  }
+  
+  .user #SMALLhotel-opt span:before {
+    transform: rotate(45deg);
+  }
+  
+  .user #SMALLhotel-opt span:after {
+    transform: rotate(-45deg);
+  }
+  
+  .user #SMALLhotel-opt h2 {
+    text-align: left;
+    color: white;
+    font-size: 55px;
+    font-family: Simple Joys;
+  }
+  
+  .user #SMALLhotel-opt h3 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: Simple Joys;
+    margin: 10px;
+  }
+  
+  .user #SMALLhotel-opt input {
+    background-color: white;
+    border: 2px solid #A7A7A7;
+    color: #A7A7A7;
+    font-size: 15px;
+  }
+  
+  .user #SMALLhotel-opt input:first-of-type {
+    padding: 10px;
+    width: 350px;
+    margin-bottom: 20px;
+  }
+  
+  .user #SMALLhotel-opt input:nth-of-type(2),
+  .user #SMALLhotel-opt input:nth-of-type(3) {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 50px;
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  
+  .user #SMALLhotel-opt .external a {
+    background-color: white;
+    color: #A7A7A7;
+    border: 2px solid #A7A7A7;
+    padding: 10px 40px 10px 40px;
+    position: relative;
+    top: 20px;
+    margin-left: 15px;
+  }
+  
+  .user #SMALLhotel-opt input:last-child {
+    border: 3px solid white;
+    background-color: #D9B018;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 60px 10px 60px;
+    border-radius: 15px;
+    position: relative;
+    bottom: -60px;
+    left: 80px;
+  }
+  
+  .user #SMALLhotel-opt input:last-child:hover {
+    background-color: #c9a112cb;
+  }
+  
+  /* Hotel Image + Find a Hotel Button Pop Up (Big version) */
+  .titleImage {
+    background-image: url('Images/Top image landing page.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+  }
+  
+  .container #bigFindBtn {
+    position: relative;
+    top: 50%;
+    left: 40%;
+    padding: 24px 65px;
+    border: solid white 5px;
+    border-radius: 20px;
+    background-color: #D9B018;
+    color: white;
+    font-size: 30px;
+    transition: background-color 1s ease-in;
+  }
+  
+  .container #bigFindBtn:hover {
+    background-color: #c9a112cb;
+  }
+  
+  .container #hotel-opt {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 490px;
+    padding: 40px;
+    border: 4px solid #D9B018;
+    border-radius: 60px;
+    background-color: black;
+    opacity: 0.97;
+  }
+  .container #hotel-opt h2,
+  .container #hotel-opt input,
+  .container #hotel-opt h3,
+  .container #hotel-opt a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .container #hotel-opt span {
+    position: relative;
+    left: 95%;
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .container #hotel-opt span:hover {
+    opacity: 0.3;
+  }
+  .container #hotel-opt span:before,
+  .container #hotel-opt span:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 5px;
+    background-color: white;
+  }
+  .container #hotel-opt span:before {
+    transform: rotate(45deg);
+  }
+  .container #hotel-opt span:after {
+    transform: rotate(-45deg);
+  }
+  
+  .container #hotel-opt h2 {
+    text-align: left;
+    color: white;
+    font-size: 40px;
+  }
+  
+  .container #hotel-opt h3 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+  }
+  
+  .container #hotel-opt input {
+    background-color: white;
+    border: 2px solid #A7A7A7;
+    color: #A7A7A7;
+    font-size: 15px;
+  }
+  
+  .container #hotel-opt input:first-of-type {
+    padding: 20px;
+    width: 700px;
+    margin-bottom: 20px;
+  }
+  
+  .container #hotel-opt input:nth-of-type(2),
+  .container #hotel-opt input:nth-of-type(3) {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 600px;
+    margin: 0 0 10px 50px;
+  }
+  
+  .container #hotel-opt .external a {
+    background-color: white;
+    color: #A7A7A7;
+    border: 2px solid #A7A7A7;
+    padding: 10px 70px 10px 70px;
+    margin-left: 80px;
+    position: relative;
+    top: 20px;
+  }
+  
+  .container #hotel-opt input:last-child {
+    border: 5px solid white;
+    background-color: #D9B018;
+    color: white;
+    font-size: 20px;
+    padding: 15px 60px 10px 60px;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-left: 530px;
+  }
+  
+  .container #hotel-opt input:last-child:hover {
+    background-color: #c9a112cb;
+  }
+  
+  /* Greeting and Perks */
+  .bubblePerks {
+    width: 100%;
+    background-color: #104C97;
+  }
+  
+  /* Join Button & Phrase */
+  .bubbleParent {
+    display: flex;
+    justify-content: center;
+    margin: 80px 20px;
+  }
+  
+  .bubble {
+    margin: 20px;
+    padding: 50px;
+    width: 650px;
+    height: 400px;
+    border: solid white 8px;
+    border-radius: 80px;
+    background-color: black;
+  }
+  
+  .bubble h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+  }
+  
+  .bubble h1:first-of-type {
+    text-align: left;
+    padding-left: 35px;
+  }
+  
+  .bubble h1:last-of-type {
+    position: relative;
+    bottom: 80px;
+    text-align: right;
+    padding-right: 40px;
+  }
+  
+  .bubble em {
+    position: relative;
+    bottom: 40px;
+    color: #009CDE;
+    font-size: 110px;
+  }
+  
+  .bubble p {
+    position: relative;
+    bottom: 75px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .bubble .joinbtn,
+  .bottom-btns .joinbtn {
+    z-index: 1;
+    background-color: #009CDE;
+    font-size: 30px;
+    border: solid white 4px;
+    border-radius: 10px;
+    transition: 0.4s ease-in;
+  }
+  
+  .bubble .joinbtn:hover,
+  .bottom-btns .joinbtn:hover {
+    background-color: #068cc4;
+    transform: scale(1.1, 1.1);
+  }
+  
+  .bubble .joinbtn {
+    position: relative;
+    bottom: 60px;
+    left: 110px;
+    padding: 25px 40px;
+  }
+  
+  .bottom-btns .joinbtn {
+    padding: 35px 60px;
+  }
+  .bottom-btns .joinbtn:hover {
+    border-color: #D9B018;
+  }
+  
+  /* Bottom-btns join button is at the bottom of page */
+  .bottom-btns {
+    margin: 0 auto;
+    padding: 50px 50px 80px 50px;
+  }
+  
+  .joinbtn {
+    border: 4px solid black;
+    padding: 50px 70px;
+    font-weight: bold;
+  }
+  
+  /* Perks Information */
+  .perkText {
+    padding: 20px 0;
+  }
+  
+  .perkText h2,
+  .perkText p {
+    padding: 3px 10px;
+    color: white;
+    text-align: center;
+  }
+  
+  .perks {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .perks p {
+    padding-top: 5px;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .perks button {
+    margin: 10px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #009CDE;
+    border: 2px white solid;
+    transition: background-color 0.5s ease-in;
+  }
+  
+  .perks button:hover {
+    background-color: #068cc4;
+    border: 4px dashed #D9B018;
+    cursor: pointer;
+  }
+  
+  
+  #speechR1,
+  #speechR2,
+  #speechR3,
+  #speechR4,
+  #speechR5 {
+    display: none;
+    background-color: white;
+    border: 5px double #D9B018;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+  }
+  
+  #speechR1:first-line,
+  #speechR2:first-line,
+  #speechR3:first-line,
+  #speechR4:first-line,
+  #speechR5:first-line {
+    font-size: 22px;
+  }
+  
+  #speechR1 a,
+  #speechR2 a,
+  #speechR3 a,
+  #speechR4 a,
+  #speechR5 a {
+    display: flex;
+    color: blue;
+    font-size: 10px;
+    justify-content: flex-end;
+  }
+  
+  /* Information - Member Tier */
+  
+  .member-tier table {
+    display: flex;
+    justify-content: center;
+    border-spacing: 30px;
+  }
+  
+  .member-tier h2 {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 10px;
+  }
+  
+  .member-tier p {
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .member-tier button {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    padding: 40px 10px 100px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid white;
+    color: white;
+    text-align: center;
+    font-family: Simple Joys;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .member-tier .diamond {
+    width: 300px;
+    background-color: rgb(178, 92, 199);
+  }
+  
+  .member-tier .gold {
+    width: 350px;
+    background-color: #D9B018;
+  }
+  
+  .member-tier .silver {
+    width: 400px;
+    background-color: rgb(143, 143, 143);
+  }
+  
+  .member-tier .blue {
+    width: 450px;
+    background-color: rgb(4, 160, 221);
+    margin-bottom: 40px;
+  }
+  
+  .member-tier button:hover {
+    transition: scale(1.5, 1.5);
+    border: 4px dashed black;
+  }
+  
+  .member-tier div {
+    width: 650px;
+    margin: 25px;
+  }
+  
+  .member-tier ul {
+    display: block;
+    list-style-type: circle;
+  }
+  
+  .perksTable {
+    height: 600px;
+    border: 4px dotted #D9B018;
+  }
+  
+  #D-tier,
+  #G-tier,
+  #S-tier,
+  #B-tier {
+    display: none;
+    padding: 40px;
+    border: 6px dashed black;
+    color: white;
+  }
+  
+  #D-tier p,
+  #G-tier p,
+  #S-tier p,
+  #B-tier p {
+    font-size: 25px;
+  }
+  
+  #D-tier {
+    background-color: rgb(178, 92, 199);
+  }
+  
+  #G-tier {
+    background-color: #D9B018;
+  }
+  
+  #S-tier {
+    background-color: rgb(143, 143, 143);
+  }
+  
+  #B-tier {
+    background-color: rgb(4, 160, 221);
+  }
+  
+  /* Information - Rewards and Offers */
+  
+  .SFR h2,
+  .EO h2 {
+    text-align: center;
+    font-size: 60px;
+    padding: 30px 0 10px 0;
+  }
+  
+  .SFR p,
+  .EO p {
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 0 30px 0;
+  }
+  
+  .SFR table td {
+    border: 2px solid black;
+  }
+  
+  .SFR table {
+    display: flex;
+    justify-content: center;
+    border-spacing: 15px;
+  }
+  
+  .SFR div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .SFR1,
+  .SFR2 {
+    width: 500px;
+    height: 400px;
+    padding: 20px 10px;
+    background-size: cover;
+  }
+  
+  .SFR1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Book with Points.jpg");
+  }
+  
+  .SFR2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Exclusive Experiences.jpg");
+  }
+  
+  .SFR1 p,
+  .SFR2 p {
+    padding: 10px 50px;
+    border: 2px dotted white;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family: Segoe UI;
+    background-color: #D9B018;
+  }
+  
+  .SFR2 a {
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    padding: 20px;
+    margin: 10px;
+    font-size: 25px;
+  }
+  
+  .SFR2 a:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #009CDE;
+    border: 5px dashed white;
+    color: white;
+  }
+  
+  
+  .SFR3 p,
+  .SFR4 p,
+  .SFR5 p {
+    padding: 20px 30px;
+    border: 2px dotted white;
+    text-align: center;
+    font-size: 15px;
+    font-family: Segoe UI;
+    color: white;
+    background-color: #D9B018;
+    z-index: 7;
+  }
+  
+  .SFR3,
+  .SFR4,
+  .SFR5 {
+    width: 300px;
+    height: 320px;
+    padding: 20px 10px;
+    background-size: cover;
+  }
+  
+  .SFR3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Shop with Points.jpg");
+  }
+  
+  .SFR4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Free Nights.jpg");
+  }
+  
+  .SFR5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/Pool your Points.jpg");
+  }
+  
+  .SFR1 p:hover,
+  .SFR2 p:hover,
+  .SFR3 p:hover,
+  .SFR4 p:hover,
+  .SFR5 p:hover {
+    transform: scale(1.1, 1.1);
+    z-index: 8;
+    cursor: pointer;
+    border-width: 5px;
+  }
+  
+  .SFR1 strong,
+  .SFR2 strong,
+  .SFR3 strong,
+  .SFR4 strong,
+  .SFR5 strong {
+    z-index: 7;
+    color: white;
+    font-family: Segoe UI;
+    font-size: 40px;
+    text-shadow: 2px 2px #D9B018;
+  }
+  
+  
+  /* Exclusiv Offers */
+  
+  .EO table {
+    border-spacing: 50px;
+  }
+  
+  .EO table td {
+    border-radius: 20px;
+    box-shadow: 10px 10px;
+  }
+  
+  .EO #EOtitle {
+    width: 100%;
+    height: 155px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #009CDE;
+  }
+  .EO strong {
+    color: #f3c82b;
+    font-family: Segoe UI;
+    font-size: 50px;
+    text-shadow: 2px 2px #b8930b;
+    text-align: center;
+  }
+  
+  .overlay {
+    width: 500px;
+    height: 400px;
+    background-color: #000;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    opacity: 0;
+    transition: .5s ease;
+  }
+  
+  .EO1,
+  .EO2,
+  .EO3,
+  .EO4 {
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+  }
+  
+  .EO1 {
+    background-image: url("Images/Earn 130K.png");
+  }
+  
+  .EO2 {
+    background-image: url("Images/Best.png");
+  }
+  
+  .EO3 {
+    background-image: url("Images/Power Promotion.png");
+  }
+  
+  .EO4 {
+    background-image: url("Images/Ride.png");
+  }
+  
+  .EO1:hover .overlay,
+  .EO2:hover .overlay,
+  .EO3:hover .overlay,
+  .EO4:hover .overlay {
+    opacity: 0.9;
+  }
+  
+  .EOtext {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px 30px 50px;
+    color: white;
+  }
+  
+  .EO1 p,
+  .EO2 p,
+  .EO3 p,
+  .EO4 p {
+    font-size: 20px;
+  }
+  
+  .EO1 em,
+  .EO2 em,
+  .EO3 em,
+  .EO4 em {
+    font-size: 25px;
+  }
+  
+  .EO1 a,
+  .EO2 a,
+  .EO3 a,
+  .EO4 a {
+    padding: 20px 25px;
+    margin-left: auto;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: #104C97;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .EO1 a:hover,
+  .EO2 a:hover,
+  .EO3 a:hover,
+  .EO4 a:hover {
+    border: 3px dashed;
+    background-color: #009CDE;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2, 1.2);
+  }
+  

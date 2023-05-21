@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Hilton Honors Rooms</title>
-    <link rel="stylesheet" href="CSS.css"><link>
-    <script type="text/javascript" src="JS.js"></script>
 
-    <header class='roomBar'>
-      <div onclick="back"><a href="index.html">Back</a></div>
-      <h1>Room Details</h1>
-    </header>
+<head>
+  <title>Hilton Honors Rooms</title>
+  <link rel="stylesheet" href="allstyle.css"><link>
+  <link rel="stylesheet" href="findhotel.css"><link>
+  <script type="text/javascript" src="javascript.js"></script>
+</head>
 
-    <body>
-      <main class=roomCon>
-        <p><em>Select the amount of rooms and assign the adults and children per room.</em></p>
-        <form id='roomForm'>
-          <div>
+<header class='roomBar'>
+  <div onclick="back"><a href="index.html">Back</a></div>
+  <div><h1>Room Details</h1></div>
+</header>
+
+<body>
+  <main class=roomCon>
+    <p><em>Select the amount of rooms and assign the adults and children per room.</em></p>
+    <form id='roomForm'>
+      <section class="formContainer">
+        <div>
           <label for="Rnum">Rooms</label><br>
-            <input type="number" name="Rnum"><br>
-          </div>
-          <div>
+          <input type="number" name="Rnum"><br>
+        </div>
+        <div>
           <label for="adult">Adult</label><br>
-            <input type="number" name="adult"><br>
-          </div>
-          <div>
+          <input type="number" name="adult"><br>
+        </div>
+        <div>
           <label for="children">Children</label><br>
-            <input type="number" name="children">
-          </div>
-          <input type="submit" value="Save"></input>
-        </form>
-
-      </main>
-    </body>
+          <input type="number" name="children">
+        </div>
+      </section>
+      <input type="submit" value="Save"></input>
+    </form>
+  </main>
+</body>
 
 </html>

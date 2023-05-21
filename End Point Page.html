@@ -4,14 +4,14 @@
 
 <head>
   <title>Hilton Honors Membership</title>
-  <link rel="stylesheet" href="CSS.css">
-  <link>
-  <script type="text/javascript" src="JS.js"></script>
+  <link rel="stylesheet" href="allstyle.css"><link>
+  <link rel="stylesheet" href="endpoint.css"><link>
+  <script type="text/javascript" src="javascript.js"></script>
 </head>
 
 <!-- Script will call local storage of user's first name and email address -->
 <script>
-  window.onload = function () {
+  window.onload = function() {
     document.getElementById("callName").innerHTML = "You're in " + sessionStorage.getItem("firstName") + "!";
     document.getElementById("callEmail").innerHTML = "Email vertification has been sent to " + sessionStorage.getItem("emailAddress");
     document.getElementById("memberNumber").innerHTML = getRndInteger(1, 1000000000);
@@ -20,21 +20,28 @@
 
 <!-- similar to the white bar menu but blue with white logo, white navigate bars and user icon which allows user to go straight to their account or login when pressed to show button-->
 <header class='Bmenu'>
+  <div>
+    <nav class="linesButton" onclick="myMenu(this)">
+      <div class="bar1"><a href="https://hiltonhonors3.hilton.com/en/explore/benefits/index.html"
+          style="text-decoration:none">Benefits</a></div>
+      <div class="bar2"><a href="https://hiltonhonors3.hilton.com/en/earn-use-points/overview/index.html"
+          style="text-decoration:none">Points</a></div>
+      <div class="bar3"><a href="https://hiltonhonors3.hilton.com/en/offers/index.htm"
+          style="text-decoration:none">Offers</a></div>
+      <div class="close"></div>
+      <div class="tri"></div>
+    </nav>
+  </div>
   <div class="logo"><a href="index.html"><img src="Images/Hilton Honors Logo (Dark).png" alt="Hilton Honors Dark Logo"
-        width="110" height="50"></a></div>
-  <nav class="button" onclick="myMenu(this)">
-    <div class="Ebar1"><a href="https://hiltonhonors3.hilton.com/en/explore/benefits/index.html"
-        style="text-decoration:none">Benefits</a></div>
-    <div class="Ebar2"><a href="https://hiltonhonors3.hilton.com/en/earn-use-points/overview/index.html"
-        style="text-decoration:none">Points</a></div>
-    <div class="Ebar3"><a href="https://hiltonhonors3.hilton.com/en/offers/index.htm"
-        style="text-decoration:none">Offers</a></div>
-    <div class="close"></div>
-    <div class="tri"></div>
-  </nav>
-  <div class="user" onclick="myUser(this)"><img src="Images/User (Gold).png" alt="User Icon" width="40" height="40"></a>
-    <button class="login3"><a href="https://secure3.hilton.com/en/hh/customer/login/index.htm"
-        style="text-decoration: none">Log in</a></button>
+        width="110" height="50"></a>
+  </div>
+  <div class="user" onclick="myUser(this)">
+    <div>
+      <img src="Images/User (Gold).png" alt="User Icon" width="40" height="40"></a>
+    </div>
+    <div>
+      <button class="login"><a href="https://secure3.hilton.com/en/hh/customer/login/index.htm" style="text-decoration: none">Log in</a></button>
+    </div>
   </div>
 </header>
 

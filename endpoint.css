@@ -1,0 +1,159 @@
+/* END POINT Page */
+
+/* Menu bar but blue colour */
+.Bmenu {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    border-bottom: solid black;
+    background-color: #104C97;
+    z-index: 100;
+  }
+  
+  .bar1,
+  .bar2,
+  .bar3 {
+    background-color: white;
+  }
+  
+  /* Logo */
+  .Bmenu .logo {
+    margin: 0 auto;
+    width: 100px;
+  }
+  
+  /* User Icon */
+  .Bmenu .user {
+    position: relative;
+    top: -5px;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .Bmenu .user img:hover {
+    opacity: 0.5;
+    transform: scale(1.3, 1.3);
+    transition: 1s ease-in-out;
+  }
+  
+  .Bmenu .login {
+    background-color: #009CDE;
+    visibility: hidden;
+  }
+  
+  .Bmenu .login:hover {
+    background-color: #D9B018;
+  }
+  
+  .Bmenu .open .login {
+    padding: 15px 35px;
+    visibility: visible;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* End Point Image + Quote */
+  .endImg {
+    width: 100%;
+    background-image: url("Images/End Point Image.jpg");
+    background-size: cover;
+    padding: 50px 30px;
+    z-index: -1;
+    box-shadow: 0 10px 5px grey;
+  }
+  .endImg table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .endImg .headings {
+    padding: 30px 30px 0 30px;
+  }
+  .endImg #callName {
+    font-family: Simple Joys;
+    font-weight: bold;
+    font-size: 150px;
+    text-shadow: 2px 2px black;
+    color: #009CDE;
+  }
+  .endImg h1 em {
+    position: relative;
+    top: -20px;
+    padding-left: 30px;
+    color: white;
+    font-family: Segoe UI;
+    font-size: 50px;
+  }
+  
+  .headButton {
+    position: relative;
+    top: -100px;
+    margin: 30px;
+  }
+  .accountbtn {
+    padding: 25px 60px;
+    border: 5px solid #A7A7A7;
+    border-radius: 10px;
+    background-color: #D9B018;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 1s ease;
+  }
+  .accountbtn:hover {
+    border-color: #c2c1c1;
+    background-color: #eabf26;;
+  }
+  
+  /* End Point Page Content */
+  .endLayout {
+    margin: 80px 0 150px 0;
+    border-spacing: 40px;
+  }
+  .endLayout table {
+    border-spacing: 30px;
+  }
+  
+  .MemNum {
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+    border: 4px dashed #D9B018;
+    color: #009CDE;
+    background-color: white;
+    font-family: Segoe UI;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .email-sent img {
+    float: right;
+    margin: 10px; 
+  }
+  .email-sent h3 {
+    margin: 10px;
+    font-size: 30px;
+  }
+  
+  .download div {
+    display: flex;
+    justify-content: space-around;
+  }
+  .download button {
+    border: none;
+    border-radius: 15px;
+    transition: 1s ease;
+  }
+  .download button:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .AF img {
+    width: 550px;
+    height: 500px;
+  }
+  

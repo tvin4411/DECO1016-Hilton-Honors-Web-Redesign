@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Hilton Honors Special Rates</title>
-    <link rel="stylesheet" href="CSS.css"><link>
-    <script type="text/javascript" src="JS.js"></script>
 
-    <header class='srBar'>
-      <div class="back"><a href="index.html">Back</a></div>
-      <h1>Special Rates</h1>
-    </header>
+<head>
+  <title>Hilton Honors Special Rates</title>
+  <link rel="stylesheet" href="allstyle.css"><link>
+  <link rel="stylesheet" href="findhotel.css"><link>
+  <script type="text/javascript" src="javascript.js"></script>
+</head>
 
-    <body>
-      <main class="srCon">
-        <p><em>Check or fill if the following applies to you.</em></p>
-        <form id='srForm'>
-          <label for="Points"><input type="checkbox" name="Points">Use Points</label>
-          <label for="Agents"><input type="checkbox" name="Agents">Travel Agents</label>
-          <label for="AAA"><input type="checkbox" name="AAA">AAA Rate</label>
-          <label for="AAPR"><input type="checkbox" name="AAPR">AAPR Rate</label>
-          <label for="Senior"><input type="checkbox" name="Senior">Senior Rate</label>
-          <label for="Gov"><input type="checkbox" name="Gov">Government Rates</label>
-          <input type="text" name="Promotion" placeholder="Promotion code">
-          <input type="text" name="Group" placeholder="Group code">
-          <input type="text" name="Corporate" placeholder="Corporate Account">
-        </form>
+<header class='srBar'>
+  <div class="back"><a href="index.html">Back</a></div>
+  <h1>Special Rates</h1>
+</header>
 
-      </main>
-    </body>
+<body>
+  <main class="srCon">
+    <p><em>Check or fill if the following applies to you.</em></p>
+    <form id='srForm'>
+      <table>
+        <tr>
+          <td>
+            <label for="Points"><input type="checkbox" name="Points">Use Points</label>
+          </td>
+          <td>
+            <label for="Agents"><input type="checkbox" name="Agents">Travel Agents</label>
+          </td>
+          <td>
+            <label for="AAA"><input type="checkbox" name="AAA">AAA Rate</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="AAPR"><input type="checkbox" name="AAPR">AAPR Rate</label>
+          </td>
+          <td>
+            <label for="Senior"><input type="checkbox" name="Senior">Senior Rate</label>
+          </td>
+          <td> 
+            <label for="Gov"><input type="checkbox" name="Gov">Government Rates</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <input type="text" name="Promotion" placeholder="Promotion code">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <input type="text" name="Group" placeholder="Group code">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <input type="text" name="Corporate" placeholder="Corporate Account">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </main>
+</body>
 
 </html>
